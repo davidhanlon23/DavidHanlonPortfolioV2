@@ -7,6 +7,6 @@
 	  "importsNotUsedAsValues": "remove",
 	  "strict": true
 	},
-	"include": ["src/**/*", "src/node_modules/**/*", ".eslintrc.js", "webpack.config.js"],
+	"include": ["src/**/*", "src/node_modules/**/*", "./.eslintrc.js", "./webpack.config.js", "./tailwind.config.ts" ],
 	"exclude": ["node_modules/*", "__sapper__/*", "static/*"]
   }

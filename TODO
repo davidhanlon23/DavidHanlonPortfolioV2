@@ -1,3 +1,5 @@
 Fix .eslintrc errors
 Fix webpack.config.js errors
 Eslint should throw error in app.svelte
+Install tailwinds
+Set up app.svelte and other basic components
