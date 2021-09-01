@@ -1,0 +1,3 @@
+Fix .eslintrc errors
+Fix webpack.config.js errors
+Eslint should throw error in app.svelte
