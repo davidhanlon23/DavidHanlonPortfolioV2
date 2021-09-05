@@ -1,14 +1,17 @@
 <script lang="ts">
+    // TODO: Add customizable height
+
     import HeroBackground from './HeroBackground.svelte';
     import HeroHeaders from './HeroHeaders.svelte';
     import HeroSubText from './HeroSubText.svelte';
     import HeroCTAs from './HeroCTAs.svelte';
-    let backgroundImage = '';
-    let backgroundColor = '';
-    let imageDescription = '';
-    let heroObject = {}; 
-    let overlay = '';
-    let children = undefined;
+    
+    export let backgroundImage = '';
+    export let backgroundColor = '';
+    export let imageDescription = '';
+    export let heroObject = {}; 
+    export let overlay = '';
+    export let children = undefined;
  
  const overlayColor = overlay || 'bg-sgPrimaryLight-500';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
