@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Icon from '../Icon/Icon.svelte'
+	import Icon from '../UI/Icon/Icon.svelte'
 	import Button from '../UI/Button/Button.svelte'
-	import AddLink from '../AddLink/AddLink.svelte'
+	import AddLink from '../UI/AddLink/AddLink.svelte'
 
 	const socials = [
 		{

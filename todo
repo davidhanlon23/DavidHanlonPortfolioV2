@@ -1,4 +1,5 @@
 1. Fix local extensions not working ( I think they are not scanning right files)
 2. Convert old nav to svelte version
 3. Create Components .... for something...
-4. 
+4. Add purge CSS
+5. Change nav.ts to enum (google ts enum)
