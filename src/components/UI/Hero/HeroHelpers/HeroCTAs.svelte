@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Button from "../Button/Button.svelte";
+    import Button from "../../Button/Button.svelte";
 
     export let heroObject;
     const primaryStyles = heroObject.cta && heroObject.cta.secondary ? 'sm:grid-cols-2' : 'sm:grid-cols-1';

@@ -1,10 +1,10 @@
 <script lang="ts">
     // TODO: Add customizable height
 
-    import HeroBackground from './HeroBackground.svelte';
-    import HeroHeaders from './HeroHeaders.svelte';
-    import HeroSubText from './HeroSubText.svelte';
-    import HeroCTAs from './HeroCTAs.svelte';
+    import HeroBackground from './HeroHelpers/HeroBackground.svelte';
+    import HeroHeaders from './HeroHelpers/HeroHeaders.svelte';
+    import HeroSubText from './HeroHelpers/HeroSubText.svelte';
+    import HeroCTAs from './HeroHelpers/HeroCTAs.svelte';
     
     export let backgroundImage = '';
     export let backgroundColor = '';

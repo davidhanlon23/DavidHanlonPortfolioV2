@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '../Icon/Icon.svelte';
-	
+	import Loading from '../Loading/Loading.svelte';
+
 	export let classes: string
 	export let type;
 	export let color = '';
@@ -135,26 +136,28 @@
 	};
 
 	const disabledClass = disabled ? `opacity-50 cursor-not-allowed` : '';
-	const formattedClassName = className || '';
+	const formattedClassName = classes || '';
 	const combinedClassNames = `${iconStyle} ${btnSize} ${fontSize} ${btnBgColor} ${!disabled && btnBgColorHover} ${btnTextColor} ${formattedClassName} ${disabledClass}`;
-	const content = text ? <span>{text}</span> : children;
+	const content = text ? `<span>${text}</span>` : children;
 	const onClickProp = !disabled && !!handleClick ? { onClick: handleClick } : {};
 </script>
 
-<button type={btnType} className={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} {...onClickProp}>
+<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} {...onClickProp}>
 	{#if icon && !loading && icon.position === 'left'}
-		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} className={`${icon.className || ''} mr-2`} />
+		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}
 	
-	  <Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} className={`${icon.className || ''} mr-2`} />
+	  <Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 
-	{#if !loading && content}
+	{#if !loading}
+		{@html content}
 	{/if}
 	
-	{#if loading && <Loading className={loadingClassName || 'h-4 w-4'} isButton />}
+	{#if loading }
+		<Loading className={loadingClassName || 'h-4 w-4'} isButton />
 	{/if}
 
 	{#if icon && !loading && icon.position === 'right'}
-		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} className={`${icon.className || ''} ml-2`} />
+		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} ml-2`} />
 	{/if}	  
   </button>

@@ -1,6 +1,5 @@
 <script lang="ts">
-    import Image from '../Image/Image.svelte';
-    // backgroundImage, backgroundColor, imageDescription, overlayColor, overlayOpacity
+    import Image from '../../Image/Image.svelte';
     export let backgroundImage = '';
     export let backgroundColor = '';
     export let imageDescription = '';
