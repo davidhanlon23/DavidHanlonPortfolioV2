@@ -1,20 +1,28 @@
 <script lang="ts">
+
 	import Icon from '../Icon/Icon.svelte';
 	import Loading from '../Loading/Loading.svelte';
 
-	export let classes: string
-	export let type;
+	export let classes = '';
+	export let type = '';
 	export let color = '';
 	export let text = '';
-	export let children; // TODO: double check
-	export let icon; // TODO: double check
-	export let onClick;
-	export let loading: boolean;
-	export let loadingClassName: string;
-	export let href = ''
-	export let target = ''
-	export let disabled: boolean;
-	export let size = ''
+	export let icon = {
+		position: '',
+		name: '',
+		size: '',
+		className: '',
+		color: '',
+		solid: false,
+
+	}; // TODO: double check
+	export let onClick = undefined;
+	export let loading = false;
+	export let loadingClassName = '';
+	export let href = '';
+	export let target = '';
+	export let disabled = false;
+	export let size = '';
 	const iconStyle = icon ? 'flex' : '';
 	const btnType = type === 'submit' ? 'submit' : 'button';
 	let btnSize;
@@ -138,7 +146,6 @@
 	const disabledClass = disabled ? `opacity-50 cursor-not-allowed` : '';
 	const formattedClassName = classes || '';
 	const combinedClassNames = `${iconStyle} ${btnSize} ${fontSize} ${btnBgColor} ${!disabled && btnBgColorHover} ${btnTextColor} ${formattedClassName} ${disabledClass}`;
-	const content = text ? `<span>${text}</span>` : children;
 	const onClickProp = !disabled && !!handleClick ? { onClick: handleClick } : {};
 </script>
 
@@ -147,10 +154,13 @@
 		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}
 	
-	  <Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 
 	{#if !loading}
-		{@html content}
+		{#if text}
+			<span>{text}</span>
+		{:else}
+		<slot/>
+		{/if}
 	{/if}
 	
 	{#if loading }

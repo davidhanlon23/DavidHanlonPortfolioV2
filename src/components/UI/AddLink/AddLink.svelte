@@ -14,7 +14,7 @@
 {#if !to || !to.length}
 	{#if onClick}
 		<button class={classes} on:click={onClick}>
-			fddfdf<slot />
+			<slot />
 		</button>
 	{:else}
 		<div class={classes} {target} {rel}>

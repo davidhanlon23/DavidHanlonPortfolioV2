@@ -12,7 +12,7 @@
 	export let classes = ''
 	export let accessibilityProps = undefined
 	export let color = ''
-	export let solid;
+	export let solid: boolean;
 	export let size;
 
 	let iconColor
@@ -47,37 +47,41 @@
 	}
 	// Get the color className
 	function getColorClassName(color) {
-	switch (color) {
-		case 'gray':
-		return `text-gray-400`;
-		case 'dark-gray':
-		return `text-gray-700`;
-		case 'white':
-		return `text-white`;
-		case 'black':
-		return `text-black`;
-		case 'pink':
-		return `text-pink-500`;
-		case 'green':
-		return `text-green-500`;
-		case 'red':
-		return `text-red-500`;
-		case 'yellow':
-		return `text-yellow-300`;
-		case 'orange':
-		return `text-orange-500`;
-		case 'blue':
-		return `text-blue-500`;
-		case 'teal':
-		return `text-teal-500`;
-		case 'indigo':
-		return `text-indigo-500`;
-		case 'purple':
-		return `text-purple-500`;
-		default:
-		return color;
+		switch (color) {
+			case 'gray':
+			return `text-gray-400`;
+			case 'dark-gray':
+			return `text-gray-700`;
+			case 'white':
+			return `text-white`;
+			case 'black':
+			return `text-black`;
+			case 'pink':
+			return `text-pink-500`;
+			case 'green':
+			return `text-green-500`;
+			case 'red':
+			return `text-red-500`;
+			case 'yellow':
+			return `text-yellow-300`;
+			case 'orange':
+			return `text-orange-500`;
+			case 'blue':
+			return `text-blue-500`;
+			case 'teal':
+			return `text-teal-500`;
+			case 'indigo':
+			return `text-indigo-500`;
+			case 'purple':
+			return `text-purple-500`;
+			default:
+			return color;
+		}
 	}
-	}
+	const c = getColorClassName(color);
+  	const s = getSizeClassName(size) || '';
+  	const cn = classes || '';
+  	const formattedClassName = `${c} ${s} ${cn}`;
 	const iconMap = {
 		cheveronRight: ChevronRight,
 		discord: Discord,
@@ -90,4 +94,4 @@
 	}
 </script>
 
-<svelte:component this={iconMap[name] || null} {classes} {accessibilityProps} {iconColor} />
+<svelte:component this={iconMap[name] || null} {formattedClassName} {accessibilityProps} {iconColor} {solid} />

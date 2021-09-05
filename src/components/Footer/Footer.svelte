@@ -28,7 +28,7 @@
 </script>
 
 <footer class="dark:bg-black-100 py-4 px-20 text-center">
-	<div class="grid grid-cols-5">
+	<!-- <div class="grid grid-cols-5">
 		<div class="grid-cols-4">
 			<div class="grid grid-cols-2">
 				<div class="text-left dark:text-white">
@@ -44,10 +44,10 @@
 					<div class={learnMoreClasses}>Contact Us</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!--Empty grid column for footer -->
-		<div />
-		<div class="text-left">
+		<!-- <div /> -->
+		<!-- <div class="text-left">
 			<div class={headerClasses}>JOIN OUR DISCORD!</div>
 			<div class="flex my-4">
 				<Icon name="discord" classes="flex items-center mr-8 w-96" color="primary" />
@@ -70,7 +70,7 @@
 					placeholder="Enter your email..."
 					class="mb-4 px-4 py-1 border-0 rounded-full w-full dark:bg-black-200 dark:text-white"
 				/><br />
-				<Button classes="px-4 py-2 w-full bg-grey-700 rounded-full dark:text-white"
+				<Button color="blue" size="massive"
 					>Sign Up</Button
 				>
 			</div>
@@ -99,6 +99,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="mt-8 text-center dark:text-white">Endeavors.tv All rights reserved.</div>
+	<Button color="blue" size="massive" > Sign Up</Button>
 </footer>

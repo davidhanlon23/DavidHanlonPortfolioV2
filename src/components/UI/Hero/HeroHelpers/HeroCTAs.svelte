@@ -12,7 +12,7 @@
             {...heroObject.cta.primary.functionality}
             color={heroObject.cta.primary.color}
             text={heroObject.cta.primary.text}
-            className="w-full mx-auto mb-4 sm:mx-0 sm:mb-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  sm:px-8"
+            classes="w-full mx-auto mb-4 sm:mx-0 sm:mb-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  sm:px-8"
           />
             {/if}
 
@@ -21,7 +21,7 @@
               {...heroObject.cta.secondary.functionality}
               color={heroObject.cta.secondary.color}
               text={heroObject.cta.secondary.text}
-              className="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"
+              classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"
             />
             {/if}
         </div>
