@@ -8,8 +8,26 @@
     
     export let backgroundImage = '';
     export let backgroundColor = '';
-    export let imageDescription = '';
-    export let heroObject = {}; 
+    export let backgroundImageDescription = '';
+
+    export let heroObject = {
+        primaryHeader: '',
+        secondaryHeader: '',
+        subText: '',
+        cta: {
+            // primary:{
+            //     text: '',
+			//     color: '',
+			//     functionality: {}
+            // },
+            // secondary:{
+            //     text: '',
+			//     color: '',
+			//     functionality: {}
+            // },
+        },
+
+    }; 
     export let overlay = '';
     export let children = undefined;
  
@@ -28,7 +46,7 @@
                 <HeroBackground
                     backgroundImage={backgroundImage}
                     backgroundColor={backgroundColor}
-                    imageDescription={imageDescription}
+                    imageDescription={backgroundImageDescription}
                     overlayColor={overlayColor}
                     overlayOpacity={overlayOpacity}
                 />
