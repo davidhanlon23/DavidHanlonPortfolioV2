@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Toggle from '../Toggle/Toggle.svelte'
 	import Popup from '../UI/Popup/Popup.svelte'
-	import DynamicForm from '../UI/DynamicForm/DynamicForm.svelte'
+	// import DynamicForm from '../UI/DynamicForm/DynamicForm.svelte'
 
 	export let isDarkMode: boolean
 
@@ -34,7 +34,7 @@
 				<div class="dark:text-white">
 					Don't have an account yet? <span class="dark:text-primary">Sign up now.</span>
 				</div>
-				<DynamicForm />
+				<!-- <DynamicForm /> -->
 				<div class="dark:text-primary">Trouble logging in?</div>
 			</div>
 		</Popup>
