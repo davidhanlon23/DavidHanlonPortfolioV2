@@ -5,7 +5,7 @@
   and field values. A JSON string formatted configuration is used as opposed to a purely javascipt object so that we can for instance pull in our form configuration from a back-end database to dynmaically build our form (in this example we are simply hard-coding the JSON into the app, but for production you might want to pull from an server-side API).
   */
 	import Field from './Field.svelte' // used to build our form fields
-	import { storeFE } from '../../stores/store' // store our form state
+	import { storeFE } from '../../../stores/store' // store our form state
 
 	let objForm // @testing - used to listen for changes in our form state
 

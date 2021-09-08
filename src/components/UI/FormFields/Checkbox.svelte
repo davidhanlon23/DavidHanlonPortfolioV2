@@ -1,6 +1,6 @@
 <script lang="ts">
 	/* Here we want to get the store index */
-	import { storeFE } from '../../stores/store'
+	import { storeFE } from '../../../stores/store'
 
 	export let objAttributes = {}
 

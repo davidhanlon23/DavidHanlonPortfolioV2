@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Toggle from '../Toggle/Toggle.svelte'
 	import Popup from '../UI/Popup/Popup.svelte'
-	import DynamicForm from '../DynamicForm/DynamicForm.svelte'
+	import DynamicForm from '../UI/DynamicForm/DynamicForm.svelte'
 
 	export let isDarkMode: boolean
 

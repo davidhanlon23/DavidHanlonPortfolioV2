@@ -100,6 +100,5 @@
 			</div>
 		</div>
 	</div> -->
-	<div class="mt-8 text-center dark:text-white">Endeavors.tv All rights reserved.</div>
-	<Button color="blue" size="massive" > Sign Up</Button>
+	<div class="mt-8 text-center dark:text-white">David M. Hanlon All rights reserved.</div>
 </footer>

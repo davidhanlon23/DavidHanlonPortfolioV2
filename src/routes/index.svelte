@@ -1,9 +1,10 @@
 <script context="module" lang="ts">
-	export const prerender = true
+	export const prerender = true;
 </script>
 
 <script lang="ts">
 	import Hero from '../components/UI/Hero/Hero.svelte';
+	import resume from '../../static/Resume/DavidHanlonResume.pdf';
 
 	const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
   	const backgroundImageDescription = 'Hero Image Background';
@@ -16,17 +17,19 @@
 				text: 'Resume',
 				color: 'white',
 				functionality: {
-					href: 'https://docs.google.com/forms/d/e/1FAIpQLSf5lOCNC9kN6wLPiBg6R46yV4dJwglrQaHyqSUg_r9L_bHaJw/viewform',
-					target: '_blank',
+					onClick: () => {
+						// window.open('/static/Resume/DavidHanlonResume.pdf');
+						console.log('hello')
+					},
 				},
 			},
 			secondary: {
 				text: 'Work with me',
-				color: 'secondary-light',
+				color: 'green',
 				functionality: {
-					// onClick: () => {
-					// 	openRegisterPage();
-					// },
+					onClick: () => {
+						console.log('Work with me clicked!')
+					},
 				},
 			},
 		},

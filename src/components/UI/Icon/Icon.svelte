@@ -1,19 +1,16 @@
 <script lang="ts">
-	import ChevronRight from '../../../icons/chevron-right.svelte'
-	import Discord from '../../../icons/discord.svelte'
-	import DotsVertical from '../../../icons/dots-vertical.svelte'
-	import Facebook from '../../../icons/facebook.svelte'
-	import Instagram from '../../../icons/instagram.svelte'
-	import Search from '../../../icons/search.svelte'
-	import Twitter from '../../../icons/twitter.svelte'
-	import Youtube from '../../../icons/youtube.svelte'
+	import ChevronRight from '../../../icons/chevron-right.svelte';
+	import DotsVertical from '../../../icons/dots-vertical.svelte';
+	import Instagram from '../../../icons/instagram.svelte';
+	import Search from '../../../icons/search.svelte';
 
-	export let name = ''
-	export let classes = ''
-	export let accessibilityProps = undefined
-	export let color = ''
-	export let solid: boolean;
-	export let size;
+
+	export let name = '';
+	export let classes = '';
+	export let accessibilityProps = undefined;
+	export let color = '';
+	export let solid = false;
+	export let size = '';
 
 	let iconColor
 	if (!name) {
@@ -84,13 +81,9 @@
   	const formattedClassName = `${c} ${s} ${cn}`;
 	const iconMap = {
 		cheveronRight: ChevronRight,
-		discord: Discord,
-		facebook: Facebook,
 		instagram: Instagram,
 		options: DotsVertical,
 		search: Search,
-		twitter: Twitter,
-		youtube: Youtube
 	}
 </script>
 

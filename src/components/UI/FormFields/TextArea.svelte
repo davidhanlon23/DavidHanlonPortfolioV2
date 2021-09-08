@@ -1,5 +1,5 @@
 <script>
-	import { storeFE } from '../../stores/store'
+	import { storeFE } from '../../../stores/store'
 
 	export let objAttributes = {}
 

@@ -3,7 +3,7 @@
 
     export let heroObject;
     const primaryStyles = heroObject.cta && heroObject.cta.secondary ? 'sm:grid-cols-2' : 'sm:grid-cols-1';
-
+    console.log('functionsality', {...heroObject.cta.primary.functionality});
 </script>
       <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
         <div class={`space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:gap-5 ${primaryStyles}`}>
