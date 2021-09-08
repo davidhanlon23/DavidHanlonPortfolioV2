@@ -18,10 +18,10 @@
 				color: 'white',
 				functionality: {
 					onClick: () => {
-						// window.open('/static/Resume/DavidHanlonResume.pdf');
-						console.log('hello')
+						window.open('/static/Resume/DavidHanlonResume.pdf');
 					},
 				},
+				accessibilityProps:{},
 			},
 			secondary: {
 				text: 'Work with me',
@@ -31,6 +31,8 @@
 						console.log('Work with me clicked!')
 					},
 				},
+				accessibilityProps:{},
+
 			},
 		},
 	};

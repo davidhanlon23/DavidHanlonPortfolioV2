@@ -1,13 +1,11 @@
 <script lang="ts">
-
 	import Icon from '../Icon/Icon.svelte';
 	import Loading from '../Loading/Loading.svelte';
 
 	export let classes = '';
 	export let type = '';
-	export let text: string = '';
 	export let color = '';
-	// export let text = '';
+	export let text = '';
 	export let icon = {
 		position: '',
 		name: '',
@@ -17,7 +15,7 @@
 		solid: false,
 
 	};
-	export let onClick = undefined;
+	export let onClick = () => {};
 	export let loading = false;
 	export let loadingClassName = '';
 	export let href = '';
@@ -142,18 +140,18 @@
 		} else if (onClick) {
 		onClick();
 		}
-		console.log('Clicked')
 	};
 
 	const disabledClass = disabled ? `opacity-50 cursor-not-allowed` : '';
 	const formattedClassName = classes || '';
 	const combinedClassNames = `${iconStyle} ${btnSize} ${fontSize} ${btnBgColor} ${!disabled && btnBgColorHover} ${btnTextColor} ${formattedClassName} ${disabledClass}`;
-	const onClickProp = !disabled && !!handleClick ? {'on:click': handleClick  } : {};
-	console.log('onClickProp:', onClickProp);
-	console.log('href:', href);
-</script>
+	const onClickProp = !disabled && !!handleClick ? handleClick: null;
+	console.log('onClick:', typeof onClick);
+	console.log('handleClick:', typeof handleClick);
+	console.log('onClickProp:', typeof onClickProp);
 
-<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} {...onClickProp}>
+</script>
+<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} >
 	{#if icon && !loading && icon.position === 'left'}
 		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}
