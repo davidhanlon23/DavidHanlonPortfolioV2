@@ -3,8 +3,13 @@
 	import Navbar from '../components/NavbarNew/Navbar.svelte'
 	// import Navbar from '../components/navbar/navbarOld.svelte';
 	import Footer from '../components/Footer/Footer.svelte'
-
+	// import { isDarkMode } from '../stores/store';
 	let isDarkMode: boolean
+
+	// function handleDarkMode(){
+	// 	isDarkMode.update(n => true);
+
+	// }
 </script>
 
 <main class={isDarkMode ? 'dark' : ''}>
