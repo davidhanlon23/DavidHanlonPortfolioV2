@@ -1,6 +1,7 @@
 <script lang="ts">
    import MainNav from "./DesktopNavHelpers/MainNav.svelte";
    const formattedClassName = $$props.className;
+   export let isDarkMode: boolean;
 </script>
 
-<MainNav className={`${formattedClassName}`} {...$$props} />
+<MainNav bind:isDarkMode className={`${formattedClassName}`} {...$$props} />

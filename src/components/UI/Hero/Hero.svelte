@@ -1,5 +1,5 @@
 <script lang="ts">
-    // TODO: Add customizable height
+    // TODO: Add customizable height... height doesn't appear to work
 
     import HeroBackground from './HeroHelpers/HeroBackground.svelte';
     import HeroHeaders from './HeroHelpers/HeroHeaders.svelte';
@@ -9,7 +9,6 @@
     export let backgroundImage = '';
     export let backgroundColor = '';
     export let backgroundImageDescription = '';
-
     export let heroObject = {
         primaryHeader: '',
         secondaryHeader: '',
@@ -19,11 +18,32 @@
     }; 
     export let overlay = '';
     export let children = undefined;
+    export let height = '';
+
+    let heroHeight = '';
+    switch (height) {
+		case '100':
+		    heroHeight = `h-screen`;
+		    break;
+		case '80':
+		    heroHeight = `h-4/5	`;
+		    break;
+		case '75':
+		    heroHeight = `h-3/4`;
+		    break;
+        case '50':
+            heroHeight = `h-1/2`;	
+		default:
+		    heroHeight = `h-auto`;
+	}
+
  
  const overlayColor = overlay || 'bg-sgPrimaryLight-500';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
+
+ 
 </script>
-<div class="w-full h-full">
+<div class={`w-full ${heroHeight} md:py-16`}>
     <div class="relative">
       <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
       <div class="">

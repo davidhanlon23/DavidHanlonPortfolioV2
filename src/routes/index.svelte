@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Hero from '../components/UI/Hero/Hero.svelte';
+	import Container from '../components/UI/Container/Container.svelte';
 
 	const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
   	const backgroundImageDescription = 'Hero Image Background';
@@ -14,7 +15,7 @@
 		cta: {
 			primary: {
 				text: 'Resume',
-				color: 'white',
+				color: 'primary',
 				functionality: {
 					onClick: () => {
 						window.open('/static/Resume/DavidHanlonResume.pdf');
@@ -26,7 +27,7 @@
 			},
 			secondary: {
 				text: 'Work with me',
-				color: 'green',
+				color: 'secondary',
 				functionality: {
 					href: '/contact',
 				},
@@ -42,5 +43,7 @@
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
-
-<Hero heroObject={heroObject} backgroundImage={backgroundImage} backgroundImageDescription={backgroundImageDescription} />
+<Hero heroObject={heroObject} backgroundImage={backgroundImage} backgroundImageDescription={backgroundImageDescription} height="100" />
+<Container className="w-full px-4 md:px-12 my-8">
+	<div>Dummy data</div>
+</Container>

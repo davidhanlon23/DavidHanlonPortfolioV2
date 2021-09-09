@@ -31,14 +31,14 @@
 	let btnBgColorHover;
 	let btnTextColor = 'text-white';
 	switch (color) {
-		case 'primary-light':
-		btnBgColor = `bg-sgPrimaryLight-500`;
-		btnBgColorHover = `hover:bg-sgPrimaryDark-500`;
-		btnTextColor = `text-white`;
+		case 'primary':
+		btnBgColor = `bg-dh-primary-500 dark:bg-dh-primary-dark-500`;
+		btnBgColorHover = `hover:bg-gray-200`;
+		btnTextColor = `text-black dark:text-white`;
 		break;
-		case 'secondary-light':
-		btnBgColor = `bg-sgSecondaryLight-500`;
-		btnBgColorHover = `hover:bg-sgSecondaryLight-600`;
+		case 'secondary':
+		btnBgColor = `bg-dh-secondary-500 dark:bg-dh-secondary-dark-500`;
+		btnBgColorHover = `hover:bg-blue-700`;
 		btnTextColor = `text-white`;
 		break;
 		case 'gray':
@@ -60,7 +60,7 @@
 		btnBgColorHover = `hover:bg-pink-600`;
 		break;
 		case 'green':
-		btnBgColor = `bg-green-500`;
+		btnBgColor = `bg-green-500 dark:bg-pink-500`;
 		btnBgColorHover = `hover:bg-green-600`;
 		break;
 		case 'red':
