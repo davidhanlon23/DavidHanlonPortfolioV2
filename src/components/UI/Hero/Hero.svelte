@@ -14,18 +14,7 @@
         primaryHeader: '',
         secondaryHeader: '',
         subText: '',
-        cta: {
-            // primary:{
-            //     text: '',
-			//     color: '',
-			//     functionality: {}
-            // },
-            // secondary:{
-            //     text: '',
-			//     color: '',
-			//     functionality: {}
-            // },
-        },
+        cta: {},
 
     }; 
     export let overlay = '';

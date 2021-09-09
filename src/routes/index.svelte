@@ -9,9 +9,9 @@
 	const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
   	const backgroundImageDescription = 'Hero Image Background';
 	const heroObject = {
-		primaryHeader: 'You bring the talent,',
-		secondaryHeader: 'We bring the audience',
-		subText: 'Sleepless Gamers is a casual and collaborative live stream gaming platform that allows its users to stream together, and easily inherit audiences.',
+		primaryHeader: 'This Primary Header,',
+		secondaryHeader: 'This is secondary header',
+		subText: 'This is a bunch of subtext that should be somewhat important...klasf;lkasj;flkajf;lskjf;slkf',
 		cta: {
 			primary: {
 				text: 'Resume',
@@ -21,7 +21,9 @@
 						window.open('/static/Resume/DavidHanlonResume.pdf');
 					},
 				},
-				accessibilityProps:{},
+				accessibilityProps:{
+					'aria-label': `Download David's Resume`,
+				},
 			},
 			secondary: {
 				text: 'Work with me',

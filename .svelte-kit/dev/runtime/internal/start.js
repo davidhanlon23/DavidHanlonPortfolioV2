@@ -21,6 +21,16 @@ function find_anchor(node) {
 	return /** @type {HTMLAnchorElement | SVGAElement} */ (node);
 }
 
+/**
+ * @param {HTMLAnchorElement | SVGAElement} node
+ * @returns {URL}
+ */
+function get_href(node) {
+	return node instanceof SVGAElement
+		? new URL(node.href.baseVal, document.baseURI)
+		: new URL(node.href);
+}
+
 class Router {
 	/**
 	 * @param {{
@@ -88,7 +98,7 @@ class Router {
 		const trigger_prefetch = (event) => {
 			const a = find_anchor(/** @type {Node} */ (event.target));
 			if (a && a.href && a.hasAttribute('sveltekit:prefetch')) {
-				this.prefetch(new URL(/** @type {string} */ (a.href)));
+				this.prefetch(get_href(a));
 			}
 		};
 
@@ -121,12 +131,8 @@ class Router {
 
 			if (!a.href) return;
 
-			// check if link is inside an svg
-			// in this case, both href and target are always inside an object
-			const svg = typeof a.href === 'object' && a.href.constructor.name === 'SVGAnimatedString';
-			const href = String(svg ? /** @type {SVGAElement} */ (a).href.baseVal : a.href);
-
-			if (href === location.href) {
+			const url = get_href(a);
+			if (url.toString() === location.href) {
 				if (!location.hash) event.preventDefault();
 				return;
 			}
@@ -141,9 +147,7 @@ class Router {
 			}
 
 			// Ignore if <a> has a target
-			if (svg ? /** @type {SVGAElement} */ (a).target.baseVal : a.target) return;
-
-			const url = new URL(href);
+			if (a instanceof SVGAElement ? a.target.baseVal : a.target) return;
 
 			if (!this.owns(url)) return;
 
@@ -175,13 +179,12 @@ class Router {
 		if (this.owns(url)) {
 			const path = url.pathname.slice(this.base.length) || '/';
 
-			const decoded_path = decodeURI(path);
-			const routes = this.routes.filter(([pattern]) => pattern.test(decoded_path));
+			const routes = this.routes.filter(([pattern]) => pattern.test(path));
 
 			const query = new URLSearchParams(url.search);
 			const id = `${path}?${query}`;
 
-			return { id, routes, path, decoded_path, query };
+			return { id, routes, path, query };
 		}
 	}
 
@@ -770,7 +773,7 @@ class Renderer {
 
 		for (let i = 0; i < filtered.length; i += 1) {
 			const loaded = filtered[i].loaded;
-			if (loaded) result.props[`props_${i}`] = await loaded.props;
+			result.props[`props_${i}`] = loaded ? await loaded.props : null;
 		}
 
 		if (
@@ -907,8 +910,8 @@ class Renderer {
 	 * @param {boolean} no_cache
 	 * @returns {Promise<import('./types').NavigationResult | undefined>} undefined if fallthrough
 	 */
-	async _load({ route, info: { path, decoded_path, query } }, no_cache) {
-		const key = `${decoded_path}?${query}`;
+	async _load({ route, info: { path, query } }, no_cache) {
+		const key = `${path}?${query}`;
 
 		if (!no_cache) {
 			const cached = this.cache.get(key);
@@ -918,7 +921,7 @@ class Renderer {
 		const [pattern, a, b, get_params] = route;
 		const params = get_params
 			? // the pattern is for the route which we've already matched to this path
-			  get_params(/** @type {RegExpExecArray}  */ (pattern.exec(decoded_path)))
+			  get_params(/** @type {RegExpExecArray}  */ (pattern.exec(path)))
 			: {};
 
 		const changed = this.current.page && {
@@ -932,7 +935,7 @@ class Renderer {
 		const page = { host: this.host, path, query, params };
 
 		/** @type {Array<import('./types').BranchNode | undefined>} */
-		const branch = [];
+		let branch = [];
 
 		/** @type {Record<string, any>} */
 		let context = {};
@@ -1031,7 +1034,7 @@ class Renderer {
 								continue;
 							}
 
-							branch.push(error_loaded);
+							branch = branch.slice(0, j + 1).concat(error_loaded);
 							break load;
 						} catch (e) {
 							continue;

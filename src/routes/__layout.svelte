@@ -8,7 +8,7 @@
 
 <main class={isDarkMode ? 'dark' : ''}>
 	<!-- <Navbar bind:isDarkMode /> -->
-	<Navbar />
+	<Navbar className="bg-white dark:bg-black" />
 	<div class="min-h-screen">
 		<slot />
 	</div>

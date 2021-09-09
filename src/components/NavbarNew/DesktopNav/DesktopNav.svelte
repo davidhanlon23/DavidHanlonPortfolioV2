@@ -1,7 +1,6 @@
 <script lang="ts">
-    
-	
+   import MainNav from "./DesktopNavHelpers/MainNav.svelte";
+   const formattedClassName = $$props.className;
 </script>
-<div class="text-green-500">
-   DesktopNav
-</div>
+
+<MainNav className={`${formattedClassName}`} {...$$props} />

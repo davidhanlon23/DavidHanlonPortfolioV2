@@ -3,13 +3,13 @@
 
     export let heroObject;
     const primaryStyles = heroObject.cta && heroObject.cta.secondary ? 'sm:grid-cols-2' : 'sm:grid-cols-1';
-    console.log('functionsality', {...heroObject.cta.primary.functionality});
 </script>
       <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
         <div class={`space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:gap-5 ${primaryStyles}`}>
             {#if heroObject.cta && heroObject.cta.primary}
             <Button
             {...heroObject.cta.primary.functionality}
+            accessibilityProps={`${heroObject.cta.primary.accessibilityProps}`}
             color={heroObject.cta.primary.color}
             text={heroObject.cta.primary.text}
             classes="w-full mx-auto mb-4 sm:mx-0 sm:mb-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  sm:px-8"

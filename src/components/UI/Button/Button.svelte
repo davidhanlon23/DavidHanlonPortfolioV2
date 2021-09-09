@@ -16,6 +16,7 @@
 
 	};
 	export let onClick = () => {};
+	export let accessibilityProps = {};
 	export let loading = false;
 	export let loadingClassName = '';
 	export let href = '';
@@ -146,12 +147,9 @@
 	const formattedClassName = classes || '';
 	const combinedClassNames = `${iconStyle} ${btnSize} ${fontSize} ${btnBgColor} ${!disabled && btnBgColorHover} ${btnTextColor} ${formattedClassName} ${disabledClass}`;
 	const onClickProp = !disabled && !!handleClick ? handleClick: null;
-	console.log('onClick:', typeof onClick);
-	console.log('handleClick:', typeof handleClick);
-	console.log('onClickProp:', typeof onClickProp);
 
 </script>
-<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} >
+<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} {...accessibilityProps} >
 	{#if icon && !loading && icon.position === 'left'}
 		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}

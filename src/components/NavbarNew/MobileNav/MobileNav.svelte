@@ -3,6 +3,6 @@
 	
 
 </script>
-<div>
+<div class="md:hidden">
    MobileNav
 </div>

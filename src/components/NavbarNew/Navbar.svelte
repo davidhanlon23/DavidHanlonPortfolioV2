@@ -4,7 +4,6 @@
 	
 
 </script>
-<nav>
-    <DesktopNav />
-    <MobileNav />
-</nav>
+
+<DesktopNav {...$$props} />
+<MobileNav {...$$props} />
