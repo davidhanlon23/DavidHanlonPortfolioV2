@@ -1,5 +1,6 @@
 <script lang="ts">
     // TODO: fix svelte ignore error and dropdowns
+    import { isDarkMode } from '../../../../stores/store'; 
     import Button from '../../../UI/Button/Button.svelte';
     import Toggle from '../../../Toggle/Toggle.svelte';
     // import Icon from '../../../UI/Icon/Icon.svelte';
@@ -7,9 +8,13 @@
     // import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';
 
-	export let isDarkMode: boolean;
     const { desktop } = nav;
     const formattedClassName = $$props.className;
+    const handleDarkModeToggle = () => {
+        isDarkMode.update( currValue => {
+            return !currValue;
+        });
+    };
 </script>
 <!-- <div class="z-50 md:top-0 md:fixed md:w-full"> -->
     <!-- svelte-ignore component-name-lowercase -->
@@ -27,7 +32,7 @@
         </div>
         <!-- <MoreDropdown desktop={desktop} /> -->
       </div>
-      <Toggle bind:isDarkMode/>
+      <Toggle onToggle={handleDarkModeToggle} label="Dark Mode Toggle" />
 
       <!-- <UserDropdown logout={logout} isAuthenticated={isAuthenticated} userName={userName} /> -->
     </nav>
