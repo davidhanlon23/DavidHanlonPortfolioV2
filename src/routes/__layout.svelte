@@ -9,8 +9,8 @@
 
 <main class={isDarkMode ? 'dark' : ''}>
 	<!-- <Navbar bind:isDarkMode /> -->
-	<Navbar className="bg-white dark:bg-black" bind:isDarkMode />
-	<div class="min-h-screen">
+	<Navbar className="bg-dh-primary-500 dark:bg-dh-primary-dark-500" bind:isDarkMode />
+	<div class="min-h-screen bg-dh-primary-500 dark:bg-dh-primary-dark-500">
 		<slot />
 	</div>
 	<Footer />

@@ -142,7 +142,6 @@
 		onClick();
 		}
 	};
-	console.log('href:', href);
 	const disabledClass = disabled ? `opacity-50 cursor-not-allowed` : '';
 	const formattedClassName = classes || '';
 	const combinedClassNames = `${iconStyle} ${btnSize} ${fontSize} ${btnBgColor} ${!disabled && btnBgColorHover} ${btnTextColor} ${formattedClassName} ${disabledClass}`;

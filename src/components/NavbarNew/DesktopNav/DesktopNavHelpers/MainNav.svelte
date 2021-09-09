@@ -10,11 +10,10 @@
 	export let isDarkMode: boolean;
     const { desktop } = nav;
     const formattedClassName = $$props.className;
-
 </script>
 <!-- <div class="z-50 md:top-0 md:fixed md:w-full"> -->
     <!-- svelte-ignore component-name-lowercase -->
-    <nav class={`${formattedClassName} border-b border-t-0 hidden md:w-full md:h-16 md:flex md:content-end z-50 md:top-0 md:fixed md:w-full`}>
+    <nav class={`${formattedClassName} border-b border-t-0 hidden md:h-16 md:flex md:content-end z-50 md:top-0 md:fixed md:w-full`}>
       <div class="flex">
         <div class="hover:bg-gray-200">
           <Button href="/" classes="shadow-none p-4 text-black hover:text-blue-500 text-2xl font-bold" text="David M. Hanlon" />
