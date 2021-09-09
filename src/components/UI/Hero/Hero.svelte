@@ -29,7 +29,7 @@
       <div class="">
         <div class="relative shadow-xl sm:overflow-hidden">
             {#if children }
-                {children}
+                <svelte:component this={children} />
             {:else}
             <div class="absolute inset-0">
                 <HeroBackground

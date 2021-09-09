@@ -2,10 +2,10 @@
     import Tooltip from '../../../UI/Tooltip/Tooltip.svelte';
     import Icon from '../../../UI/Icon/Icon.svelte';
     import Button from '../../../UI/Button/Button.svelte';
-    import Dropdown from '../../../UI/Dropdown/Dropdown';
+    // import Dropdown from '../../../UI/Dropdown/Dropdown';
 </script>
-<div className="m-auto md-991:ml-4 lg:ml-8 xl:ml-12">
-        <Dropdown
+<div class="m-auto md-991:ml-4 lg:ml-8 xl:ml-12">
+        <!-- <Dropdown
           id="desktop-user-menu"
           trigger={
               <Button className="p-1 hover:bg-gray-200 shadow-none rounded">
@@ -27,5 +27,5 @@
               </li>
             ))}
           </ul>
-        </Dropdown>
+        </Dropdown> -->
   </div>

@@ -4,7 +4,6 @@
 
 <script lang="ts">
 	import Hero from '../components/UI/Hero/Hero.svelte';
-	import resume from '../../static/Resume/DavidHanlonResume.pdf';
 
 	const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
   	const backgroundImageDescription = 'Hero Image Background';
@@ -29,11 +28,11 @@
 				text: 'Work with me',
 				color: 'green',
 				functionality: {
-					onClick: () => {
-						console.log('Work with me clicked!')
-					},
+					href: '/contact',
 				},
-				accessibilityProps:{},
+				accessibilityProps:{
+					'aria-label': 'Link to contact page'
+				},
 
 			},
 		},

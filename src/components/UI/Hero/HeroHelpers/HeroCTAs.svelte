@@ -9,7 +9,7 @@
             {#if heroObject.cta && heroObject.cta.primary}
             <Button
             {...heroObject.cta.primary.functionality}
-            accessibilityProps={`${heroObject.cta.primary.accessibilityProps}`}
+            accessibilityProps={heroObject.cta.primary.accessibilityProps}
             color={heroObject.cta.primary.color}
             text={heroObject.cta.primary.text}
             classes="w-full mx-auto mb-4 sm:mx-0 sm:mb-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  sm:px-8"
@@ -19,6 +19,7 @@
             {#if heroObject.cta && heroObject.cta.secondary}
             <Button
               {...heroObject.cta.secondary.functionality}
+              accessibilityProps={heroObject.cta.secondary.accessibilityProps}
               color={heroObject.cta.secondary.color}
               text={heroObject.cta.secondary.text}
               classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"

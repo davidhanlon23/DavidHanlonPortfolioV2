@@ -1,7 +1,7 @@
 <script lang="ts">
     // TODO: fix svelte ignore error and dropdowns
     import Button from '../../../UI/Button/Button.svelte';
-    import Icon from '../../../UI/Icon/Icon.svelte';
+    // import Icon from '../../../UI/Icon/Icon.svelte';
     // import MoreDropdown from './MoreDropdown.svelte';
     // import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';

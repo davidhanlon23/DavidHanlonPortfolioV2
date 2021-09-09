@@ -131,30 +131,18 @@ module.exports = {
 					800: '#97266d',
 					900: '#702459'
 				},
-				sg: {
-					black: {
-						primary: '#28282a', // no
-					},
-					blue: {
-						primary: '#0088b1', // no
-						secondary: '#76cae3', // no
-						opacity: {
-							0: '#0088b100' // no
-						}
-					},
-					brown: '#9c5300', // no
-					gold: '#ffb300', // no
-					green: {
-						primary: '#478e2e', // no
-						opacity: {
-							0: '#478e2e00' // no
-						}
-					},
-					grey: {
-						primary: '#0e0e0f', // got
-					},
-					pink: '#b52d48', // no
-				}
+				'dh-primary': {
+					500: '#ffffff',
+				},
+				'dh-secondary': {
+					500: '#4299e1',
+				},
+				'dh-primary-dark': {
+					500: '#000000',
+				},
+				'dh-secondary-dark': {
+					500: '#34D399',
+				}, 
 			},
 			spacing: {
 				px: '1px',

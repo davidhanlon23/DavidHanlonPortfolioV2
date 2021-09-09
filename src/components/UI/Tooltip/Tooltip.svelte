@@ -4,10 +4,10 @@
     import tippy from "sveltejs-tippy";
 
     import 'react-tippy/dist/tippy.css';
-    const props = {
-        content: "<span class='tooltip'>Styled tooltip text</span>",
-        placement: "bottom"
-    };
+    // const props = {
+    //     content: "<span class='tooltip'>Styled tooltip text</span>",
+    //     placement: "bottom"
+    // };
     export let trigger;
     export let content;
     export let position;
@@ -21,7 +21,7 @@
     export let onShow;
     export let onHide;
 </script>
-<Tippy
+<!-- <Tippy
       open={open}
       onShow={onShow}
       onHide={onHide}
@@ -37,4 +37,4 @@
       distance={distance}
     >
       {trigger}
-    </Tippy>
+    </Tippy> -->
