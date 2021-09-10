@@ -44,6 +44,7 @@
 	<title>Home</title>
 </svelte:head>
 <Hero heroObject={heroObject} backgroundImage={backgroundImage} backgroundImageDescription={backgroundImageDescription} height="100" />
-<Container className="w-full px-4 md:px-12 my-8">
+<Container className="w-full px-4 md:px-12 py-8 text-black dark:text-white">
 	<div>Dummy data</div>
 </Container>
+

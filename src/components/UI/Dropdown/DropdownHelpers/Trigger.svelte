@@ -21,7 +21,7 @@
             text={button.text}
             color={button.color}
             icon={iconProps}
-            className={button.className}
+            classes={button.className}
             loading={button.loading}
             onClick={() => setDropDown(!openDropDown)}
         />
