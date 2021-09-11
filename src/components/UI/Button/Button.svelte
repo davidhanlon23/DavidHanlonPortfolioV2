@@ -29,17 +29,17 @@
 	let fontSize;
 	let btnBgColor;
 	let btnBgColorHover;
-	let btnTextColor = 'text-white';
+	let btnTextColor = 'text-black';
 	switch (color) {
 		case 'primary':
-		btnBgColor = `bg-dh-primary-500 dark:bg-dh-primary-dark-500`;
-		btnBgColorHover = `hover:bg-gray-200`;
-		btnTextColor = `text-black dark:text-white`;
+		btnBgColor = `bg-dh-secondary-dark-500 dark:bg-white`;
+		btnBgColorHover = `hover:bg-green-700 dark:hover:bg-gray-100`;
+		btnTextColor = `text-white dark:text-dh-primary-dark-500 `;
 		break;
 		case 'secondary':
-		btnBgColor = `bg-dh-secondary-500 dark:bg-dh-secondary-dark-500`;
-		btnBgColorHover = `hover:bg-blue-700`;
-		btnTextColor = `text-white`;
+		btnBgColor = `bg-dh-primary-dark-500 dark:bg-dh-secondary-dark-500`;
+		btnBgColorHover = `hover:bg-gray-700 dark:hover:bg-green-700`;
+		btnTextColor = `text-white dark:text-dh-primary-dark-500`;
 		break;
 		case 'gray':
 		btnBgColor = `bg-gray-300`;
@@ -148,7 +148,7 @@
 	const onClickProp = !disabled && !!handleClick ? handleClick: null;
 
 </script>
-<button type={btnType} class={`${combinedClassNames} focus:outline-none bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} {...accessibilityProps} >
+<button type={btnType} class={`${combinedClassNames} focus:ring bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} {...accessibilityProps} >
 	{#if icon && !loading && icon.position === 'left'}
 		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}

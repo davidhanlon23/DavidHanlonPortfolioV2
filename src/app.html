@@ -8,6 +8,13 @@
 		%svelte.head%
 	</head>
 	<body>
-		<div id="svelte">%svelte.body%</div>
+		<div id="svelte" class="app">%svelte.body%</div>
 	</body>
 </html>
+
+<style>
+	/* attempting to remove focus on mouse click but keep for tab*/
+	.app:focus:not(:focus-visible){
+		outline: none;
+	}
+</style>

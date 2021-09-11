@@ -38,16 +38,19 @@
 
 			},
 		},
-		heroFooter:{
-			component: HomeHeroFooter,
-		},
+		heroFooter: [
+			{
+				component: HomeHeroFooter,
+			},
+		],
+
 	};
 </script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
-<Hero heroObject={heroObject} backgroundColor="bg-blue-500 dark:bg-red-500" heroHeight="screen" backgroundHeight="100" />
+<Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" heroHeight="screen" backgroundHeight="100" />
 <Container className="w-full px-4 md:px-12 py-8 text-black dark:text-white">
 	<div>Dummy data1</div>
 	<div>Dummy data2</div>

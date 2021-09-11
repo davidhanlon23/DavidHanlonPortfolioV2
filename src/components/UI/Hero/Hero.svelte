@@ -15,7 +15,7 @@
         secondaryHeader: '',
         subText: '',
         cta: {},
-        heroFooter: {},
+        heroFooter: [],
 
     }; 
     export let overlay = '';
@@ -28,7 +28,6 @@
     
  const overlayColor = overlay || 'bg-black';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
-
  
 </script>
 <div class={`w-full bg-green-500 ${heroHeight} md:py-16 relative`}>
@@ -50,6 +49,6 @@
                 <HeroSubText heroSubText={heroObject.subText} />
                 <HeroCTAs heroObject={heroObject} />
             </div>
-            <HeroFooter {...heroObject.heroFooter} />
+            <HeroFooter children={heroObject.heroFooter} />
             {/if}
   </div>

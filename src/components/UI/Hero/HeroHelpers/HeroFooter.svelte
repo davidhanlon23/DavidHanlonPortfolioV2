@@ -1,4 +1,5 @@
 <script lang="ts">
-    console.log('props', $$props);
+    export let children = [];
+    console.log('props', children[0].component);
 </script>
-<slot/>
+<!-- <svelte:component this={children[0].component} /> -->
