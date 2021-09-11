@@ -5,9 +5,10 @@
 <script lang="ts">
 	import Hero from '../components/UI/Hero/Hero.svelte';
 	import Container from '../components/UI/Container/Container.svelte';
+	import HomeHeroFooter from '../components/Home/HomeHeroFooter.svelte';
 
-	const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
-  	const backgroundImageDescription = 'Hero Image Background';
+	// const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
+  	// const backgroundImageDescription = 'Hero Image Background';
 	const heroObject = {
 		primaryHeader: 'This Primary Header,',
 		secondaryHeader: 'This is secondary header',
@@ -37,14 +38,20 @@
 
 			},
 		},
+		heroFooter:{
+			component: HomeHeroFooter,
+		},
 	};
 </script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
-<Hero heroObject={heroObject} backgroundImage={backgroundImage} backgroundImageDescription={backgroundImageDescription} height="100" />
+<Hero heroObject={heroObject} backgroundColor="bg-blue-500 dark:bg-red-500" heroHeight="screen" backgroundHeight="100" />
 <Container className="w-full px-4 md:px-12 py-8 text-black dark:text-white">
-	<div>Dummy data</div>
+	<div>Dummy data1</div>
+	<div>Dummy data2</div>
+	<div>Dummy data3</div>
+	<div>Dummy data4</div>
 </Container>
 

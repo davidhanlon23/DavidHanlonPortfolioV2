@@ -5,7 +5,8 @@
     import HeroHeaders from './HeroHelpers/HeroHeaders.svelte';
     import HeroSubText from './HeroHelpers/HeroSubText.svelte';
     import HeroCTAs from './HeroHelpers/HeroCTAs.svelte';
-    
+    import HeroFooter from './HeroHelpers/HeroFooter.svelte';
+    import { getDivHeight } from '../../../utils/common';
     export let backgroundImage = '';
     export let backgroundColor = '';
     export let backgroundImageDescription = '';
@@ -14,40 +15,23 @@
         secondaryHeader: '',
         subText: '',
         cta: {},
+        heroFooter: {},
 
     }; 
     export let overlay = '';
     export let children = undefined;
-    export let height = '';
+    export let backgroundHeight = '';
+    export let heroHeight = '';
 
-    let heroHeight = '';
-    switch (height) {
-		case '100':
-		    heroHeight = `h-screen`;
-		    break;
-		case '80':
-		    heroHeight = `h-4/5	`;
-		    break;
-		case '75':
-		    heroHeight = `h-3/4`;
-		    break;
-        case '50':
-            heroHeight = `h-1/2`;	
-		default:
-		    heroHeight = `h-auto`;
-	}
+    heroHeight = getDivHeight(heroHeight);
 
- 
- const overlayColor = overlay || 'bg-sgPrimaryLight-500';
+    
+ const overlayColor = overlay || 'bg-black';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
 
  
 </script>
-<div class={`w-full ${heroHeight} md:py-16`}>
-    <div class="relative">
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-      <div class="">
-        <div class="relative shadow-xl sm:overflow-hidden">
+<div class={`w-full bg-green-500 ${heroHeight} md:py-16 relative`}>
             {#if children }
                 <svelte:component this={children} />
             {:else}
@@ -55,6 +39,7 @@
                 <HeroBackground
                     backgroundImage={backgroundImage}
                     backgroundColor={backgroundColor}
+                    backgroundHeight={backgroundHeight}
                     imageDescription={backgroundImageDescription}
                     overlayColor={overlayColor}
                     overlayOpacity={overlayOpacity}
@@ -65,9 +50,6 @@
                 <HeroSubText heroSubText={heroObject.subText} />
                 <HeroCTAs heroObject={heroObject} />
             </div>
+            <HeroFooter {...heroObject.heroFooter} />
             {/if}
-            
-        </div>
-      </div>
-    </div>
   </div>

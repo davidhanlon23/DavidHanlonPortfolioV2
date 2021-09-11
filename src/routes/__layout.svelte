@@ -12,7 +12,7 @@
 
 </script>
 
-<main class={toggleDarkMode ? 'dark' : ''}>
+<main class={`min-h-screen ${toggleDarkMode ? 'dark' : ''}`}>
 	<Navbar className="bg-dh-primary-500 dark:bg-dh-primary-dark-500" />
 	<div class="min-h-screen bg-dh-primary-500 dark:bg-dh-primary-dark-500">
 		<slot />
