@@ -6,6 +6,8 @@
 	import Hero from '../components/UI/Hero/Hero.svelte';
 	import Container from '../components/UI/Container/Container.svelte';
 	import HomeHeroFooter from '../components/Home/HomeHeroFooter.svelte';
+	import Image from '../components/UI/Image/Image.svelte';
+	// import d_icon from '../../static/Images/d_icon.png'
 
 	// const backgroundImage = 'https://i.pinimg.com/originals/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.png';
   	// const backgroundImageDescription = 'Hero Image Background';
@@ -56,5 +58,6 @@
 	<div>Dummy data2</div>
 	<div>Dummy data3</div>
 	<div>Dummy data4</div>
+
 </Container>
 

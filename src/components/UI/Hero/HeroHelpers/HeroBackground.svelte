@@ -9,9 +9,7 @@
     export let overlayOpacity = '';
     export let backgroundHeight = '';
     const bgColor = backgroundColor || 'bg-dh-primary-500';
-    console.log('bgColor', bgColor);
     backgroundHeight = getDivHeight(backgroundHeight);
-    console.log("bgHeight", backgroundHeight);
 </script>
 {#if backgroundImage}
     <Image classes={`${backgroundHeight} w-full object-cover bg-center`} src={backgroundImage} alt={imageDescription} />

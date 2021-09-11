@@ -2,7 +2,7 @@
     import Image from "../UI/Image/Image.svelte";
 
 </script>
-<Image src="/static/images/hero.svg" />
-<h2>YOOOOOO</h2>
-<svelte:component this={$$props}/>
+<div class="flex justify-center">
+    <Image src="/Images/hero.svg" />
+</div>
 
