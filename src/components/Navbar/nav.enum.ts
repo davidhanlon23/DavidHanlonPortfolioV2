@@ -29,12 +29,6 @@ export const nav = {
           href: '/community',
           id: uuidv4(),
         },
-        {
-          label: 'King Of The Hill',
-          icon: 'chart-bar',
-          href: '/koth',
-          id: uuidv4(),
-        },
       ],
     },
     authenticated: {
@@ -82,18 +76,13 @@ export const nav = {
       label: 'General',
       items: [
         {
-          label: 'About',
+          label: 'About Me',
           href: '/about',
           id: uuidv4(),
         },
         {
-          label: 'King Of The Hill',
-          href: '/koth',
-          id: uuidv4(),
-        },
-        {
-          label: 'Community',
-          href: '/community',
+          label: 'Projects',
+          href: '/projects',
           id: uuidv4(),
         },
         {

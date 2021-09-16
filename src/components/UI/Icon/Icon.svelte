@@ -1,4 +1,5 @@
 <script lang="ts">
+	import DotsHorizontal from '../../../icons/dots-horizontal.svelte';
 	import ChevronRight from '../../../icons/chevron-right.svelte';
 	import DotsVertical from '../../../icons/dots-vertical.svelte';
 	import Instagram from '../../../icons/instagram.svelte';
@@ -52,7 +53,7 @@
 			case 'white':
 			return `text-white`;
 			case 'black':
-			return `text-black`;
+			return `text-black dark:text-white`;
 			case 'pink':
 			return `text-pink-500`;
 			case 'green':
@@ -82,8 +83,9 @@
 	const iconMap = {
 		cheveronRight: ChevronRight,
 		instagram: Instagram,
-		options: DotsVertical,
+		'dots-vertical': DotsVertical,
 		search: Search,
+		'dots-horizontal': DotsHorizontal,
 	}
 </script>
 

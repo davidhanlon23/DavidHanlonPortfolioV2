@@ -6,13 +6,13 @@
     export let icon;
     export let trigger;
     export let text = '';
-    export let openDropDown;
-    export let setDropDown;
+    export let isOpen;
+    export let toggleDropdown;
     // TODO: fix iconProps default 
     let iconProps;
     if (icon) {
       iconProps = { ...icon };
-      iconProps.className = `transition duration-200 transform ${openDropDown && iconProps.rotate ? 'rotate-90' : ''}`;
+      iconProps.className = `transition duration-200 transform ${isOpen && iconProps.rotate ? 'rotate-90' : ''}`;
     }
 </script>
     {#if button}
@@ -23,15 +23,15 @@
             icon={iconProps}
             classes={button.className}
             loading={button.loading}
-            onClick={() => setDropDown(!openDropDown)}
+            onClick={() => toggleDropdown()}
         />
     {/if}
     {#if trigger}
-    <div onClick={() => setDropDown(!openDropDown)} class="flex items-center cursor-pointer">
-        {trigger}
-        <Icon name={iconProps.name} color={iconProps.color} solid={iconProps.solid} size="small" classes={`${iconProps.className || ''} ml-2`} />
-      </div>
+    <div on:click={() => toggleDropdown()} class="flex items-center cursor-pointer">
+        <svelte:component this={trigger[0].component} />
+        <!-- <Icon name={`dots-horizontal`} color={iconProps.color} solid={iconProps.solid} size="small" classes={`${iconProps.className || ''} ml-2`} /> -->
+    </div>
     {/if}
-    <p onClick={() => setDropDown(!openDropDown)} class="cursor-pointer">
+    <p on:click={() => toggleDropdown()} class="cursor-pointer">
         {text}
     </p>

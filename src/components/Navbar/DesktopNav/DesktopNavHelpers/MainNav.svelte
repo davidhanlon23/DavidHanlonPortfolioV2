@@ -4,7 +4,7 @@
     import Button from '../../../UI/Button/Button.svelte';
     import Toggle from '../../../Toggle/Toggle.svelte';
     // import Icon from '../../../UI/Icon/Icon.svelte';
-    // import MoreDropdown from './MoreDropdown.svelte';
+    import MoreDropdown from './MoreDropdown.svelte';
     // import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';
 
@@ -28,7 +28,7 @@
         <div class="my-auto px-2  md-991:ml-8 lg:ml-8 xl:ml-12">
           <Button classes="md:text-sm md-991:text-md lg:text-lg font-bold text-black dark:text-white hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500 shadow-none" href="/contact" type="button" text="Contact" />
         </div>
-        <!-- <MoreDropdown desktop={desktop} /> -->
+        <MoreDropdown desktop={desktop} />
       </div>
       <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" />
 

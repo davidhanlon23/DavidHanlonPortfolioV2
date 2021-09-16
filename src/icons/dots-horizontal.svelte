@@ -1,5 +1,4 @@
 <script lang="ts">
-import AddLink from "src/components/AddLink/AddLink.svelte";
 
     export let solid = false;
     export let formattedClassName = '';

@@ -3,13 +3,15 @@
 	import Navbar from '../components/Navbar/Navbar.svelte'
 	import Footer from '../components/Footer/Footer.svelte'
 	import { isDarkMode } from '../stores/store';
+	import { onMount } from 'svelte';
 
 	let toggleDarkMode: boolean
-
+	onMount(() => {
+		console.log('localStorage', localStorage.theme);
+  });
 	isDarkMode.subscribe( data => {
 		toggleDarkMode = data;
 	});
-
 </script>
 
 <main class={`min-h-screen ${toggleDarkMode ? 'dark' : ''}`}>
