@@ -12,8 +12,8 @@
 <Dropdown
         id="desktop-user-menu"
         trigger={children}
-        className="cursor-pointer my-auto p-2 rounded md:ml-2 mr-4"
-        dropClassName="w-48 bg-white dark:bg-red-500 rounded shadow-lg"
+        className=" cursor-pointer my-auto p-2 rounded md:ml-2 mr-4"
+        dropClassName="w-48 rounded bg-white dark:bg-gray-900 dark:text-white"
       >
       <ul class="pb-4">
           <!-- map through "user dropdown" navigation items-->

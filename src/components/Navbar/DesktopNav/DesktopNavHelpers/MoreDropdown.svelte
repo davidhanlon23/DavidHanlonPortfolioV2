@@ -23,7 +23,7 @@
           id="desktop-user-menu"
           trigger={children}
           className="px-4"
-          dropClassName="w-48 bg-white text-dh-primary-dark-500 dark:text-white dark:bg-dh-primary-dark-500 rounded shadow-lg"
+          dropClassName="w-48 bg-white text-dh-primary-dark-500 dark:text-white dark:bg-gray-900 rounded shadow-lg"
         >
           <ul class="pb-4">
             <li class="pt-4 pb-2">
