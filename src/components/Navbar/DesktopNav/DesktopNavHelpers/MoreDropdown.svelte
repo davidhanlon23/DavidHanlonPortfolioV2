@@ -18,7 +18,7 @@
     }]
 
 </script>
-<div class="m-auto md-991:ml-4 lg:ml-8 xl:ml-12">
+<div class="flex items-center">
         <Dropdown
           id="desktop-user-menu"
           trigger={children}
