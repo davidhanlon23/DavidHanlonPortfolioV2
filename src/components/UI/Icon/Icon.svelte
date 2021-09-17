@@ -4,6 +4,10 @@
 	import DotsVertical from '../../../icons/dots-vertical.svelte';
 	import Instagram from '../../../icons/instagram.svelte';
 	import Search from '../../../icons/search.svelte';
+	import Moon from '../../../icons/moon.svelte';
+	import User from '../../../icons/user.svelte';
+	import X from '../../../icons/x.svelte';
+	import Login from '../../../icons/login.svelte';
 
 
 	export let name = '';
@@ -86,6 +90,12 @@
 		'dots-vertical': DotsVertical,
 		search: Search,
 		'dots-horizontal': DotsHorizontal,
+		moon: Moon,
+		login: Login,
+		user: User,
+		x: X,
+
+
 	}
 </script>
 

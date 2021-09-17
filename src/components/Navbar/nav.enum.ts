@@ -95,32 +95,9 @@ export const nav = {
     authenticated: {
       items: [
         {
-          label: 'Notifications',
-          icon: 'bell',
-          href: '/notification-center',
-          id: uuidv4(),
-        },
-        {
           label: 'Messages',
           icon: 'mail',
           href: '/messages',
-          id: uuidv4(),
-        },
-      ],
-    },
-    secondaryLoggedIn: {
-      label: 'Account',
-      items: [
-        {
-          label: 'My Channel',
-          icon: 'desktop-computer',
-          href: '/profile',
-          id: uuidv4(),
-        },
-        {
-          label: 'Settings',
-          icon: 'cog',
-          href: '/settings',
           id: uuidv4(),
         },
       ],
@@ -129,7 +106,7 @@ export const nav = {
       label: '',
       items: [
         {
-          label: 'Placeholder',
+          label: 'Darkmode',
           icon: 'moon',
           href: '/',
           id: uuidv4(),

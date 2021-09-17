@@ -27,7 +27,7 @@
 	const learnMoreClasses = 'mt-2 tracking-tighter'
 </script>
 
-<footer class="dark:bg-black-100 py-4 px-20 text-center">
+<footer class="dark:bg-dh-primary-dark-500 py-4 px-20 text-center">
 	<!-- <div class="grid grid-cols-5">
 		<div class="grid-cols-4">
 			<div class="grid grid-cols-2">

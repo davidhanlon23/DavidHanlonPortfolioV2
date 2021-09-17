@@ -5,7 +5,7 @@
     import Toggle from '../../../Toggle/Toggle.svelte';
     // import Icon from '../../../UI/Icon/Icon.svelte';
     import MoreDropdown from './MoreDropdown.svelte';
-    // import UserDropdown from './UserDropdown.svelte';
+    import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';
 
     const { desktop } = nav;
@@ -30,7 +30,9 @@
         </div>
         <MoreDropdown desktop={desktop} />
       </div>
-      <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" />
-
-      <!-- <UserDropdown logout={logout} isAuthenticated={isAuthenticated} userName={userName} /> -->
+      <div class="flex justify-end">
+        <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" />
+        <UserDropdown desktop={desktop} />
+      </div>
+      
     </nav>

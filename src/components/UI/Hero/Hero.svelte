@@ -44,11 +44,11 @@
                     overlayOpacity={overlayOpacity}
                 />
             </div>
-            <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <div class="relative px-4 pt-16 sm:px-6 sm:pt-24 lg:pt-32 lg:px-8">
                 <HeroHeaders heroPrimaryHeader={heroObject.primaryHeader} heroSecondaryHeader={heroObject.secondaryHeader} />
                 <HeroSubText heroSubText={heroObject.subText} />
                 <HeroCTAs heroObject={heroObject} />
+                <HeroFooter children={heroObject.heroFooter} />
             </div>
-            <HeroFooter children={heroObject.heroFooter} />
             {/if}
   </div>
