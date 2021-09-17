@@ -2,10 +2,11 @@
     // TODO: fix svelte ignore error and dropdowns
     import { isDarkMode } from '../../../../stores/store'; 
     import Button from '../../../UI/Button/Button.svelte';
-    import Toggle from '../../../Toggle/Toggle.svelte';
-    // import Icon from '../../../UI/Icon/Icon.svelte';
+    // import Toggle from '../../../Toggle/Toggle.svelte';
+
+    import Icon from '../../../UI/Icon/Icon.svelte';
     import MoreDropdown from './MoreDropdown.svelte';
-    import UserDropdown from './UserDropdown.svelte';
+    // import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';
 
     const { desktop } = nav;
@@ -31,9 +32,12 @@
           </div>
           <MoreDropdown desktop={desktop} />
         </div>
-        <div class="flex w-full justify-end">
-          <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" />
-          <UserDropdown desktop={desktop} />
+        <div class="flex mx-4">
+          <!-- <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" /> -->
+          <!-- <UserDropdown desktop={desktop} /> -->
+          <button on:click={handleDarkModeToggle} class="flex w-full justify-end items-center">
+              <Icon name="moon" color="black" classes="w-6 h-6 hover:text-gray-400 dark:hover:text-gray-400" solid />
+          </button>
         </div>
       </div>
       

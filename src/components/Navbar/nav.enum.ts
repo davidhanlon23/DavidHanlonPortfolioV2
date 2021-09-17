@@ -73,7 +73,7 @@ export const nav = {
   },
   desktop: {
     primary: {
-      label: 'General',
+      label: 'More',
       items: [
         {
           label: 'About Me',
