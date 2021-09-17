@@ -86,8 +86,8 @@ export const nav = {
           id: uuidv4(),
         },
         {
-          label: 'Help Center',
-          href: 'https://help.sleepless-gamers.com',
+          label: 'Skills',
+          href: '/skills',
           id: uuidv4(),
         },
       ],

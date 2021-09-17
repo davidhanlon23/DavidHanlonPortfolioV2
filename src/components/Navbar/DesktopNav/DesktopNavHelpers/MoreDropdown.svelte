@@ -33,7 +33,7 @@
             {#each desktop.primary.items as item }
               <li class="">
                 <div class="mx-4">
-                  <Button classes="flex w-full justify-start px-4 py-1 cursor-pointer text-sm hover:bg-gray-200 rounded shadow-none" href={item['href']} text={item['label']} />
+                  <Button classes="flex w-full justify-start px-4 py-1 cursor-pointer text-sm hover:bg-gray-200 dark:hover:bg-gray-600 rounded shadow-none" href={item['href']} text={item['label']} />
                 </div>
               </li>
             {/each}
