@@ -1,6 +1,5 @@
 <script lang="ts">
-  
-    // import Trigger from '../../UI/Dropdown/DropdownHelpers/Trigger.svelte';
+    import { onMount } from 'svelte';
     import Button from '../../UI/Button/Button.svelte';
     export let className = '';
     export let dropClassName = '';
@@ -10,24 +9,28 @@
     export let button = undefined;
     export let icon = {};
     let isOpen = false;
-    // $: isOpen = false;
-    // function clickHandler(e) {
-    //   const targetElement = document.getElementById(id);
-    //   if (targetElement && !targetElement.contains(e.target)) {
-    //     // Clicked outside the dropdown
-    //     isOpen = true;
-    //   }
-    // }
+
+    onMount( () => {
+      function clickHandler(e) {
+        const targetElement = document.getElementById(id);
+        if (targetElement && !targetElement.contains(e.target)) {
+        
+          // Clicked outside the dropdown
+          isOpen = false;
+        }
+      }
+      // initiate the event handler
+      window.addEventListener('click', clickHandler, true);
+
+      // this will clean up the event every time the component is re-rendered
+      return function cleanup() {
+          window.removeEventListener('click', clickHandler);
+        };
+    });
+
     function toggleDropdown(){
       isOpen = !isOpen;
     }
-    // // initiate the event handler
-    // window.addEventListener('click', clickHandler, true);
-
-    // // this will clean up the event every time the component is re-rendered
-    // return function cleanup() {
-    //   window.removeEventListener('click', clickHandler);
-    // };
 
     $: display = isOpen ? 'block' : 'hidden';
     $: visibility = isOpen ? 'visibile' : 'invisibile';
