@@ -36,7 +36,7 @@
           <!-- <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" /> -->
           <!-- <UserDropdown desktop={desktop} /> -->
           <button on:click={handleDarkModeToggle} class="flex w-full justify-end items-center">
-              <Icon name="moon" color="black" classes="w-6 h-6 hover:text-gray-400 dark:hover:text-gray-400" solid />
+              <Icon name="moon" color="black" classes="w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500" solid />
           </button>
         </div>
       </div>
