@@ -10,17 +10,17 @@
     dark:bg-dh-secondary-dark-500 dark:hover:bg-black dark:border-black dark:text-black dark:hover:text-dh-secondary-dark-500`;
 </script>
 <div class={`flex ${classes}`}>
-    <button class={buttonClasses}>
+    <a href="https://linkedin.com/in/david-hanlon" target="_blank" aria-label="link to my linkedin profile in new tab" class={buttonClasses}>
         <Linkedin formattedClassName="w-4 h-4" />
-    </button>
-    <button class={buttonClasses}>
+    </a>
+    <a href="https://github.com/davidhanlon23" target="_blank" aria-label="link to my github in new tab" class={buttonClasses}>
         <Github formattedClassName="w-4 h-4" />
-    </button>
+    </a>
     <!-- <button class="mx-2">HiredDotCom</button> -->
-    <button class={buttonClasses}>
+    <a href="https://instagram.com/davidmhanlon" target="_blank" aria-label="link to my instagram in new tab" class={buttonClasses}>
         <Instagram classes="w-4 h-4" />
-    </button>
-    <button class={buttonClasses}>
+    </a>
+    <a href="mailto:davidhanlon23@gmail.com" aria-label="click to send me an email" class={buttonClasses}>
         <Mail formattedClassName="w-4 h-4" />
-    </button>
+    </a>
 </div>

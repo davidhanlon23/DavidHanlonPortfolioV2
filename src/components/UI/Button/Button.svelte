@@ -148,7 +148,7 @@
 	const onClickProp = !disabled && !!handleClick ? handleClick: null;
 
 </script>
-<button type={btnType} class={`${combinedClassNames} focus:ring bg-center items-center cursor-pointer shadow-xs rounded`} on:click={onClickProp} {...accessibilityProps} >
+<button type={btnType} class={`${combinedClassNames} focus:ring bg-center items-center cursor-pointer shadow-xs rounded-full`} on:click={onClickProp} {...accessibilityProps} >
 	{#if icon && !loading && icon.position === 'left'}
 		<Icon name={icon.name} color={icon.color} solid={icon.solid} size={icon.size} classes={`${icon.className || ''} mr-2`} />
 	{/if}

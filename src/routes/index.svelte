@@ -67,15 +67,20 @@
 	<p class="text-lg sm:text-xl text-center text-black dark:text-white" >Here are a few design projects I've worked on recently. Want to see more?
 		<a href="mailto:davidhanlon23@gmail.com" class="text-dh-secondary-dark-500 hover:no-underline">Email me</a> .
 	</p>
-	<div>
+	<div class="flex justify-center my-24">
 		INSERT PROJECTS HERE
 	</div>
-	<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8" color="primary" />
+	<div class="flex justify-center my-24">
+		<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8" color="primary" />
+	</div>
 </Container>
 <Divider marginTop="mt-8" marginBottom="mb-8" />
 <Container>
 	<h3 class="text-center text-2xl sm:text-4xl font-bold pb-4 text-dh-secondary-dark-500">Interested in collaborating or hiring me?</h3>
 	<p class="text-lg sm:text-xl text-center text-black dark:text-white" >I’m always open to discussing product design work or partnership opportunities.</p>
+	<div class="flex justify-center my-24">
+		<Button classes="border-2 py-2 px-4 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Start a Conversation"/>
+	</div>
 </Container>
 <Divider marginTop="mt-8" marginBottom="mb-8" />
 

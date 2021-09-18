@@ -30,8 +30,10 @@
 
 <footer class="bg-dh-secondary-dark-500 dark:bg-dh-secondary-dark-500 py-4 px-20 text-center">
 	<div class="flex justify-center m-8">
-		<p class="text-2xl text-white dark:text-black">Living, learning, & leveling up one day at a time.</p>
+		<p class="text-2xl text-white dark:text-black">Living, learning, & leveling 
+			<br/>
+			 up one day at a time.</p>
 	</div>
 	<SocialIcons classes="justify-center mb-8" />
-	<div class="m-8 text-center text-white dark:text-black">Hand crafted by me © DMH Global</div>
+	<div class="m-8 text-center text-white dark:text-black">Hand crafted by me © DMH Global LLC</div>
 </footer>
