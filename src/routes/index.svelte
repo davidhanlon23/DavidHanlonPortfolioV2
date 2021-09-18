@@ -71,7 +71,7 @@
 		INSERT PROJECTS HERE
 	</div>
 	<div class="flex justify-center my-24">
-		<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8" color="primary" />
+		<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8 text-white bg-dh-secondary-dark-500 hover:bg-white dark:hover:bg-black hover:text-dh-secondary-dark-500 hover:border-dh-secondary-dark-500" />
 	</div>
 </Container>
 <Divider marginTop="mt-8" marginBottom="mb-8" />
