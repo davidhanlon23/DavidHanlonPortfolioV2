@@ -52,7 +52,7 @@
 	<title>Home</title>
 </svelte:head>
 <Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" heroHeight="screen" backgroundHeight="100" />
-<div class="w-full mx-0 my-8 text-black dark:text-white bg-dh-secondary-dark-500 rounded-t-3xl h-screen">
+<div class="w-full mx-0 my-8 text-black dark:text-white bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen">
 	<div class="pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
 		<h3 class="text-center text-2xl sm:text-4xl font-bold text-black dark:text-white pb-4">Hi, I’m David. Nice to meet you.</h3>
 		<p class="text-center text-xl text-black dark:text-white">Since beginning my journey as a freelance designer nearly 10 years ago,
@@ -62,8 +62,8 @@
 	</div>
 </div>
 <Divider marginBottom="mb-8" />
-<Container className="h-screen">
-	<h3 class="text-center text-4xl font-bold pb-4 text-dh-secondary-dark-500">My Recent Work</h3>
+<Container className="min-h-screen">
+	<h3 class="text-center text-2xl sm:text-4xl font-bold pb-4 text-dh-secondary-dark-500">My Recent Work</h3>
 	<p class="text-lg sm:text-xl text-center text-black dark:text-white" >Here are a few design projects I've worked on recently. Want to see more?
 		<a href="mailto:davidhanlon23@gmail.com" class="text-dh-secondary-dark-500 hover:no-underline">Email me</a> .
 	</p>
@@ -72,5 +72,10 @@
 	</div>
 	<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8" color="primary" />
 </Container>
-<Divider marginTop="mt-8" />
+<Divider marginTop="mt-8" marginBottom="mb-8" />
+<Container>
+	<h3 class="text-center text-2xl sm:text-4xl font-bold pb-4 text-dh-secondary-dark-500">Interested in collaborating or hiring me?</h3>
+	<p class="text-lg sm:text-xl text-center text-black dark:text-white" >I’m always open to discussing product design work or partnership opportunities.</p>
+</Container>
+<Divider marginTop="mt-8" marginBottom="mb-8" />
 

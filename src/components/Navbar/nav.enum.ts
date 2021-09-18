@@ -48,7 +48,7 @@ export const nav = {
         {
           label: 'Help Center',
           icon: 'question-mark-circle',
-          href: 'https://help.sleepless-gamers.com',
+          href: '',
           id: uuidv4(),
         },
       ],
