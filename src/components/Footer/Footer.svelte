@@ -28,7 +28,7 @@
 	const learnMoreClasses = 'mt-2 tracking-tighter'
 </script>
 
-<footer class="bg-dh-secondary-dark-500 dark:bg-dh-secondary-dark-500 py-4 px-20 text-center">
+<footer class="bg-dh-secondary-dark-500 dark:bg-dh-secondary-dark-500 py-4 px-20 text-center" style={{height:'100vh'}}>
 	<div class="flex justify-center m-8">
 		<p class="text-2xl text-white dark:text-black">Living, learning, & leveling 
 			<br/>

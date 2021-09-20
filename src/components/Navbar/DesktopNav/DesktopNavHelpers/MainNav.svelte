@@ -25,7 +25,7 @@
             <Button href="/" classes="shadow-none p-4 text-black dark:text-white hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500 text-2xl font-bold" text="David M. Hanlon" />
           </div>
           <div class="my-auto px-2  md-991:ml-8 lg:ml-8 xl:ml-12">
-            <Button classes="md:text-sm md-991:text-md lg:text-lg font-bold text-black dark:text-white hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500 shadow-none" href="/experience" type="button" text="Experience" />
+            <Button classes="md:text-sm md-991:text-md lg:text-lg font-bold text-black dark:text-white hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500 shadow-none" href="/projects" type="button" text="Projects" />
           </div>
           <div class="my-auto px-2  md-991:ml-8 lg:ml-8 xl:ml-12">
             <Button classes="md:text-sm md-991:text-md lg:text-lg font-bold text-black dark:text-white hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500 shadow-none" href="/contact" type="button" text="Contact" />

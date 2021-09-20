@@ -81,8 +81,8 @@ export const nav = {
           id: uuidv4(),
         },
         {
-          label: 'Projects',
-          href: '/projects',
+          label: 'Experience',
+          href: '/experience',
           id: uuidv4(),
         },
         {
