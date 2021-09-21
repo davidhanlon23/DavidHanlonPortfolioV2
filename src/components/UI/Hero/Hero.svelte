@@ -21,16 +21,16 @@
     export let overlay = '';
     export let children = undefined;
     export let backgroundHeight = '';
-    export let heroHeight = '';
+    // export let heroHeight = '';
 
-    heroHeight = getDivHeight(heroHeight);
+    // heroHeight = getDivHeight(heroHeight);
 
     
  const overlayColor = overlay || 'bg-black';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
  
 </script>
-<div class={`w-full bg-green-500 ${heroHeight} md:py-16 relative`}>
+<div class={`w-full md:py-16 relative`}>
             {#if children }
                 <svelte:component this={children} />
             {:else}

@@ -10,7 +10,8 @@
 	import Container from '../components/UI/Container/Container.svelte';
 	import HomeHeroFooter from '../components/Home/HomeHeroFooter.svelte';
 	import Divider from '../components/UI/Divider/Divider.svelte';
-	
+	import Image from '../components/UI/Image/Image.svelte';
+
 	const heroObject = {
 		primaryHeader: 'Full Stack Engineer, Entrepreneur, & Blockchain Enthusiast',
 		secondaryHeader: '',
@@ -52,9 +53,10 @@
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
-<Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" heroHeight="screen" backgroundHeight="100" />
+<Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" backgroundHeight="100" />
 <div class="w-full mx-0 my-8 bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen">
 	<div class="pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
+		<Image classes="w-32 h-32" src="/Images/softEngClip2.png" />
 		<h3 class="text-center text-2xl sm:text-4xl font-bold text-white dark:text-black pb-4">Hi, I’m David. Nice to meet you.</h3>
 		<p class="text-center text-xl text-white dark:text-black">Since beginning my journey as a freelance designer nearly 10 years ago,
 		 I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products 
@@ -71,7 +73,7 @@
 	<div class="my-24 flex flex-col md:grid md:grid-flow-col md:grid-cols-3 md:grid-rows-2 md:gap-4">
 		<ProjectCard classes="my-4" title="Endeavors.tv" content="Due to legal reasons, I can not share the repository code or extensive details of this live streaming platform. It was built using Svelte and Rust" projectLink="https://Endeavors.tv" />
 		<ProjectCard classes="my-4" title="Love Calculator" content="Mobile Application built using Angular, Ionic Hybrid Mobile Framework, and FireBase Hosting. This app calculates % love of two names by using the ascii value of the names then converting them to percent" imgSrc="/Images/loveCalc.png" />
-		<ProjectCard classes="my-4" title="NextJS Social" content="More test" imgSrc="" />
+		<ProjectCard classes="my-4" title="NextJS Social" content="More test" imgSrc="" projectLink="https://next-js-social-media-app.herokuapp.com/" repoLink="https://github.com/davidhanlon23/nextJS-social-media-app" />
 		<ProjectCard classes="my-4" title="Original Portfolio" content="Original Portfolio built using ReactJS, ExpressJS and NoSQL/MongoDB" />
 		<ProjectCard classes="my-4" title="Expense Tracker" content="Mobile application for tracking expenses built with Angular and Ionic Hybrid Mobile App Framework" imgSrc="/Images/expenseTracker.png" />
 		<ProjectCard classes="my-4" title="Chat App" content="Mobile group chat application built with Angular and Ionic Hybrid Mobile App framework" imgSrc="/Images/chatApp.png" />
@@ -88,5 +90,5 @@
 		<Button classes="border-2 py-2 px-4 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Start a Conversation" href="/contact" />
 	</div>
 </Container>
-<Divider marginTop="mt-8" marginBottom="mb-8" />
+<Divider marginTop="mt-8" />
 
