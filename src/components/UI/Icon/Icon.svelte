@@ -8,7 +8,7 @@
 	import User from '../../../icons/user.svelte';
 	import X from '../../../icons/x.svelte';
 	import Login from '../../../icons/login.svelte';
-
+	import Sun from '../../../icons/sun.svelte';
 
 	export let name = '';
 	export let classes = '';
@@ -92,6 +92,7 @@
 		'dots-horizontal': DotsHorizontal,
 		moon: Moon,
 		login: Login,
+		sun: Sun,
 		user: User,
 		x: X,
 
