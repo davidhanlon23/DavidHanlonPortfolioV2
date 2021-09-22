@@ -56,7 +56,9 @@
 <Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" backgroundHeight="100" />
 <div class="w-full mx-0 my-8 bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen">
 	<div class="pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
-		<Image classes="w-32 h-32" src="/Images/softEngClip2.png" />
+		<div class="flex justify-center my-4">
+			<Image classes="w-32 h-32" src="/Images/softEngClip2.png" />
+		</div>
 		<h3 class="text-center text-2xl sm:text-4xl font-bold text-white dark:text-black pb-4">Hi, I’m David. Nice to meet you.</h3>
 		<p class="text-center text-xl text-white dark:text-black">Since beginning my journey as a freelance designer nearly 10 years ago,
 		 I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products 
@@ -71,12 +73,12 @@
 		<a href="mailto:davidhanlon23@gmail.com" class="text-dh-secondary-dark-500 hover:no-underline">Email me</a> .
 	</p>
 	<div class="my-24 flex flex-col md:grid md:grid-flow-col md:grid-cols-3 md:grid-rows-2 md:gap-4">
-		<ProjectCard classes="my-4" title="Endeavors.tv" content="Due to legal reasons, I can not share the repository code or extensive details of this live streaming platform. It was built using Svelte and Rust" projectLink="https://Endeavors.tv" />
-		<ProjectCard classes="my-4" title="Love Calculator" content="Mobile Application built using Angular, Ionic Hybrid Mobile Framework, and FireBase Hosting. This app calculates % love of two names by using the ascii value of the names then converting them to percent" imgSrc="/Images/loveCalc.png" />
-		<ProjectCard classes="my-4" title="NextJS Social" content="More test" imgSrc="" projectLink="https://next-js-social-media-app.herokuapp.com/" repoLink="https://github.com/davidhanlon23/nextJS-social-media-app" />
-		<ProjectCard classes="my-4" title="Original Portfolio" content="Original Portfolio built using ReactJS, ExpressJS and NoSQL/MongoDB" />
-		<ProjectCard classes="my-4" title="Expense Tracker" content="Mobile application for tracking expenses built with Angular and Ionic Hybrid Mobile App Framework" imgSrc="/Images/expenseTracker.png" />
-		<ProjectCard classes="my-4" title="Chat App" content="Mobile group chat application built with Angular and Ionic Hybrid Mobile App framework" imgSrc="/Images/chatApp.png" />
+		<ProjectCard classes="my-4" title="Endeavors.tv" content="Due to legal reasons, I can not share the repository code or extensive details of this live streaming platform. It was built using Svelte and Rust" projectLink="https://Endeavors.tv" imgSrc="/Images/endeavorsTvCardImg.png" />
+		<ProjectCard classes="my-4" title="Love Calculator" content="Mobile Application built using Angular, Ionic Hybrid Mobile Framework, and FireBase Hosting. This app calculates % love of two names by using the ascii value of the names then converting them to percent" repoLink="https://github.com/davidhanlon23/loveCalculator" imgSrc="/Images/loveCalcCardImg.png" />
+		<ProjectCard classes="my-4" title="NextJS Social" content="Demo Social Media application built using Server Side Rendering framework NextJS, ReactJS, and ExpressJS" imgSrc="/Images/nextJsCardImg.png" projectLink="https://next-js-social-media-app.herokuapp.com/" repoLink="https://github.com/davidhanlon23/nextJS-social-media-app" />
+		<ProjectCard classes="my-4" title="Original Portfolio" content="Original Portfolio built using ReactJS, ExpressJS and NoSQL/MongoDB" repoLink="https://github.com/davidhanlon23/DavidHanlonPortfolio" projectLink="https://davidmhanlon-stg.herokuapp.com/" imgSrc="/Images/originalPortfolioCardImg.png"/>
+		<ProjectCard classes="my-4" title="Expense Tracker" content="Mobile application for tracking expenses built with Angular and Ionic Hybrid Mobile App Framework" repoLink="https://github.com/davidhanlon23/ExpenseTracker" imgSrc="/Images/expenseTrackerCardImg.png" />
+		<ProjectCard classes="my-4" title="Chat App" content="Mobile group chat application built with Angular and Ionic Hybrid Mobile App framework" repoLink="https://github.com/davidhanlon23/ChatApp" imgSrc="/Images/chatAppCardImg.png" />
 	</div>
 	<div class="flex justify-center my-24">
 		<Button href="/projects" text="View More Projects" classes="w-full mx-auto sm:mx-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8 text-white bg-dh-secondary-dark-500 hover:bg-white dark:hover:bg-black hover:text-dh-secondary-dark-500 hover:border-dh-secondary-dark-500" />
