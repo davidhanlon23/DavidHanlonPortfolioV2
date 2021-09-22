@@ -2,7 +2,7 @@
     // import Button from '../../UI/Button/Button.svelte';
     import Linkedin from "../../../icons/linkedin.svelte";
     import Github from "../../../icons/github.svelte";
-    import Instagram from "../../../icons/instagram.svelte";
+    import Insta from "../../../icons/insta.svelte";
     import Mail from '../../../icons/mail.svelte';
     export let classes = '';
 
@@ -18,7 +18,7 @@
     </a>
     <!-- <button class="mx-2">HiredDotCom</button> -->
     <a href="https://instagram.com/davidmhanlon" target="_blank" aria-label="link to my instagram in new tab" class={buttonClasses}>
-        <Instagram classes="w-4 h-4" />
+        <Insta classes="w-4 h-4" />
     </a>
     <a href="mailto:davidhanlon23@gmail.com" aria-label="click to send me an email" class={buttonClasses}>
         <Mail formattedClassName="w-4 h-4" />
