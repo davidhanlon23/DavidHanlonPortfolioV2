@@ -1,0 +1,13 @@
+<script lang="ts">
+    import Button from '../../../UI/Button.svelte';
+    import Icon from '../../../UI/Icon/Icon.svelte';
+
+</script>
+<Button
+        onClick={() => {
+          $$props.onClick();
+        }}
+        classes="shadow-none"
+      >
+        <Icon name="menu" size="large" />
+ </Button>

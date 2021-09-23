@@ -9,6 +9,7 @@
 	import X from '../../../icons/x.svelte';
 	import Login from '../../../icons/login.svelte';
 	import Sun from '../../../icons/sun.svelte';
+	import Menu from '../../../icons/menu.svelte';
 
 	export let name = '';
 	export let classes = '';
@@ -16,7 +17,7 @@
 	export let color = '';
 	export let solid = false;
 	export let size = '';
-
+	$: name;
 	let iconColor
 	if (!name) {
 		name = null
@@ -95,6 +96,7 @@
 		sun: Sun,
 		user: User,
 		x: X,
+		menu: Menu,
 
 
 	}

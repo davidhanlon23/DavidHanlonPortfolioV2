@@ -28,12 +28,12 @@
 			{#if projectLink || repoLink}
 				<div class="flex justify-end">
 					{#if projectLink}
-						<a href={projectLink} target="_blank" aria-label={`Link to ${title} site in new tab`} class={`mx-4 ${linkClasses}`}>
+						<a href={projectLink} target="_blank" aria-label={`Link to ${title} site in new tab`} class={`ml-4 ${linkClasses}`}>
 							<DesktopComputer solid />
 						</a>
 					{/if}
 					{#if repoLink}
-						<a href={repoLink} target="_blank" aria-label={`Link to ${title} repo in new tab`} class={linkClasses}>
+						<a href={repoLink} target="_blank" aria-label={`Link to ${title} repo in new tab`} class={`ml-4 ${linkClasses}`}>
 							<Github />
 						</a>
 					{/if}
