@@ -2,20 +2,18 @@
     // TODO: fix svelte ignore error and dropdowns
     import { isDarkMode } from '../../../../stores/store'; 
     import Button from '../../../UI/Button/Button.svelte';
-    // import Toggle from '../../../Toggle/Toggle.svelte';
 
     import Icon from '../../../UI/Icon/Icon.svelte';
     import MoreDropdown from './MoreDropdown.svelte';
-    // import UserDropdown from './UserDropdown.svelte';
     import { nav } from '../../nav.enum';
 
     const { desktop } = nav;
     const formattedClassName = $$props.className;
-    const handleDarkModeToggle = () => {
-        isDarkMode.update( currValue => {
-            return !currValue;
-        });
-    };
+    let iconName = $isDarkMode ? 'sun' : 'moon';
+    function handleDarkModeToggle(){
+        $isDarkMode = !$isDarkMode;
+        iconName = $isDarkMode ? 'sun' : 'moon';
+    }
 </script>
     <!-- svelte-ignore component-name-lowercase -->
     <nav class={`${formattedClassName} hidden md:h-16 md:flex md:content-end z-50 md:top-0 md:fixed md:w-full`}>
@@ -33,12 +31,12 @@
           <MoreDropdown desktop={desktop} />
         </div>
         <div class="flex mx-4">
-          <!-- <Toggle onToggle={handleDarkModeToggle} untoggledColor="#fff" toggledColor="#000" switchColor="#34D399" label="Dark Mode Toggle" /> -->
-          <!-- <UserDropdown desktop={desktop} /> -->
+          {#key $isDarkMode}
           <button on:click={handleDarkModeToggle} class="flex w-full justify-end items-center">
-              <Icon name="moon" color="black" classes="w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500" solid />
+              <Icon name={iconName} color="black" classes="w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500" solid/> 
           </button>
+          {/key}
         </div>
       </div>
-      
     </nav>
+

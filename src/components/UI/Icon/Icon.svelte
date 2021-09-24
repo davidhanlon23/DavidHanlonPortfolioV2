@@ -17,7 +17,6 @@
 	export let color = '';
 	export let solid = false;
 	export let size = '';
-	$: name;
 	let iconColor
 	if (!name) {
 		name = null
