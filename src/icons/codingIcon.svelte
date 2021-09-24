@@ -1,11 +1,7 @@
 <script lang="ts">
     import { isDarkMode } from '../stores/store';
     $: iconColor = '';
-    let toggleDarkMode = false;
-	isDarkMode.subscribe( data => {
-		toggleDarkMode = data;
-	});
-    iconColor = toggleDarkMode ? '#000000' : '#FFFFFF'
+    iconColor = $isDarkMode ? '#000000' : '#FFFFFF'
 </script>
 <svg width="650px" height="265px" viewBox="0 0 650 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
