@@ -1,6 +1,6 @@
 <script lang="ts">
     // TODO: fix svelte ignore error and dropdowns
-    import { isDarkMode } from '../../../../stores/store'; 
+    import { theme } from '../../../../stores/store'; 
     import Button from '../../../UI/Button/Button.svelte';
 
     import Icon from '../../../UI/Icon/Icon.svelte';
@@ -9,11 +9,16 @@
 
     const { desktop } = nav;
     const formattedClassName = $$props.className;
-    let iconName = $isDarkMode ? 'sun' : 'moon';
+    $: iconName = $theme === 'dark' ? 'sun' : 'moon';
+
     function handleDarkModeToggle(){
-        $isDarkMode = !$isDarkMode;
-        iconName = $isDarkMode ? 'sun' : 'moon';
-    }
+        if(localStorage.getItem("theme") === 'light'){
+          theme.set('dark');
+        }
+        else if(localStorage.getItem("theme") === 'dark'){
+          theme.set('light');
+        }
+      }
 </script>
     <!-- svelte-ignore component-name-lowercase -->
     <nav class={`${formattedClassName} hidden md:h-16 md:flex md:content-end z-50 md:top-0 md:fixed md:w-full`}>
@@ -31,8 +36,8 @@
           <MoreDropdown desktop={desktop} />
         </div>
         <div class="flex mx-4">
-          {#key $isDarkMode}
-          <button on:click={handleDarkModeToggle} class="flex w-full justify-end items-center">
+          {#key theme}
+          <button on:click={()=>handleDarkModeToggle()} class="flex w-full justify-end items-center">
               <Icon name={iconName} color="black" classes="w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500" solid/> 
           </button>
           {/key}
