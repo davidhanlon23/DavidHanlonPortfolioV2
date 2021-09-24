@@ -5,16 +5,12 @@
 	import { isDarkMode } from '../stores/store';
 	import { onMount } from 'svelte';
 
-	let toggleDarkMode: boolean
 	onMount(() => {
 		console.log('localStorage', localStorage.theme);
   });
-	isDarkMode.subscribe( data => {
-		toggleDarkMode = data;
-	});
 </script>
 
-<main class={`min-h-screen ${toggleDarkMode ? 'dark' : ''}`}>
+<main class={`min-h-screen ${$isDarkMode ? 'dark' : ''}`}>
 	<Navbar className="bg-dh-primary-500 dark:bg-dh-primary-dark-500" />
 	<div class="min-h-screen bg-dh-primary-500 dark:bg-dh-primary-dark-500">
 		<slot />
