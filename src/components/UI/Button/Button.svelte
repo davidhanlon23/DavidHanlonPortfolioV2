@@ -33,12 +33,12 @@
 	switch (color) {
 		case 'primary':
 		btnBgColor = `bg-dh-secondary-dark-500 dark:bg-white`;
-		btnBgColorHover = `hover:bg-green-700 dark:hover:bg-gray-100`;
+		btnBgColorHover = `hover:bg-dh-secondary-dark-400 dark:hover:bg-gray-100`;
 		btnTextColor = `text-white dark:text-dh-primary-dark-500 `;
 		break;
 		case 'secondary':
 		btnBgColor = `bg-dh-primary-dark-500 dark:bg-dh-secondary-dark-500`;
-		btnBgColorHover = `hover:bg-gray-700 dark:hover:bg-green-700`;
+		btnBgColorHover = `hover:bg-gray-700 dark:hover:bg-dh-secondary-dark-400`;
 		btnTextColor = `text-white dark:text-dh-primary-dark-500`;
 		break;
 		case 'gray':
