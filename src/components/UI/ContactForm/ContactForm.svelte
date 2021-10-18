@@ -4,9 +4,9 @@
     const inputClasses = "border border-gray-200 dark:border-gray-600 rounded-sm bg-white dark:bg-gray-900 text-black dark:text-white text-xl";
     const labelClasses = "text-black dark:text-white text-xl font-normal mb-2"
 </script>
-<form>
-    <div class="flex mb-8">
-        <div class="flex flex-col mr-4">
+<form class="my-8">
+    <div class="flex flex-col md:flex-row mb-8">
+        <div class="flex flex-col md:mr-4">
             <label for="contact-form-name" class={`${labelClasses}`}>Name</label>
             <input id="contact-form-name" name="name" type="text" class={`${inputClasses} h-10 p-4`} required />
         </div>
