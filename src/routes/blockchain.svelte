@@ -4,6 +4,6 @@
 </script>
 <div class="mt-16">
     <Container>
-        <h3 class="text-blue-400">This is blockchain</h3>
+        <h1 class="pt-16 text-5xl font-normal text-dh-secondary-dark-500 text-center">Blockchain</h1>
     </Container>
 </div>

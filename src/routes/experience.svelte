@@ -4,6 +4,6 @@
 </script>
 <div class="mt-16">
     <Container>
-        <h3 class="text-blue-400">This is experience</h3>
+        <h1 class="pt-16 text-5xl font-normal text-dh-secondary-dark-500 text-center">Job Experience</h1>
     </Container>
 </div>
