@@ -86,7 +86,7 @@ export const nav = {
           id: uuidv4(),
         },
         {
-          label: 'Skills',
+          label: 'Technical Skills',
           href: '/skills',
           id: uuidv4(),
         },
