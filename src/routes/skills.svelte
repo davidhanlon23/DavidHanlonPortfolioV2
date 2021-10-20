@@ -8,7 +8,7 @@
     const iconWrapperClasses = "flex flex-col";
 
 </script>
-<div class="mt-16">
+<div class="py-16">
     <Container>
         <h1 class="pt-16 text-5xl font-normal text-dh-secondary-dark-500 text-center">Technical Skills</h1>
         
