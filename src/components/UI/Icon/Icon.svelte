@@ -10,6 +10,8 @@
 	import Login from '../../../icons/login.svelte';
 	import Sun from '../../../icons/sun.svelte';
 	import Menu from '../../../icons/menu.svelte';
+	import Calendar from '../../../icons/calendar.svelte';
+	import AcademicCap from '../../../icons/academic-cap.svelte';
 
 	export let name = '';
 	export let classes = '';
@@ -17,7 +19,6 @@
 	export let color = '';
 	export let solid = false;
 	export let size = '';
-	let iconColor
 	if (!name) {
 		name = null
 	}
@@ -76,6 +77,8 @@
 			return `text-indigo-500`;
 			case 'purple':
 			return `text-purple-500`;
+			case 'primary':
+			return `text-dh-secondary-dark-500`;
 			default:
 			return color;
 		}
@@ -96,9 +99,11 @@
 		user: User,
 		x: X,
 		menu: Menu,
+		calendar: Calendar,
+		'academic-cap': AcademicCap,
 
 
 	}
 </script>
 
-<svelte:component this={iconMap[name] || null} {formattedClassName} {accessibilityProps} {iconColor} {solid} />
+<svelte:component this={iconMap[name] || null} {formattedClassName} {accessibilityProps} {solid} />
