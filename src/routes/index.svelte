@@ -57,7 +57,7 @@
 <div class="w-full mx-0 my-8 bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen">
 	<div class="pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
 		<div class="flex justify-center my-4">
-			<Image classes="w-48 h-48 border-none" src="/static/Images/davidHanlon.jpg" alt="Image of Me (David Hanlon)" circle />
+			<Image classes="w-48 h-48 border-none" src="/Images/davidHanlon.jpg" alt="Image of Me (David Hanlon)" circle />
 		</div>
 		<h3 class="text-center text-2xl sm:text-4xl font-bold text-white dark:text-black pb-4">Hi, I’m David. Nice to meet you.</h3>
 		<p class="text-center text-xl text-white dark:text-black">Since beginning my journey as a freelance designer nearly 10 years ago,
