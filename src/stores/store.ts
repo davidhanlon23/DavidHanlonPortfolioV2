@@ -1,9 +1,11 @@
 import { writable } from 'svelte/store'
 export const storeFE = writable({})
 export const isDarkMode = writable(false);
-const storedTheme = localStorage.getItem("theme");
+const storedTheme = typeof window !== 'undefined' ? localStorage.getItem("theme") : 'light';
 export const theme = writable(storedTheme);
-theme.subscribe(value => {
-    localStorage.setItem("theme", value === 'dark' ? 'dark' : 'light');
-});
-
+if(typeof window !== 'undefined'){
+    theme.subscribe(value => {
+        localStorage.setItem("theme", value === 'dark' ? 'dark' : 'light');
+    });
+    
+}
