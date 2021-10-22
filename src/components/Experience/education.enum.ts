@@ -14,6 +14,7 @@ export const educationObject = [
                         educationsWebsite:"https://www.towson.edu/",
                         educationsWebsiteAriaLabel:"Opens Towson's site in new tab",
                         educationsLogo:"/Images/towsonLogo2.jpeg",
+                        educationsLogoAlt: "Towson's Logo",
                     },
                 ],
             },
@@ -29,6 +30,7 @@ export const educationObject = [
                         educationsWebsite:"https://worcestertechhs.com/",
                         educationsWebsiteAriaLabel:"Opens WTHS's site in new tab",
                         educationsLogo:"/Images/wthsLogo1.jpg",
+                        educationsLogoAlt:"WTHS's Logo",
                     },
                     {
                         educationName:"Pocomoke High School",
@@ -37,6 +39,7 @@ export const educationObject = [
                         educationsWebsite:"https://www.pocomokehighschool.org/",
                         educationsWebsiteAriaLabel:"Opens Pocomoke's site in new tab",
                         educationsLogo:"/Images/phsLogo.jpeg",
+                        educationsLogoAlt:"Pocomoke's Logo",
                     },
                 ],
             },
