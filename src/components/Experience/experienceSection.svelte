@@ -31,7 +31,7 @@
                    ],
                 },
     ];
-    const secondaryHeaderClasses = "text-black dark:text-white font-semibold text-xl";
+    const secondaryHeaderClasses = "text-black dark:text-white font-semibold text-2xl mt-8";
     const nameOfExperienceClasses = "text-black dark:text-white text-4xl hover:cursor-pointer hover:no-underline";
     const taglineClasses = "italic text-black dark:text-white mt-2";
     const positionClasses = "text-black dark:text-white my-2";
@@ -74,7 +74,7 @@
                     </ul>
                 </div>
                 <div class="flex justify-center mt-8 md:mt-0 md:justify-start md:w-full">
-                    <Image classes={logoClasses} src="/Images/cybrary3.png" alt={experience.experienceLogoAlt} />
+                    <Image classes={logoClasses} src={`${experience.experienceLogo}`} alt={experience.experienceLogoAlt} />
                 </div>
             </div>
         </Container>
