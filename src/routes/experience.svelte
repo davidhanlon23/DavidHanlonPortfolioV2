@@ -152,7 +152,7 @@
                     </ul>
                 </div>
                 <div>
-                    <Image classes="w-60 h-60" src="/Images/cybrary3.png" alt="Cybrary Logo" />
+                    <Image classes="w-60 h-60" src="/Images/etsLogo.png" alt="ETS Logo" />
                 </div>
             </div>
 
@@ -183,7 +183,7 @@
                     </ul>
                 </div>
                 <div>
-                    <Image classes="w-60 h-60" src="/Images/cybrary3.png" alt="Cybrary Logo" />
+                    <Image classes="w-60 h-60" src="/Images/sproutLogo2.png" alt="Sprout Creatives Logo" />
                 </div>
             </div>
             
@@ -194,7 +194,11 @@
             <h3 class="">College</h3>
             <div class="flex">
                <div>
-                    <h4>Towson University</h4>
+                    <h4>
+                        <a href="https://www.towson.edu/" class={`${nameOfExperienceClasses} hover:text-yellow-500 dark:hover:text-yellow-500 hover:cursor-pointer hover:no-underline`} target="_blank" aria-label="Opens Towson's site in new tab">
+                            Towson University
+                        </a>
+                    </h4>
                     <p>Towson University is a Liberal Arts university in northern Baltimore County, Maryland where I completed my Bachelor's degree in Computer Science</p>
                     <div class="flex">
                         <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
@@ -206,7 +210,7 @@
                     </div>
                </div>
                <div>
-                   <Image src="/Images/towsonLogo2.jpeg" />
+                   <Image classes="w-60 h-60" src="/Images/towsonLogo2.jpeg" />
                </div>
 
             </div>
@@ -224,21 +228,30 @@
             <!-- Worcester Tech -->
             <div class="flex">
                <div>
-                    <h4>Worcester Technical High School</h4>
+                    <h4>
+                        <a href="https://worcestertechhs.com/" class={`${nameOfExperienceClasses} hover:text-red-800 dark:hover:text-red-800 hover:cursor-pointer hover:no-underline`} target="_blank" aria-label="Opens Worcester Tech's site in new tab">
+                            Worcester Technical High School
+                        </a>
+                    </h4>
                     <p>Worcester Technical High School is vocational high school in Worcester County, Maryland that offers STEM and trade related courses. I attended WTHS to complete the 4 year Pre-Engineering program while concurrently attending Pocomoke High School</p>
                </div>
                <div>
-                   <Image src="/Images/towsonLogo2.jpeg" />
+                   <Image classes="w-60 h-60" src="/Images/wthsLogo1.jpg" />
                </div>
             </div>
             <!-- Pocomoke High -->
             <div class="flex">
                 <div>
-                     <h4>Pocomoke High School</h4>
+                    <h4>
+                        <a href="https://www.pocomokehighschool.org/" class={`${nameOfExperienceClasses} hover:text-blue-800 dark:hover:text-blue-800 hover:cursor-pointer hover:no-underline`} target="_blank" aria-label="Opens Pocomoke High's site in new tab"> 
+                            Pocomoke High School
+                        </a>
+                    </h4>
+
                      <p>Pocomoke High School is the primary high school I was enrolled at where I studied Core classes and AP Computer Science</p>
                 </div>
                 <div>
-                    <Image src="/Images/towsonLogo2.jpeg" />
+                    <Image classes="w-60 h-60" src="/Images/towsonLogo2.jpeg" />
                 </div>
  
              </div>

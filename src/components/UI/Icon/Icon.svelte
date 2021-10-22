@@ -12,6 +12,7 @@
 	import Menu from '../../../icons/menu.svelte';
 	import Calendar from '../../../icons/calendar.svelte';
 	import AcademicCap from '../../../icons/academic-cap.svelte';
+	import Location from '../../../icons/location.svelte';	
 
 	export let name = '';
 	export let classes = '';
@@ -101,6 +102,7 @@
 		menu: Menu,
 		calendar: Calendar,
 		'academic-cap': AcademicCap,
+		location: Location,
 
 
 	}
