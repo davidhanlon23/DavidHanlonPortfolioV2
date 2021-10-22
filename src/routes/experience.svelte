@@ -3,13 +3,9 @@
     import Container from '../components/UI/Container/Container.svelte';
     import Icon from '../components/UI/Icon/Icon.svelte';
     import Divider from '../components/UI/Divider/Divider.svelte';
-    import ExperienceSection from '../components/Experience/experienceSection.svelte';
+    import ExperienceSection from '../components/Experience/ExperienceSection.svelte';
     import { experienceObject } from '../components/Experience/experience.enum';
-    const secondaryHeaderClasses = "text-black dark:text-white font-semibold text-xl";
-    const nameOfExperienceClasses = "text-black dark:text-white text-4xl";
-    // const sectionClasses = "";
-    // const taglineClasses = "italic"
-    // const logoClasses = "w-60 h-60";
+
 </script>
 <div class="py-16">
     <Container>
