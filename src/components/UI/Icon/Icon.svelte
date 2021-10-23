@@ -19,6 +19,7 @@
 	import Cube from '../../../icons/cube.svelte';
 	import Terminal from '../../../icons/terminal.svelte';
 	import Briefcase from '../../../icons/briefcase.svelte';
+	import MenuAlt1 from '../../../icons/menu-alt1.svelte';
 
 	export let name = '';
 	export let classes = '';
@@ -106,6 +107,7 @@
 		user: User,
 		x: X,
 		menu: Menu,
+		'menu-alt1': MenuAlt1,
 		calendar: Calendar,
 		'academic-cap': AcademicCap,
 		location: Location,
