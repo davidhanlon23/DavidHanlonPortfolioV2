@@ -7,47 +7,65 @@ export const nav = {
       items: [
         {
           label: 'Home',
-          icon: 'calendar',
+          icon: 'home',
           href: '/',
           id: uuidv4(),
         },
         {
           label: 'Projects',
-          icon: 'calendar',
+          icon: 'desktop-computer',
           href: '/projects',
           id: uuidv4(),
         },
         {
           label: 'Contact',
-          icon: 'calendar',
+          icon: 'mail',
           href: '/contact',
           id: uuidv4(),
         },
-      ],
-    },
-    secondary: {
-      label: 'More',
-      items: [
         {
           label: 'Experience',
-          icon: 'calendar',
+          icon: 'briefcase',
           href: '/experience',
           id: uuidv4(),
         },
         {
           label: 'Technical Skills',
-          icon: 'calendar',
+          icon: 'terminal',
           href: '/skills',
           id: uuidv4(),
         },
         {
           label: 'Blockchain',
-          icon: 'calendar',
+          icon: 'cube',
           href: '/blockchain',
           id: uuidv4(),
         },
       ],
     },
+    // secondary: {
+    //   label: 'More',
+    //   items: [
+    //     {
+    //       label: 'Experience',
+    //       icon: 'calendar',
+    //       href: '/experience',
+    //       id: uuidv4(),
+    //     },
+    //     {
+    //       label: 'Technical Skills',
+    //       icon: 'calendar',
+    //       href: '/skills',
+    //       id: uuidv4(),
+    //     },
+    //     {
+    //       label: 'Blockchain',
+    //       icon: 'calendar',
+    //       href: '/blockchain',
+    //       id: uuidv4(),
+    //     },
+    //   ],
+    // },
   },
   desktop: {
     primary: {

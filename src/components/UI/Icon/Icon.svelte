@@ -13,6 +13,12 @@
 	import Calendar from '../../../icons/calendar.svelte';
 	import AcademicCap from '../../../icons/academic-cap.svelte';
 	import Location from '../../../icons/location.svelte';	
+	import Home from '../../../icons/home.svelte';
+	import Mail from '../../../icons/mail.svelte';
+	import DesktopComputer from '../../../icons/desktop-computer.svelte';
+	import Cube from '../../../icons/cube.svelte';
+	import Terminal from '../../../icons/terminal.svelte';
+	import Briefcase from '../../../icons/briefcase.svelte';
 
 	export let name = '';
 	export let classes = '';
@@ -89,7 +95,7 @@
   	const cn = classes || '';
   	const formattedClassName = `${c} ${s} ${cn}`;
 	const iconMap = {
-		cheveronRight: ChevronRight,
+		'cheveron-right': ChevronRight,
 		instagram: Instagram,
 		'dots-vertical': DotsVertical,
 		search: Search,
@@ -103,6 +109,12 @@
 		calendar: Calendar,
 		'academic-cap': AcademicCap,
 		location: Location,
+		home: Home,
+		mail: Mail,
+		'desktop-computer': DesktopComputer,
+		cube: Cube,
+		terminal: Terminal,
+		briefcase: Briefcase,
 
 
 	}
