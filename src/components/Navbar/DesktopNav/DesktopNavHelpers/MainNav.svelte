@@ -1,24 +1,13 @@
 <script lang="ts">
-    // TODO: fix svelte ignore error and dropdowns
-    import { theme } from '../../../../stores/store'; 
     import Button from '../../../UI/Button/Button.svelte';
 
-    import Icon from '../../../UI/Icon/Icon.svelte';
     import MoreDropdown from './MoreDropdown.svelte';
     import { nav } from '../../nav.enum';
+    import ToggleThemeButton from '../../ToggleThemeButton.svelte';
 
     const { desktop } = nav;
     const formattedClassName = $$props.className;
-    $: iconName = $theme === 'dark' ? 'sun' : 'moon';
-
-    function handleDarkModeToggle(){
-        if(localStorage.getItem("theme") === 'light'){
-          theme.set('dark');
-        }
-        else if(localStorage.getItem("theme") === 'dark'){
-          theme.set('light');
-        }
-      }
+  
 </script>
     <!-- svelte-ignore component-name-lowercase -->
     <nav class={`${formattedClassName} hidden md:h-16 md:flex md:content-end z-50 md:top-0 md:fixed md:w-full`}>
@@ -36,11 +25,7 @@
           <MoreDropdown desktop={desktop} />
         </div>
         <div class="flex mx-4">
-          {#key theme}
-          <button on:click={()=>handleDarkModeToggle()} class="flex w-full justify-end items-center">
-              <Icon name={iconName} color="black" classes="w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500" solid/> 
-          </button>
-          {/key}
+          <ToggleThemeButton />
         </div>
       </div>
     </nav>

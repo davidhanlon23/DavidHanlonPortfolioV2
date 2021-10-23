@@ -9,5 +9,5 @@
         }}
         classes="shadow-none"
       >
-        <Icon name="menu" size="large" />
+        <Icon name="menu" size="large" classes="text-black dark:text-white" />
  </Button>
