@@ -14,7 +14,7 @@
 
     function getMenuItem(itemName) {
         if (!itemName) {
-          setActiveSideMenu(null);
+          setActiveSideMenu(false);
           return;
         }
         // eslint-disable-next-line no-restricted-globals
