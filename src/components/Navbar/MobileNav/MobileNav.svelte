@@ -4,8 +4,8 @@
 
   let mobileSideMenu = false;
 
-  function toggleMobileSideMenu(){
-    mobileSideMenu = !mobileSideMenu;
+  function toggleMobileSideMenu(activeStatus){
+    mobileSideMenu = activeStatus;
   }
 </script>
 

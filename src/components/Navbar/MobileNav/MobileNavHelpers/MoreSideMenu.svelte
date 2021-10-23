@@ -19,8 +19,9 @@
         },
 
     };
+    console.log('activeSideMenu: ', activeSideMenu);
 </script>
-{#if activeSideMenu}
+{#if !activeSideMenu}
 <div class="flex items-center mx-auto border-b border-gray-300 px-6 py-5 mb-6 bg-gray-100">
     <Button classes="focus:outline-none" onClick={() => setActiveSideMenu(!activeSideMenu)}>
       <Icon name="chevron-left" classes="h-6 w-6 mr-4 text-black" />
@@ -32,7 +33,7 @@
   </div>
   <ul class="mb-10">
     <li>
-      <p class="text-xs uppercase font-bold pb-2 pl-6">More</p>
+      <p class="text-xs uppercase font-bold pb-2 pl-6 text-black dark:text-white">More</p>
     </li>
     {#each mobile.secondary.items as item}
     <li>
