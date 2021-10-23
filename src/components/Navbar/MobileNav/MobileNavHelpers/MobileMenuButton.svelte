@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Button from '../../../UI/Button.svelte';
+    import Button from '../../../UI/Button/Button.svelte';
     import Icon from '../../../UI/Icon/Icon.svelte';
 
 </script>

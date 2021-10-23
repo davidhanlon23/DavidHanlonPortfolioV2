@@ -15,7 +15,7 @@
         </div>
         <div class="px-2 mx-auto">
           <Button href="/" classes="shadow-none p-4">
-            <Icon name="sleepless-logo" size="large" />
+            <Icon name="calendar" size="large" />
           </Button>
         </div>
         <div>
