@@ -8,7 +8,7 @@
     export let mobileSideMenu = false;
 
     const { mobile } = nav;
-     $: activeSideMenu = false;
+    let activeSideMenu = false;
     function setActiveSideMenu(activeStatus){
       activeSideMenu = activeStatus;
     }
@@ -27,10 +27,8 @@
     function handleClick(item) {
         if (item.children && item.children.length) {
           getMenuItem(item.label);
-          console.log('we in if');
         } else {
           toggleMobileSideMenu(false);
-          console.log('we in else');
         }
     }
 </script>
