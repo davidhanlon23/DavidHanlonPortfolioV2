@@ -1,3 +1,13 @@
 export const projectsObject = [
-    {},
+    {
+        projectName: 'Test Project',
+        projectWebsite: 'https://www.google.com',
+        projectRepoLink: 'https://www.github.com/',
+        projectDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis rhoncus leo. Nullam a nulla eu eros laoreet cursus eget at sapien. Nulla ligula dui, aliquet eget lacus ut, pellentesque scelerisque dolor. Morbi vitae turpis sem. Donec neque augue, convallis ac blandit vel, commodo ac augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tempus ipsum sit amet libero gravida, eu consectetur magna molestie. Donec fermentum rhoncus nisi, et pretium tellus consequat consectetur. Pellentesque tellus tellus, imperdiet et convallis non, commodo ut elit. Maecenas sem lorem, iaculis eu tempor quis, tristique id sapien.
+
+        Fusce accumsan nec lorem id ultricies. Nullam non libero dictum, elementum quam vel, varius mi. Proin luctus purus sed lobortis convallis. Cras malesuada nunc orci, vitae porta sapien imperdiet at. Morbi massa felis, lacinia ac purus et, eleifend imperdiet ligula. Phasellus accumsan ante eros, a tincidunt justo tempus eu. Integer egestas fermentum imperdiet. Nulla eget massa ex. Vivamus dapibus justo consequat neque aliquam, et mattis leo facilisis. Nam lacus est, sagittis congue mi ac, accumsan ultricies ligula. Ut semper, justo nec laoreet dapibus, diam ligula porta elit, vitae dictum arcu eros id dui. Ut ac sem interdum, porta magna vitae, tincidunt velit. Mauris enim dolor, fringilla vitae dictum ac, facilisis id leo. Etiam ultrices felis sapien, id ultrices dui aliquet dapibus. Etiam ut massa porttitor, ultrices nibh sed, finibus nisi. Morbi ut diam vulputate, pretium mauris sit amet, eleifend eros.
+        
+        Suspendisse vestibulum nisi non dictum congue. Pellentesque in hendrerit ante, a luctus lorem. Vivamus tempus libero nibh, viverra pretium neque egestas a. Proin volutpat, magna nec semper consectetur, dolor ipsum interdum sapien, et tempus massa nisl eget ex. Duis pharetra laoreet elit, ut feugiat nunc lacinia ac. Mauris sit amet commodo felis. Donec vitae lectus et enim eleifend fermentum. Fusce efficitur ex magna, a molestie mauris sollicitudin et. Curabitur in ultricies ex, vitae dictum nulla. Nunc consequat ultrices justo, sed rhoncus neque porta sed. Fusce egestas elementum velit euismod malesuada. Integer faucibus magna ac turpis accumsan consectetur.`,
+        projectImageUrl: '',
+    },
 ];
