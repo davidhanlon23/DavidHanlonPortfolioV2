@@ -1,5 +1,6 @@
 <script lang="ts">
     import Label from '../UI/Label/Label.svelte';
+    import Divider from '../UI/Divider/Divider.svelte';
     export let projects = [
         {
         projectName: '',
@@ -27,8 +28,18 @@
 
 </script>
 {#each projects as project}
-<div>
-    {project.projectName}
+<div class="flex">
+    <div>
+        <!-- IMAGE GOES HERE -->
+    </div>
+    <div>
+        <div class="flex">
+            <h2>{project.projectName}</h2>
+            <Label value="Hello"/>
+        </div>
+        
+        <p><!-- Project Description here --></p>
+    </div>
 </div>
-<Label value="HELLO" classes="bg-green-500 text-black w-4"/>
+<Divider />
 {/each}
