@@ -7,5 +7,7 @@
     <Container>
         <h1 class="pt-16 text-5xl font-normal text-dh-secondary-dark-500 text-center">Projects</h1>
     </Container>
-    <ProjectSection projects={projectsObject} />
+    <div class="mt-8">
+        <ProjectSection projects={projectsObject} />
+    </div>
 </div>

@@ -5,7 +5,7 @@
 	export let classes = ''
 	export let icon = ''
 
-	const additionalClasses = `px-4 py-1 text-white rounded-md  text-sm ${icon ? 'flex' : ''} `
+	const additionalClasses = `px-1.5 py-0.5 mx-2 text-xs text-white dark:text-black font-bold bg-dh-secondary-dark-500 rounded ${icon ? 'flex' : 'inline-block'} `
 </script>
 
 <div class={additionalClasses + classes}>
