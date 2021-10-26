@@ -1,7 +1,7 @@
 <script lang="ts">
     import Button from '../../../UI/Button/Button.svelte';
     import Icon from '../../../UI/Icon/Icon.svelte';
-    
+    import Logo from '../../../../icons/dhLogo.svelte';
     export let activeSideMenu = false;
     export let mobile = {
     primary: {
@@ -24,7 +24,7 @@
     <!-- {/* Mobile Nav Header */} -->
     <div class="flex items-center px-2 mx-auto border-b border-gray-300 dark:border-gray-600 py-2 mb-6">
       <Button href="/" classes="shadow-none p-4">
-        <Icon name="calendar" size="large" color="primary" />
+        <Logo formattedClassName="w-10 h-10 text-dh-secondary-dark-500" />
       </Button>
     </div>
     <!-- {/* Mobile Buttons Header */} -->
