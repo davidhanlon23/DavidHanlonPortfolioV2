@@ -33,6 +33,7 @@ module.exports = {
 					800: '#2d3748',
 					900: '#1a202c'
 				},
+
 				red: {
 					100: '#fff5f5',
 					200: '#fed7d7',
@@ -139,7 +140,7 @@ module.exports = {
 					500: '#4299e1',
 				},
 				'dh-primary-dark': {
-					500: '#000000',
+					500: '#141414',
 				},
 				'dh-secondary-dark': {
 					400: '#6ee7b7', // lighter emerald
