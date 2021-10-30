@@ -52,7 +52,7 @@
 		btnTextColor = `text-sgPrimaryLight-500`;
 		break;
 		case 'black':
-		btnBgColor = `bg-black`;
+		btnBgColor = `bg-dh-primary-dark-500`;
 		btnBgColorHover = `hover:bg-gray-900`;
 		break;
 		case 'pink':

@@ -22,7 +22,7 @@
     console.log('activeSideMenu: ', activeSideMenu);
 </script>
 {#if !activeSideMenu}
-<div class="flex items-center mx-auto border-b border-gray-300 px-6 py-5 mb-6 bg-white dark:bg-black">
+<div class="flex items-center mx-auto border-b border-gray-300 px-6 py-5 mb-6 bg-white dark:bg-dh-primary-dark-500">
     <Button classes="focus:outline-none" onClick={() => setActiveSideMenu(!activeSideMenu)}>
       <Icon name="chevron-left" classes="h-6 w-6 mr-4 text-black" />
     </Button>

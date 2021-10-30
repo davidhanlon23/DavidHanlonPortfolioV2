@@ -26,7 +26,7 @@
     // heroHeight = getDivHeight(heroHeight);
 
     
- const overlayColor = overlay || 'bg-black';
+ const overlayColor = overlay || 'bg-dh-primary-dark-500';
  const overlayOpacity = backgroundImage ? 'opacity-50' : '';
  
 </script>

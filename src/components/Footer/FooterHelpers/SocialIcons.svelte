@@ -10,14 +10,14 @@
     let buttonClasses = `mx-2 p-2 rounded-full border-2 `
     if(colorPallete ==='mobileMenu'){
         buttonClasses += `bg-white hover:bg-dh-secondary-dark-500 border-black text-black hover:text-white
-    dark:bg-black dark:hover:bg-dh-secondary-dark-500 dark:border-white dark:text-white dark:hover:text-black`;
+    dark:bg-dh-primary-dark-500 dark:hover:bg-dh-secondary-dark-500 dark:border-white dark:text-white dark:hover:text-black`;
     }
     else {
         buttonClasses += `bg-dh-secondary-dark-500 hover:bg-white border-white text-white hover:text-dh-secondary-dark-500
-    dark:bg-dh-secondary-dark-500 dark:hover:bg-black dark:border-black dark:text-black dark:hover:text-dh-secondary-dark-500`;
+    dark:bg-dh-secondary-dark-500 dark:hover:bg-dh-primary-dark-500 dark:border-black dark:text-black dark:hover:text-dh-secondary-dark-500`;
     }
     // const buttonClasses = `mx-2 p-2 rounded-full border-2 bg-dh-secondary-dark-500 hover:bg-white border-white text-white hover:text-dh-secondary-dark-500
-    // dark:bg-dh-secondary-dark-500 dark:hover:bg-black dark:border-black dark:text-black dark:hover:text-dh-secondary-dark-500`;
+    // dark:bg-dh-secondary-dark-500 dark:hover:bg-dh-primary-dark-500 dark:border-black dark:text-black dark:hover:text-dh-secondary-dark-500`;
 </script>
 <div class={`flex ${classes}`}>
     <a href="https://linkedin.com/in/david-hanlon" target="_blank" aria-label="link to my linkedin profile in new tab" class={buttonClasses}>

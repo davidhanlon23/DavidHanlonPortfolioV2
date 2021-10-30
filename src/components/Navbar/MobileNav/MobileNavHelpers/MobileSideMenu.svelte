@@ -33,8 +33,8 @@
     }
 </script>
 <div class={`fixed z-220 top-0 left-0 w-full h-full lg:hidden transition-all ease-in duration-400 ${mobileSideMenu ? 'visible' : 'invisible'}`}>
-    <div id="sidebar-overlay" class="z-210 bg-black opacity-50 w-full h-full" on:click={toggleMobileSideMenu(!mobileSideMenu)} />
-    <div class={`overflow-hidden absolute top-0 left-0 z-220 bg-white dark:bg-black w-4/5 h-full transition-all ease-in-out duration-500 ${mobileSideMenu ? 'ml-0' : '-ml-152'}`}>
+    <div id="sidebar-overlay" class="z-210 bg-dh-primary-dark-500 opacity-50 w-full h-full" on:click={toggleMobileSideMenu(!mobileSideMenu)} />
+    <div class={`overflow-hidden absolute top-0 left-0 z-220 bg-white dark:bg-dh-primary-dark-500 w-4/5 h-full transition-all ease-in-out duration-500 ${mobileSideMenu ? 'ml-0' : '-ml-152'}`}>
       <div class="second-container pb-10 h-full overflow-y-scroll" width='103%'>
         <PrimarySideMenu
           activeSideMenu={activeSideMenu}
