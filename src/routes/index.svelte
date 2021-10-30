@@ -60,10 +60,12 @@
 			<Image classes="w-48 h-48 border-none" src="/Images/davidHanlon.jpg" alt="Image of Me (David Hanlon)" circle />
 		</div>
 		<h3 class="text-center text-2xl sm:text-4xl font-bold text-white dark:text-black pb-4">Hi, I’m David. Nice to meet you.</h3>
-		<p class="text-center text-xl text-white dark:text-black">Since beginning my journey as a freelance designer nearly 10 years ago,
-		 I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products 
-		 for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one
-		  design problem at a time.</p>
+		  <p class="text-center text-xl text-white dark:text-black"> Since beginning my journey as an Entrepreneur and Software Engineer, I have helped build some amazing projects and collaborated with talented people to create digital products 
+			for both business and consumer use. My unique skill set goes much deeper then just developing.
+			   I have worked at a Start Up for over the past 2 years, built multiple E-commerce businesses, ran digital and social media advertising (Instagram, Facebook, Snapchat, and Google AdWords), 
+			   and have helped many clients turn their website into their central hub for their business through the likes of SaaS solutions such as Wix, and Shopify.
+			   I'm naturally curious, and perpetually working on improving my skills trying to solve on problem with the help of technology at a time.
+		  </p>
 	</div>
 </div>
 <Divider marginBottom="mb-8" />

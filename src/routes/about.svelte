@@ -14,9 +14,13 @@
             <div class="flex flex-col justify-items-center text-center md:text-left w-full sm:w-2/3 md:w-1/2 md:ml-16 my-8 m-auto md:m-0">
                 <h2 class="text-black dark:text-white font-bold text-xl">Hi, I am David Hanlon.</h2>
                 <br />
-                <p class={`${textClasses}`}> I am an ambitious, optimistic, and dependable Junior Level Software Engineer with a passion for developing software and pushing the limits of my current programming and problem solving skillset.</p>
+                <p class={`${textClasses}`}> I am an ambitious, optimistic, and dependable Associate Level Software Engineer with a passion for developing software and pushing the limits of my current programming and problem solving skillset.</p>
                 <br/>
-                <p class={`${textClasses}`}> I am seeking to become a versatile and selfless member of a high performing software engineering team that is passionate about developing and deploying quality software in order to help your organization to reach its optimal vision.</p>
+                <p class={`${textClasses}`}>I have many hobbies but the one I am passionate about most is my dedication and commitment to the persuit of life long learning. I am always looking for opportunities to grow as an individual and projects that give me an opportunity to make a difference and do something meaningful.
+                </p>
+                <br/>
+                <p class={`${textClasses}`}> As an entrepreneurial minded software engineer I am always looking to innovate and stay at the cutting edge of technology. I believe technology has the power to solve many problems and change the world and because of this I take pride in trying to be a pioneer for the future of the web and staying at the forefront of the latest trends within the technology world.
+                </p>
             </div>
         </div>
         <div class="flex justify-center">

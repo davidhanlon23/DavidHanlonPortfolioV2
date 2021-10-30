@@ -16,19 +16,19 @@ export const projectsObject = [
         projectLabelYear: '2021',
     },
     {
-        projectName: 'Original Portfolio',
-        projectWebsite: 'https://davidmhanlon-stg.herokuapp.com/',
-        projectRepoLink: 'https://github.com/davidhanlon23/DavidHanlonPortfolio',
-        projectDescription: `My original website portfolio was built using ReactJS, JS, BootstrapCSS, ExpressJS and MongoDB/NoSql. This site is currently hosted on the Heroku platform.`, 
-        projectImageUrl: '/Images/projectImages/davidHPortfolio.webp',
-        projectLabelYear: '2019',
-    },
-    {
         projectName: 'NextJS Social',
         projectWebsite: 'https://next-js-social-media-app.herokuapp.com/',
         projectRepoLink: 'https://github.com/davidhanlon23/nextJS-social-media-app',
         projectDescription: `NextJS Social is a fully functional demo social media application that I built using React, NextJS, ExpressJS, and MongoDB/NoSQL in order to practice building projects with Server Side Rendering.`, 
         projectImageUrl: '/Images/projectImages/nextJsProject.webp',
+        projectLabelYear: '2019',
+    },
+    {
+        projectName: 'Original Portfolio',
+        projectWebsite: 'https://davidmhanlon-stg.herokuapp.com/',
+        projectRepoLink: 'https://github.com/davidhanlon23/DavidHanlonPortfolio',
+        projectDescription: `My original website portfolio was built using ReactJS, JS, BootstrapCSS, ExpressJS and MongoDB/NoSql. This site is currently hosted on the Heroku platform.`, 
+        projectImageUrl: '/Images/projectImages/davidHPortfolio.webp',
         projectLabelYear: '2019',
     },
     {
