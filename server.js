@@ -1,6 +1,8 @@
 import express from "express";
-import bodyParser from 'body-parser';
 import * as dotenv from "dotenv";
+import cors from 'cors';
+import path from 'path';
+
 import contactFormAPI, {transporter} from './api/contact.js';
 import testAPI from "./api/test.js";
 
@@ -12,15 +14,13 @@ dotenv.config();
 //   origin: `http://localhost:8081"`
 // };
 
-// app.use(cors(corsOptions));
+app.use(cors());
 
 // Bodyparser middleware
 app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
+  express.urlencoded()
 );
-app.use(bodyParser.json());
+app.use(express.json());
 
 // verify connection configuration
 transporter.verify(function (error, success) {
@@ -35,7 +35,10 @@ transporter.verify(function (error, success) {
 app.use('/api', contactFormAPI);
 app.use('/api', testAPI);
 
-
+app.use(express.static('public'));
+app.get('*', (req, res) => {
+   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+});
 app.listen(port, () => {
     console.log(`Server is up at port ${port}`);
 });
