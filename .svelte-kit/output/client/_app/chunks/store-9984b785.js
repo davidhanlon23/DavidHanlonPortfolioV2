@@ -1,1 +1,0 @@
-import{C as e}from"./vendor-1fde8790.js";const i=e(!1),o=typeof window!="undefined"?localStorage.getItem("theme"):"light",s=e(o);typeof window!="undefined"&&s.subscribe(t=>{localStorage.setItem("theme",t==="dark"?"dark":"light")});const r=e({name:"",email:"",message:""});export{i,s as t,r as u};
