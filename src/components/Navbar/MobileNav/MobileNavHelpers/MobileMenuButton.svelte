@@ -8,6 +8,7 @@
           $$props.onClick();
         }}
         classes="shadow-none"
+        accessibilityProps={{'aria-label': 'Toggle Mobile Navigation Menu'}}
       >
         <Icon name="menu-alt1" size="large" classes="text-black dark:text-white" />
  </Button>

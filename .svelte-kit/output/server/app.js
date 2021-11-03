@@ -1552,9 +1552,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-9d62e4a5.js",
+      file: assets + "/_app/start-3d36bca1.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-9d62e4a5.js", assets + "/_app/chunks/vendor-96868851.js"]
+      js: [assets + "/_app/start-3d36bca1.js", assets + "/_app/chunks/vendor-96868851.js"]
     },
     fetched: void 0,
     floc: false,
@@ -1583,7 +1583,7 @@ function init(settings = default_settings) {
 }
 const empty = () => ({});
 const manifest = {
-  assets: [{ "file": ".DS_Store", "size": 8196, "type": null }, { "file": "Images/.DS_Store", "size": 10244, "type": null }, { "file": "Images/A.svg", "size": 2971, "type": "image/svg+xml" }, { "file": "Images/B.svg", "size": 3258, "type": "image/svg+xml" }, { "file": "Images/DH.png", "size": 4890, "type": "image/png" }, { "file": "Images/DH.svg", "size": 2062, "type": "image/svg+xml" }, { "file": "Images/chatApp.png", "size": 539642, "type": "image/png" }, { "file": "Images/chatAppCardImg.png", "size": 415052, "type": "image/png" }, { "file": "Images/computerBg.jpg", "size": 1783504, "type": "image/jpeg" }, { "file": "Images/cybrary1.png", "size": 3727, "type": "image/png" }, { "file": "Images/cybrary2.png", "size": 2850, "type": "image/png" }, { "file": "Images/cybrary3.png", "size": 2641, "type": "image/png" }, { "file": "Images/d_icon.png", "size": 11419, "type": "image/png" }, { "file": "Images/davidHanlon.jpg", "size": 396379, "type": "image/jpeg" }, { "file": "Images/davidHanlon.svg", "size": 2720, "type": "image/svg+xml" }, { "file": "Images/educationClipArt.jpg", "size": 30319, "type": "image/jpeg" }, { "file": "Images/endeavorsTvCardImg.png", "size": 844318, "type": "image/png" }, { "file": "Images/etsLogo.png", "size": 5095, "type": "image/png" }, { "file": "Images/expenseTracker.png", "size": 37239, "type": "image/png" }, { "file": "Images/expenseTrackerCardImg.png", "size": 47026, "type": "image/png" }, { "file": "Images/hero.svg", "size": 21478, "type": "image/svg+xml" }, { "file": "Images/loveCalc.png", "size": 79869, "type": "image/png" }, { "file": "Images/loveCalcCardImg.png", "size": 56690, "type": "image/png" }, { "file": "Images/minionClipArt.jpeg", "size": 8286, "type": "image/jpeg" }, { "file": "Images/needToEdit.png", "size": 895291, "type": "image/png" }, { "file": "Images/nextJsCardImg.png", "size": 154294, "type": "image/png" }, { "file": "Images/originalPortfolioCardImg.png", "size": 132269, "type": "image/png" }, { "file": "Images/phsLogo.jpeg", "size": 238136, "type": "image/jpeg" }, { "file": "Images/pinokioClipArt.png", "size": 13702, "type": "image/png" }, { "file": "Images/profilePic.png", "size": 274937, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.03 PM.png", "size": 628963, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.29 PM.png", "size": 864248, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.55 PM.png", "size": 501810, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.37.20 PM.png", "size": 596027, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-22 at 1.34.59 PM.png", "size": 1021027, "type": "image/png" }, { "file": "Images/projectImages/chatAppProject.webp", "size": 60196, "type": "image/webp" }, { "file": "Images/projectImages/davidHPortfolio.webp", "size": 110902, "type": "image/webp" }, { "file": "Images/projectImages/expenseTrackerProject.webp", "size": 10606, "type": "image/webp" }, { "file": "Images/projectImages/loveCalculatorProject.webp", "size": 28630, "type": "image/webp" }, { "file": "Images/projectImages/nextJsProject.webp", "size": 60784, "type": "image/webp" }, { "file": "Images/projectImages/sleeplessGamersProject.webp", "size": 203294, "type": "image/webp" }, { "file": "Images/sbdLogo.jpg", "size": 9598, "type": "image/jpeg" }, { "file": "Images/softEngClip.jpg", "size": 41213, "type": "image/jpeg" }, { "file": "Images/softEngClip2.png", "size": 39138, "type": "image/png" }, { "file": "Images/sproutLogo1.png", "size": 2623, "type": "image/png" }, { "file": "Images/sproutLogo2.png", "size": 8881, "type": "image/png" }, { "file": "Images/towsonLogo1.png", "size": 8929, "type": "image/png" }, { "file": "Images/towsonLogo2.jpeg", "size": 4179, "type": "image/jpeg" }, { "file": "Images/work1ClipArt.png", "size": 2708, "type": "image/png" }, { "file": "Images/wthsLogo1.jpg", "size": 519344, "type": "image/jpeg" }, { "file": "Resume/.DS_Store", "size": 6148, "type": null }, { "file": "Resume/DavidHanlonResume.pdf", "size": 69402, "type": "application/pdf" }, { "file": "favicon.ico", "size": 1150, "type": "image/vnd.microsoft.icon" }, { "file": "robots.txt", "size": 70, "type": "text/plain" }],
+  assets: [{ "file": ".DS_Store", "size": 8196, "type": null }, { "file": "Images/.DS_Store", "size": 10244, "type": null }, { "file": "Images/A.svg", "size": 2971, "type": "image/svg+xml" }, { "file": "Images/B.svg", "size": 3258, "type": "image/svg+xml" }, { "file": "Images/DH.png", "size": 4890, "type": "image/png" }, { "file": "Images/DH.svg", "size": 2062, "type": "image/svg+xml" }, { "file": "Images/chatApp.png", "size": 539642, "type": "image/png" }, { "file": "Images/chatAppCardImg.webp", "size": 181838, "type": "image/webp" }, { "file": "Images/computerBg.jpg", "size": 1783504, "type": "image/jpeg" }, { "file": "Images/cybrary1.png", "size": 3727, "type": "image/png" }, { "file": "Images/cybrary2.png", "size": 2850, "type": "image/png" }, { "file": "Images/cybrary3.png", "size": 2641, "type": "image/png" }, { "file": "Images/d_icon.png", "size": 11419, "type": "image/png" }, { "file": "Images/davidHanlon.jpg", "size": 396379, "type": "image/jpeg" }, { "file": "Images/davidHanlon.svg", "size": 2720, "type": "image/svg+xml" }, { "file": "Images/davidHanlon.webp", "size": 183128, "type": "image/webp" }, { "file": "Images/educationClipArt.jpg", "size": 30319, "type": "image/jpeg" }, { "file": "Images/endeavorsTvCardImg.webp", "size": 403648, "type": "image/webp" }, { "file": "Images/etsLogo.png", "size": 5095, "type": "image/png" }, { "file": "Images/expenseTrackerCardImg.webp", "size": 9772, "type": "image/webp" }, { "file": "Images/hero.svg", "size": 21478, "type": "image/svg+xml" }, { "file": "Images/loveCalc.png", "size": 79869, "type": "image/png" }, { "file": "Images/loveCalcCardImg.webp", "size": 11902, "type": "image/webp" }, { "file": "Images/minionClipArt.jpeg", "size": 8286, "type": "image/jpeg" }, { "file": "Images/needToEdit.png", "size": 895291, "type": "image/png" }, { "file": "Images/nextJsCardImg.webp", "size": 63146, "type": "image/webp" }, { "file": "Images/originalPortfolioCardImg.webp", "size": 41912, "type": "image/webp" }, { "file": "Images/phsLogo.jpeg", "size": 238136, "type": "image/jpeg" }, { "file": "Images/pinokioClipArt.png", "size": 13702, "type": "image/png" }, { "file": "Images/profilePic.png", "size": 274937, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.03 PM.png", "size": 628963, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.29 PM.png", "size": 864248, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.36.55 PM.png", "size": 501810, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-20 at 8.37.20 PM.png", "size": 596027, "type": "image/png" }, { "file": "Images/projectImages/Screen Shot 2021-09-22 at 1.34.59 PM.png", "size": 1021027, "type": "image/png" }, { "file": "Images/projectImages/chatAppProject.webp", "size": 60196, "type": "image/webp" }, { "file": "Images/projectImages/davidHPortfolio.webp", "size": 110902, "type": "image/webp" }, { "file": "Images/projectImages/expenseTrackerProject.webp", "size": 10606, "type": "image/webp" }, { "file": "Images/projectImages/loveCalculatorProject.webp", "size": 28630, "type": "image/webp" }, { "file": "Images/projectImages/nextJsProject.webp", "size": 60784, "type": "image/webp" }, { "file": "Images/projectImages/sleeplessGamersProject.webp", "size": 203294, "type": "image/webp" }, { "file": "Images/sbdLogo.jpg", "size": 9598, "type": "image/jpeg" }, { "file": "Images/softEngClip.jpg", "size": 41213, "type": "image/jpeg" }, { "file": "Images/softEngClip2.png", "size": 39138, "type": "image/png" }, { "file": "Images/sproutLogo1.png", "size": 2623, "type": "image/png" }, { "file": "Images/sproutLogo2.png", "size": 8881, "type": "image/png" }, { "file": "Images/towsonLogo1.png", "size": 8929, "type": "image/png" }, { "file": "Images/towsonLogo2.jpeg", "size": 4179, "type": "image/jpeg" }, { "file": "Images/work1ClipArt.png", "size": 2708, "type": "image/png" }, { "file": "Images/wthsLogo1.jpg", "size": 519344, "type": "image/jpeg" }, { "file": "Resume/.DS_Store", "size": 6148, "type": null }, { "file": "Resume/DavidHanlonResume.pdf", "size": 69402, "type": "application/pdf" }, { "file": "favicon.ico", "size": 1150, "type": "image/vnd.microsoft.icon" }, { "file": "robots.txt", "size": 70, "type": "text/plain" }],
   layout: "src/routes/__layout.svelte",
   error: ".svelte-kit/build/components/error.svelte",
   routes: [
@@ -1673,7 +1673,7 @@ const module_lookup = {
     return about;
   })
 };
-const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-53c57dc3.js", "css": ["assets/pages/__layout.svelte-34d3cd38.css"], "js": ["pages/__layout.svelte-53c57dc3.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-70e94bbb.js", "css": [], "js": ["error.svelte-70e94bbb.js", "chunks/vendor-96868851.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-f0bb032c.js", "css": [], "js": ["pages/index.svelte-f0bb032c.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js", "chunks/Container-934b6593.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/blockchain.svelte": { "entry": "pages/blockchain.svelte-d0509ef3.js", "css": [], "js": ["pages/blockchain.svelte-d0509ef3.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/experience.svelte": { "entry": "pages/experience.svelte-16493e6a.js", "css": [], "js": ["pages/experience.svelte-16493e6a.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Image-0ddfdca8.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/projects.svelte": { "entry": "pages/projects.svelte-6374016f.js", "css": [], "js": ["pages/projects.svelte-6374016f.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js", "chunks/Button-bf526c8f.js", "chunks/Image-0ddfdca8.js"], "styles": [] }, "src/routes/contact.svelte": { "entry": "pages/contact.svelte-c1ac312b.js", "css": [], "js": ["pages/contact.svelte-c1ac312b.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/skills.svelte": { "entry": "pages/skills.svelte-243972de.js", "css": [], "js": ["pages/skills.svelte-243972de.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-afd8ec7b.js", "css": [], "js": ["pages/about.svelte-afd8ec7b.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Container-934b6593.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js"], "styles": [] } };
+const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-0f0d0abd.js", "css": ["assets/pages/__layout.svelte-34d3cd38.css"], "js": ["pages/__layout.svelte-0f0d0abd.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-70e94bbb.js", "css": [], "js": ["error.svelte-70e94bbb.js", "chunks/vendor-96868851.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-9db0269e.js", "css": [], "js": ["pages/index.svelte-9db0269e.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js", "chunks/Container-934b6593.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/blockchain.svelte": { "entry": "pages/blockchain.svelte-d0509ef3.js", "css": [], "js": ["pages/blockchain.svelte-d0509ef3.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/experience.svelte": { "entry": "pages/experience.svelte-16493e6a.js", "css": [], "js": ["pages/experience.svelte-16493e6a.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Image-0ddfdca8.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/projects.svelte": { "entry": "pages/projects.svelte-6374016f.js", "css": [], "js": ["pages/projects.svelte-6374016f.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js", "chunks/Button-bf526c8f.js", "chunks/Image-0ddfdca8.js"], "styles": [] }, "src/routes/contact.svelte": { "entry": "pages/contact.svelte-9dd7b17f.js", "css": [], "js": ["pages/contact.svelte-9dd7b17f.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/skills.svelte": { "entry": "pages/skills.svelte-243972de.js", "css": [], "js": ["pages/skills.svelte-243972de.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-ed651e01.js", "css": [], "js": ["pages/about.svelte-ed651e01.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Container-934b6593.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -2760,7 +2760,10 @@ const Dropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 });
 const MoreDropdownTrigger = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Button, "Button").$$render($$result, {
-    classes: "p-1 hover:bg-gray-200 dark:hover:bg-gray-600 shadow-none rounded"
+    classes: "p-1 hover:bg-gray-200 dark:hover:bg-gray-600 shadow-none rounded",
+    accessibilityProps: {
+      "aria-label": "Toggle More Options Dropdown List"
+    }
   }, {}, {
     default: () => `${validate_component(Icon, "Icon").$$render($$result, {
       name: "dots-horizontal",
@@ -2939,7 +2942,7 @@ const ToggleThemeButton = create_ssr_component(($$result, $$props, $$bindings, s
   $$unsubscribe_theme = subscribe(theme, (value) => $theme = value);
   iconName = $theme === "dark" ? "sun" : "moon";
   $$unsubscribe_theme();
-  return `<button class="${"flex w-full justify-end items-center"}">${validate_component(Icon, "Icon").$$render($$result, {
+  return `<button class="${"flex w-full justify-end items-center"}"${add_attribute("aria-label", `Toggle Theme to ${iconName === "sun" ? "Light Mode" : "Dark Mode"}`, 0)}>${validate_component(Icon, "Icon").$$render($$result, {
     name: iconName,
     color: "black",
     classes: "w-6 h-6 hover:text-dh-secondary-dark-500 dark:hover:text-dh-secondary-dark-500",
@@ -3178,7 +3181,10 @@ const MobileMenuButton = create_ssr_component(($$result, $$props, $$bindings, sl
     onClick: () => {
       $$props.onClick();
     },
-    classes: "shadow-none"
+    classes: "shadow-none",
+    accessibilityProps: {
+      "aria-label": "Toggle Mobile Navigation Menu"
+    }
   }, {}, {
     default: () => `${validate_component(Icon, "Icon").$$render($$result, {
       name: "menu-alt1",
@@ -3229,7 +3235,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 			 up one day at a time.</p></div>
 	${validate_component(SocialIcons, "SocialIcons").$$render($$result, { classes: "justify-center mb-8" }, {}, {})}
 	<div class="${"m-8 text-center"}"><p class="${"text-white dark:text-black"}">Hand crafted by me \xA9 DMH Global LLC</p>
-		<p class="${"text-xs text-white dark:text-black"}">This project was built using SvelteJS</p></div></footer>`;
+		<p class="${"text-xs text-white dark:text-black"}">This project was built using Svelte and ExpressJS</p></div></footer>`;
 });
 const _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let isDarkMode2;
@@ -3567,7 +3573,7 @@ ${validate_component(Hero, "Hero").$$render($$result, {
   }, {}, {})}
 <div class="${"w-full mx-0 my-8 bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen"}"><div class="${"pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96"}"><div class="${"flex justify-center my-4"}">${validate_component(Image, "Image").$$render($$result, {
     classes: "w-48 h-48 border-none",
-    src: "/Images/davidHanlon.jpg",
+    src: "/Images/davidHanlon.webp",
     alt: "Image of Me (David Hanlon)",
     circle: true
   }, {}, {})}</div>
@@ -3589,7 +3595,7 @@ ${validate_component(Container, "Container").$$render($$result, { className: "mi
       title: "Endeavors.tv",
       content: "Due to legal reasons, I can not share the repository code or extensive details of this live streaming platform. It was built using Svelte and Rust",
       projectLink: "https://Endeavors.tv",
-      imgSrc: "/Images/endeavorsTvCardImg.png"
+      imgSrc: "/Images/endeavorsTvCardImg.webp"
     }, {}, {})}
 		${validate_component(ProjectCard, "ProjectCard").$$render($$result, {
       classes: "my-4",
@@ -3597,13 +3603,13 @@ ${validate_component(Container, "Container").$$render($$result, { className: "mi
       content: "Progessive Web/Mobile Application built using Ionic Hybrid Mobile Framework, Typescript and FireBase Hosting. This app calculates % love of two names by using the ascii value of the names then converting them to percent",
       projectLink: "https://lovecalculator-bb0e8.web.app/",
       repoLink: "https://github.com/davidhanlon23/loveCalculator",
-      imgSrc: "/Images/loveCalcCardImg.png"
+      imgSrc: "/Images/loveCalcCardImg.webp"
     }, {}, {})}
 		${validate_component(ProjectCard, "ProjectCard").$$render($$result, {
       classes: "my-4",
       title: "NextJS Social",
       content: "Demo Social Media application built using Server Side Rendering framework NextJS, ReactJS, and ExpressJS",
-      imgSrc: "/Images/nextJsCardImg.png",
+      imgSrc: "/Images/nextJsCardImg.webp",
       projectLink: "https://next-js-social-media-app.herokuapp.com/",
       repoLink: "https://github.com/davidhanlon23/nextJS-social-media-app"
     }, {}, {})}
@@ -3613,21 +3619,21 @@ ${validate_component(Container, "Container").$$render($$result, { className: "mi
       content: "Original Portfolio built using ReactJS, ExpressJS and NoSQL/MongoDB",
       repoLink: "https://github.com/davidhanlon23/DavidHanlonPortfolio",
       projectLink: "https://davidmhanlon-stg.herokuapp.com/",
-      imgSrc: "/Images/originalPortfolioCardImg.png"
+      imgSrc: "/Images/originalPortfolioCardImg.webp"
     }, {}, {})}
 		${validate_component(ProjectCard, "ProjectCard").$$render($$result, {
       classes: "my-4",
       title: "Expense Tracker",
       content: "Mobile application for tracking expenses built with Angular and Ionic Hybrid Mobile App Framework",
       repoLink: "https://github.com/davidhanlon23/ExpenseTracker",
-      imgSrc: "/Images/expenseTrackerCardImg.png"
+      imgSrc: "/Images/expenseTrackerCardImg.webp"
     }, {}, {})}
 		${validate_component(ProjectCard, "ProjectCard").$$render($$result, {
       classes: "my-4",
       title: "Chat App",
       content: "Mobile group chat application built with Angular and Ionic Hybrid Mobile App framework",
       repoLink: "https://github.com/davidhanlon23/ChatApp",
-      imgSrc: "/Images/chatAppCardImg.png"
+      imgSrc: "/Images/chatAppCardImg.webp"
     }, {}, {})}</div>
 	<div class="${"flex justify-center my-24"}">${validate_component(Button, "Button").$$render($$result, {
       href: "/projects",
@@ -4177,10 +4183,11 @@ var projects = /* @__PURE__ */ Object.freeze({
 const inputClasses = "border border-gray-200 dark:border-gray-600 rounded-sm bg-white dark:bg-gray-900 text-black dark:text-white text-xl";
 const labelClasses = "text-black dark:text-white text-xl font-normal mb-2";
 const ContactForm = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<form class="${"my-8"}" id="${"contact-form"}" method="${"POST"}" action="${"/api/contact"}" enctype="${"multipart/form-data"}"><div class="${"flex flex-col md:flex-row mb-8"}"><div class="${"flex flex-col md:mr-4"}"><label for="${"contact-form-name"}"${add_attribute("class", `${labelClasses}`, 0)}>Name</label>
+  console.log("ENV VAR: ", "http://localhost:5001");
+  return `<form class="${"my-8"}" id="${"contact-form"}" method="${"POST"}"${add_attribute("action", `${"http://localhost:5001"}/api/contact`, 0)} enctype="${"multipart/form-data"}"><div class="${"flex flex-col md:flex-row mb-8"}"><div class="${"flex flex-col md:mr-4"}"><label for="${"contact-form-name"}"${add_attribute("class", `${labelClasses}`, 0)}>Name</label>
             <input id="${"contact-form-name"}" name="${"name"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} required></div>
         <div class="${"flex flex-col"}"><label for="${"contact-form-email"}"${add_attribute("class", `${labelClasses}`, 0)}>Email</label>
-            <input id="${"contact-form-email"}" name="${"email"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} required></div></div>
+            <input id="${"contact-form-email"}" name="${"email"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} value="${"fuck"}" required></div></div>
     <div class="${"flex flex-col"}"><label for="${"contact-form-message"}"${add_attribute("class", `${labelClasses}`, 0)}>Message</label>
         <textarea id="${"contact-form-message"}" name="${"message"}" type="${"text"}" placeholder="${"How can I assist you?"}"${add_attribute("class", `${inputClasses} p-4 h-56`, 0)} required></textarea></div>
     <div class="${"mt-8 flex justify-center"}">${validate_component(Button, "Button").$$render($$result, {
@@ -4274,7 +4281,7 @@ const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => `<h1 class="${"pt-16 text-5xl font-normal text-dh-secondary-dark-500 text-center"}">About Me</h1>
         <div class="${"py-16 flex justify-center flex-col md:flex-row"}"><div class="${"flex justify-center my-8"}">${validate_component(Image, "Image").$$render($$result, {
       classes: "w-72 h-72 border-none",
-      src: "/Images/davidHanlon.jpg",
+      src: "/Images/davidHanlon.webp",
       alt: "Image of Me (David Hanlon)",
       circle: true
     }, {}, {})}</div> 
