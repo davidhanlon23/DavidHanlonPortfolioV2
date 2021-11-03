@@ -11,7 +11,7 @@
 	<SocialIcons classes="justify-center mb-8" />
 	<div class="m-8 text-center">
 		<p class="text-white dark:text-black">Hand crafted by me © DMH Global LLC</p>
-		<p class="text-xs text-white dark:text-black">This project was built using SvelteJS</p>
+		<p class="text-xs text-white dark:text-black">This project was built using Svelte and ExpressJS</p>
 
 	</div>
 </footer>
