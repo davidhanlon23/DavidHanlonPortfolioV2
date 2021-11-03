@@ -1,11 +1,10 @@
 <script lang="ts">
-    import Button from '../Button/Button.svelte';
     import axios from 'axios';
     import { user } from '../../../stores/store';
+    import { notifications } from '../../../stores/notifactions';
 
-    let name = '';
-    let email = '';
-    let message ='';
+    import Toast from '../Toast/Toast.svelte';
+    import Button from '../Button/Button.svelte';
 
     function submitContactForm(){
         console.log('user', $user);
@@ -19,11 +18,11 @@
             subject:"Contact Form Email"
         }
         }).then((response)=>{
-          if (response.data.status === 'Success'){
-              alert("Message Sent."); 
-              resetForm()
+          if (response.data.status === 'success'){
+            notifications.success('Message Sent!', 3000)
+            resetForm()
           }else if(response.data.status === 'fail'){
-              alert("Message failed to send.")
+            notifications.danger('Message Failed!', 3000)
           }
         })
     }
@@ -55,4 +54,5 @@
         <Button classes="border-2 py-2 px-12 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Contact" type="submit" />
     </div>
 </form>
+<Toast/>
 

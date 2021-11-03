@@ -29,11 +29,11 @@ const router = express.Router();
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         res.json({
-          status: 'Message failed to send'
+          status: 'fail'
         })
       } else {
         res.json({
-         status: 'Success'
+         status: 'success'
         })
       }
     })
