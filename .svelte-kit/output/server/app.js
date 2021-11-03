@@ -902,7 +902,7 @@ async function respond$1(opts) {
   const { request, options: options2, state, $session, route } = opts;
   let nodes;
   try {
-    nodes = await Promise.all(route.a.map((id) => id ? options2.load_component(id) : void 0));
+    nodes = await Promise.all(route.a.map((id2) => id2 ? options2.load_component(id2) : void 0));
   } catch (err) {
     const error3 = coalesce_to_error(err);
     options2.handle_error(error3, request);
@@ -1303,6 +1303,9 @@ function blank_object() {
 function run_all(fns) {
   fns.forEach(run);
 }
+function is_function(thing) {
+  return typeof thing === "function";
+}
 function safe_not_equal(a, b) {
   return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
 }
@@ -1312,6 +1315,9 @@ function subscribe(store, ...callbacks) {
   }
   const unsub = store.subscribe(...callbacks);
   return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+}
+function null_to_empty(value) {
+  return value == null ? "" : value;
 }
 function custom_event(type, detail, bubbles = false) {
   const e = document.createEvent("CustomEvent");
@@ -1476,7 +1482,7 @@ function add_attribute(name, value, boolean) {
 function afterUpdate() {
 }
 var root_svelte_svelte_type_style_lang = "";
-const css = {
+const css$1 = {
   code: "#svelte-announcer.svelte-1pdgbjn{clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;left:0;overflow:hidden;position:absolute;top:0;white-space:nowrap;width:1px}",
   map: null
 };
@@ -1501,7 +1507,7 @@ const Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_1(props_1);
   if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
     $$bindings.props_2(props_2);
-  $$result.css.add(css);
+  $$result.css.add(css$1);
   {
     stores.page.set(page);
   }
@@ -1552,13 +1558,13 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-3d36bca1.js",
+      file: assets + "/_app/start-54e41665.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-3d36bca1.js", assets + "/_app/chunks/vendor-96868851.js"]
+      js: [assets + "/_app/start-54e41665.js", assets + "/_app/chunks/vendor-1fde8790.js"]
     },
     fetched: void 0,
     floc: false,
-    get_component_path: (id) => assets + "/_app/" + entry_lookup[id],
+    get_component_path: (id2) => assets + "/_app/" + entry_lookup[id2],
     get_stack: (error2) => String(error2),
     handle_error: (error2, request) => {
       hooks.handleError({ error: error2, request });
@@ -1673,7 +1679,7 @@ const module_lookup = {
     return about;
   })
 };
-const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-0f0d0abd.js", "css": ["assets/pages/__layout.svelte-34d3cd38.css"], "js": ["pages/__layout.svelte-0f0d0abd.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-70e94bbb.js", "css": [], "js": ["error.svelte-70e94bbb.js", "chunks/vendor-96868851.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-9db0269e.js", "css": [], "js": ["pages/index.svelte-9db0269e.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/github-a8e17420.js", "chunks/Container-934b6593.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/blockchain.svelte": { "entry": "pages/blockchain.svelte-d0509ef3.js", "css": [], "js": ["pages/blockchain.svelte-d0509ef3.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/experience.svelte": { "entry": "pages/experience.svelte-16493e6a.js", "css": [], "js": ["pages/experience.svelte-16493e6a.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Image-0ddfdca8.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js"], "styles": [] }, "src/routes/projects.svelte": { "entry": "pages/projects.svelte-6374016f.js", "css": [], "js": ["pages/projects.svelte-6374016f.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js", "chunks/Icon-5ffe7568.js", "chunks/Divider-d10ac2f6.js", "chunks/Button-bf526c8f.js", "chunks/Image-0ddfdca8.js"], "styles": [] }, "src/routes/contact.svelte": { "entry": "pages/contact.svelte-9dd7b17f.js", "css": [], "js": ["pages/contact.svelte-9dd7b17f.js", "chunks/vendor-96868851.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/skills.svelte": { "entry": "pages/skills.svelte-243972de.js", "css": [], "js": ["pages/skills.svelte-243972de.js", "chunks/vendor-96868851.js", "chunks/Container-934b6593.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-ed651e01.js", "css": [], "js": ["pages/about.svelte-ed651e01.js", "chunks/vendor-96868851.js", "chunks/Image-0ddfdca8.js", "chunks/Container-934b6593.js", "chunks/Button-bf526c8f.js", "chunks/Icon-5ffe7568.js"], "styles": [] } };
+const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-a40e801f.js", "css": ["assets/pages/__layout.svelte-34d3cd38.css"], "js": ["pages/__layout.svelte-a40e801f.js", "chunks/vendor-1fde8790.js", "chunks/Button-1519a163.js", "chunks/Icon-edd10b00.js", "chunks/store-9984b785.js", "chunks/github-2090236b.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-5a21b326.js", "css": [], "js": ["error.svelte-5a21b326.js", "chunks/vendor-1fde8790.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-d51d084d.js", "css": [], "js": ["pages/index.svelte-d51d084d.js", "chunks/vendor-1fde8790.js", "chunks/Image-0cdebd8d.js", "chunks/Button-1519a163.js", "chunks/Icon-edd10b00.js", "chunks/github-2090236b.js", "chunks/Container-7e014be9.js", "chunks/store-9984b785.js", "chunks/Divider-e478375d.js"], "styles": [] }, "src/routes/blockchain.svelte": { "entry": "pages/blockchain.svelte-8179f549.js", "css": [], "js": ["pages/blockchain.svelte-8179f549.js", "chunks/vendor-1fde8790.js", "chunks/Container-7e014be9.js"], "styles": [] }, "src/routes/experience.svelte": { "entry": "pages/experience.svelte-d0d25ce1.js", "css": [], "js": ["pages/experience.svelte-d0d25ce1.js", "chunks/vendor-1fde8790.js", "chunks/Container-7e014be9.js", "chunks/Image-0cdebd8d.js", "chunks/Icon-edd10b00.js", "chunks/Divider-e478375d.js"], "styles": [] }, "src/routes/projects.svelte": { "entry": "pages/projects.svelte-a0d8a9e0.js", "css": [], "js": ["pages/projects.svelte-a0d8a9e0.js", "chunks/vendor-1fde8790.js", "chunks/Container-7e014be9.js", "chunks/Icon-edd10b00.js", "chunks/Divider-e478375d.js", "chunks/Button-1519a163.js", "chunks/Image-0cdebd8d.js"], "styles": [] }, "src/routes/contact.svelte": { "entry": "pages/contact.svelte-1c712a1d.js", "css": ["assets/pages/contact.svelte-f7c9e558.css"], "js": ["pages/contact.svelte-1c712a1d.js", "chunks/vendor-1fde8790.js", "chunks/store-9984b785.js", "chunks/Button-1519a163.js", "chunks/Icon-edd10b00.js", "chunks/Container-7e014be9.js"], "styles": [] }, "src/routes/skills.svelte": { "entry": "pages/skills.svelte-8ae72f3a.js", "css": [], "js": ["pages/skills.svelte-8ae72f3a.js", "chunks/vendor-1fde8790.js", "chunks/Container-7e014be9.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-f55667d7.js", "css": [], "js": ["pages/about.svelte-f55667d7.js", "chunks/vendor-1fde8790.js", "chunks/Image-0cdebd8d.js", "chunks/Container-7e014be9.js", "chunks/Button-1519a163.js", "chunks/Icon-edd10b00.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -2712,7 +2718,7 @@ const Dropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let { dropClassName = "" } = $$props;
   let { text = "" } = $$props;
   let { trigger = [] } = $$props;
-  let { id = "" } = $$props;
+  let { id: id2 = "" } = $$props;
   let { button = void 0 } = $$props;
   let { icon = {} } = $$props;
   let isOpen = false;
@@ -2732,8 +2738,8 @@ const Dropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$bindings.text(text);
   if ($$props.trigger === void 0 && $$bindings.trigger && trigger !== void 0)
     $$bindings.trigger(trigger);
-  if ($$props.id === void 0 && $$bindings.id && id !== void 0)
-    $$bindings.id(id);
+  if ($$props.id === void 0 && $$bindings.id && id2 !== void 0)
+    $$bindings.id(id2);
   if ($$props.button === void 0 && $$bindings.button && button !== void 0)
     $$bindings.button(button);
   if ($$props.icon === void 0 && $$bindings.icon && icon !== void 0)
@@ -2742,7 +2748,7 @@ const Dropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   visibility = isOpen ? "visibile" : "invisibile";
   opacity = isOpen ? "opacity-100" : "opacity-0";
   height = isOpen ? "h-auto" : "0";
-  return `<div${add_attribute("id", id, 0)}${add_attribute("class", `relative inline-block top-0 bg-transparent border-none ${className || ""}`, 0)}>
+  return `<div${add_attribute("id", id2, 0)}${add_attribute("class", `relative inline-block top-0 bg-transparent border-none ${className || ""}`, 0)}>
     
     ${button ? `${validate_component(Button, "Button").$$render($$result, {
     type: "button",
@@ -2887,6 +2893,11 @@ const nav = {
   }
 };
 const subscriber_queue = [];
+function readable(value, start) {
+  return {
+    subscribe: writable(value, start).subscribe
+  };
+}
 function writable(value, start = noop) {
   let stop;
   const subscribers = new Set();
@@ -2928,6 +2939,44 @@ function writable(value, start = noop) {
   }
   return { set, update, subscribe: subscribe2 };
 }
+function derived(stores, fn, initial_value) {
+  const single = !Array.isArray(stores);
+  const stores_array = single ? [stores] : stores;
+  const auto = fn.length < 2;
+  return readable(initial_value, (set) => {
+    let inited = false;
+    const values = [];
+    let pending = 0;
+    let cleanup = noop;
+    const sync = () => {
+      if (pending) {
+        return;
+      }
+      cleanup();
+      const result = fn(single ? values[0] : values, set);
+      if (auto) {
+        set(result);
+      } else {
+        cleanup = is_function(result) ? result : noop;
+      }
+    };
+    const unsubscribers = stores_array.map((store, i) => subscribe(store, (value) => {
+      values[i] = value;
+      pending &= ~(1 << i);
+      if (inited) {
+        sync();
+      }
+    }, () => {
+      pending |= 1 << i;
+    }));
+    inited = true;
+    sync();
+    return function stop() {
+      run_all(unsubscribers);
+      cleanup();
+    };
+  });
+}
 const isDarkMode = writable(false);
 const storedTheme = typeof window !== "undefined" ? localStorage.getItem("theme") : "light";
 const theme = writable(storedTheme);
@@ -2936,6 +2985,11 @@ if (typeof window !== "undefined") {
     localStorage.setItem("theme", value === "dark" ? "dark" : "light");
   });
 }
+const user = writable({
+  name: "",
+  email: "",
+  message: ""
+});
 const ToggleThemeButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let iconName;
   let $theme, $$unsubscribe_theme;
@@ -4180,21 +4234,84 @@ var projects = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": Projects
 });
+function createNotificationStore(timeout) {
+  const _notifications = writable([]);
+  function send(message, type = "default", timeout2) {
+    _notifications.update((state) => {
+      return [...state, { id: id(), type, message, timeout: timeout2 }];
+    });
+  }
+  const notifications2 = derived(_notifications, ($_notifications, set) => {
+    set($_notifications);
+    if ($_notifications.length > 0) {
+      const timer = setTimeout(() => {
+        _notifications.update((state) => {
+          state.shift();
+          return state;
+        });
+      }, $_notifications[0].timeout);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  });
+  const { subscribe: subscribe2 } = notifications2;
+  return {
+    subscribe: subscribe2,
+    send,
+    default: (msg, timeout2) => send(msg, "default", timeout2),
+    danger: (msg, timeout2) => send(msg, "danger", timeout2),
+    warning: (msg, timeout2) => send(msg, "warning", timeout2),
+    info: (msg, timeout2) => send(msg, "info", timeout2),
+    success: (msg, timeout2) => send(msg, "success", timeout2)
+  };
+}
+function id() {
+  return "_" + Math.random().toString(36).substr(2, 9);
+}
+const notifications = createNotificationStore();
+var Toast_svelte_svelte_type_style_lang = "";
+const css = {
+  code: ".notifications.svelte-qfy9pg{align-items:center;display:flex;flex-direction:column;justify-content:flex-start;left:0;margin:0 auto;padding:0;pointer-events:none;position:fixed;right:0;top:10px;z-index:9999}.toast.svelte-qfy9pg{flex:0 0 auto;margin-bottom:10px}.content.svelte-qfy9pg{color:#fff;display:block;font-weight:500;padding:10px}",
+  map: null
+};
+const Toast = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $notifications, $$unsubscribe_notifications;
+  $$unsubscribe_notifications = subscribe(notifications, (value) => $notifications = value);
+  let { themes = {
+    danger: "#E26D69",
+    success: "#84C991",
+    warning: "#f0ad4e",
+    info: "#5bc0de",
+    default: "#aaaaaa"
+  } } = $$props;
+  if ($$props.themes === void 0 && $$bindings.themes && themes !== void 0)
+    $$bindings.themes(themes);
+  $$result.css.add(css);
+  $$unsubscribe_notifications();
+  return `<div class="${"notifications svelte-qfy9pg"}">${each($notifications, (notification) => `<div class="${"toast svelte-qfy9pg"}" style="${"background: " + escape(themes[notification.type]) + ";"}"><div class="${"content svelte-qfy9pg"}">${escape(notification.message)}</div>
+        ${notification.icon ? `<i class="${escape(null_to_empty(notification.icon)) + " svelte-qfy9pg"}"></i>` : ``}
+      </div>`)}
+  </div>`;
+});
 const inputClasses = "border border-gray-200 dark:border-gray-600 rounded-sm bg-white dark:bg-gray-900 text-black dark:text-white text-xl";
 const labelClasses = "text-black dark:text-white text-xl font-normal mb-2";
 const ContactForm = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  console.log("ENV VAR: ", "http://localhost:5001");
+  let $user, $$unsubscribe_user;
+  $$unsubscribe_user = subscribe(user, (value) => $user = value);
+  $$unsubscribe_user();
   return `<form class="${"my-8"}" id="${"contact-form"}" method="${"POST"}"${add_attribute("action", `${"http://localhost:5001"}/api/contact`, 0)} enctype="${"multipart/form-data"}"><div class="${"flex flex-col md:flex-row mb-8"}"><div class="${"flex flex-col md:mr-4"}"><label for="${"contact-form-name"}"${add_attribute("class", `${labelClasses}`, 0)}>Name</label>
-            <input id="${"contact-form-name"}" name="${"name"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} required></div>
+            <input id="${"contact-form-name"}" name="${"name"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} required${add_attribute("value", $user.name, 0)}></div>
         <div class="${"flex flex-col"}"><label for="${"contact-form-email"}"${add_attribute("class", `${labelClasses}`, 0)}>Email</label>
-            <input id="${"contact-form-email"}" name="${"email"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} value="${"fuck"}" required></div></div>
+            <input id="${"contact-form-email"}" name="${"email"}" type="${"text"}"${add_attribute("class", `${inputClasses} h-10 p-4`, 0)} required${add_attribute("value", $user.email, 0)}></div></div>
     <div class="${"flex flex-col"}"><label for="${"contact-form-message"}"${add_attribute("class", `${labelClasses}`, 0)}>Message</label>
-        <textarea id="${"contact-form-message"}" name="${"message"}" type="${"text"}" placeholder="${"How can I assist you?"}"${add_attribute("class", `${inputClasses} p-4 h-56`, 0)} required></textarea></div>
+        <textarea id="${"contact-form-message"}" name="${"message"}" type="${"text"}" placeholder="${"How can I assist you?"}"${add_attribute("class", `${inputClasses} p-4 h-56`, 0)} required>${$user.message || ""}</textarea></div>
     <div class="${"mt-8 flex justify-center"}">${validate_component(Button, "Button").$$render($$result, {
     classes: "border-2 py-2 px-12 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black",
-    text: "Submit",
+    text: "Contact",
     type: "submit"
-  }, {}, {})}</div></form>`;
+  }, {}, {})}</div></form>
+${validate_component(Toast, "Toast").$$render($$result, {}, {}, {})}`;
 });
 const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="${"py-16 min-h-screen"}">${validate_component(Container, "Container").$$render($$result, { className: "" }, {}, {

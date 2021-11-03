@@ -3,11 +3,15 @@
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
+	"engine": {
+		"node": "15.1.0"
+	},
 	"scripts": {
 		"dev:only": "svelte-kit dev",
 		"dev": "concurrently \"npm run server\" \"npm run dev:only\" \"npm run tailwind:watch\"",
 		"build:only": "svelte-kit build",
 		"build": "npm run tailwind:build && npm run build:only",
+		"deploy-production": "npm run build user@147.182.208.24:/var/www/davidmhanlon.com/html",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
