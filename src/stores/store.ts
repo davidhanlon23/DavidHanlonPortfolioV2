@@ -9,3 +9,9 @@ if(typeof window !== 'undefined'){
     });
     
 }
+
+export const user = writable({
+    name: "",
+    email: "",
+    message: ""
+  })

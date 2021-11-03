@@ -14,7 +14,7 @@ const router = express.Router();
     },
   });
   export default router.post("/contact", (req, res) => {
-    console.log('req: ', req);
+    console.log('req: ', req.body);
     var name = req.body.name;
     var email = req.body.email;
     var subject = req.body.subject;
@@ -33,7 +33,7 @@ const router = express.Router();
         })
       } else {
         res.json({
-         status: 'Message Successfully Sent. I will respond ASAP'
+         status: 'Success'
         })
       }
     })
