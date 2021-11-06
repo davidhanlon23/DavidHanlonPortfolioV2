@@ -7,7 +7,6 @@
     import Button from '../Button/Button.svelte';
 
     function submitContactForm(){
-        console.log('user', $user);
         axios({
           method: "POST", 
           url:`${import.meta.env.VITE_API_URL}/api/contact`, 

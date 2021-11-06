@@ -19,7 +19,6 @@
         },
 
     };
-    console.log('activeSideMenu: ', activeSideMenu);
 </script>
 {#if !activeSideMenu}
 <div class="flex items-center mx-auto border-b border-gray-300 px-6 py-5 mb-6 bg-white dark:bg-dh-primary-dark-500">

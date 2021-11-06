@@ -14,7 +14,6 @@ const router = express.Router();
     },
   });
   export default router.post("/contact", (req, res) => {
-    console.log('req: ', req.body);
     var name = req.body.name;
     var email = req.body.email;
     var subject = req.body.subject;
