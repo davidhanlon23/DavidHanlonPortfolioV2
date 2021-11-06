@@ -11,7 +11,6 @@
 		"dev": "concurrently \"npm run server\" \"npm run dev:only\" \"npm run tailwind:watch\"",
 		"build:only": "svelte-kit build",
 		"build": "npm run tailwind:build && npm run build:only",
-		"deploy-production": "npm run build user@147.182.208.24:/var/www/davidmhanlon.com/html",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -19,7 +18,8 @@
 		"format": "prettier --write --plugin-search-dir=. .",
 		"server": "nodemon server.js",
 		"tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
-		"tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production  postcss src/styles/tailwind.css -o src/styles/tailwind-output.css"
+		"tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production  postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
+		"deploy-production":"npm run tailwind:build && npm run build:only && scp -r ./.svelte-kit/build/* root@147.182.208.24:/var/www/davidmhanlon.com/html"
 	},
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
