@@ -38,7 +38,7 @@
           <Button
             onClick={() => handleClick(item)}
             href={(item && item.href) ? item.href : ''}
-            classes="flex w-9/10 mx-4 my-2 items-center cursor-pointer py-1 px-6 shadow-none rounded hover:bg-gray-700"
+            classes="flex w-9/10 mx-4 my-2 items-center cursor-pointer py-1 px-6 shadow-none rounded hover:bg-gray-200 dark:hover:bg-gray-700"
           >
             <Icon name={item.icon} classes="h-8 w-8 mr-3" color="primary" />
             <p class="text-lg text-gray-500 dark:text-gray-200">{item.label}</p>
