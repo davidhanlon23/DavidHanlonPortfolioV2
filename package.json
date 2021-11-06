@@ -19,7 +19,7 @@
 		"server": "nodemon server.js",
 		"tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
 		"tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production  postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
-		"deploy-production":"npm run tailwind:build && npm run build:only && scp -r ./.svelte-kit/build/* root@147.182.208.24:/var/www/davidmhanlon.com/html"
+		"deploy-production": "npm run tailwind:build && npm run build:only && scp -r ./.svelte-kit/build/* root@147.182.208.24:/var/www/davidmhanlon.com/html"
 	},
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
@@ -38,6 +38,7 @@
 		"uuid": "^8.3.2"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.21",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.4.0",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",

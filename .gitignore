@@ -106,3 +106,5 @@ dist
 .svelte-kit
 
 .vscode
+build
+package-lock.json
