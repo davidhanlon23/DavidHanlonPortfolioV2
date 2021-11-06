@@ -22,7 +22,7 @@
 				color: 'primary',
 				functionality: {
 					onClick: () => {
-						window.open('/static/Resume/DavidHanlonResume.pdf');
+						window.open('/Resume/DavidHanlonResume.pdf');
 					},
 				},
 				accessibilityProps:{

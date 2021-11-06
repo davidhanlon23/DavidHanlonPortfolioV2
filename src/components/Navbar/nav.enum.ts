@@ -86,11 +86,11 @@ export const nav = {
           href: '/skills',
           id: uuidv4(),
         },
-        {
-          label: 'Blockchain',
-          href: '/blockchain',
-          id: uuidv4(),
-        },
+        // {
+        //   label: 'Blockchain',
+        //   href: '/blockchain',
+        //   id: uuidv4(),
+        // },
       ],
     },
     authenticated: {
