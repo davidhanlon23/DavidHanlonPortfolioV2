@@ -64,7 +64,7 @@
 			for both business and consumer use. My unique skill set goes much deeper then just developing.
 			   I have worked at a Start Up for over the past 2 years, built multiple E-commerce businesses, ran digital and social media advertising (Instagram, Facebook, Snapchat, and Google AdWords), 
 			   and have helped many clients turn their website into their central hub for their business through the likes of SaaS solutions such as Wix, and Shopify.
-			   I'm naturally curious, and perpetually working on improving my skills trying to solve on problem with the help of technology at a time.
+			   I'm naturally curious, and perpetually working on improving my skills trying to solve one problem with the help of technology at a time.
 		  </p>
 	</div>
 </div>
