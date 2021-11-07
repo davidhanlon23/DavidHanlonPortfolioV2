@@ -8,7 +8,7 @@
 	},
 	"scripts": {
 		"dev:only": "svelte-kit dev",
-		"dev": "concurrently \"npm run server\" \"npm run dev:only\" \"npm run tailwind:watch\"",
+		"dev": "concurrently \"npm run dev:only\" \"npm run tailwind:watch\"",
 		"build:only": "svelte-kit build",
 		"build": "npm run tailwind:build && npm run build:only",
 		"preview": "svelte-kit preview",
@@ -16,7 +16,6 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"server": "nodemon server.js",
 		"tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
 		"tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production  postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
 		"deploy-production": "npm run tailwind:build && npm run build:only && scp -r ./build/* root@147.182.208.24:/var/www/davidmhanlon.com/html"
@@ -26,13 +25,7 @@
 		"@lukeed/uuid": "^2.0.0",
 		"axios": "^0.24.0",
 		"cookie": "^0.4.1",
-		"cors": "^2.8.5",
 		"dotenv": "^10.0.0",
-		"express": "^4.17.1",
-		"graphql": "^15.5.1",
-		"multiparty": "^4.2.2",
-		"nodemailer": "^6.7.0",
-		"nodemon": "^2.0.14",
 		"svelte-toggle": "^3.0.0",
 		"sveltejs-tippy": "^3.0.0",
 		"uuid": "^8.3.2"
