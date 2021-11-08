@@ -140,7 +140,7 @@ module.exports = {
 					500: '#4299e1',
 				},
 				'dh-primary-dark': {
-					500: '#141414',
+					500: '#121212',
 				},
 				'dh-secondary-dark': {
 					400: '#6ee7b7', // lighter emerald

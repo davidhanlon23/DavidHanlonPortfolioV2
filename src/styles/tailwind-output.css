@@ -1068,7 +1068,7 @@ video {
 }
 .bg-dh-primary-dark-500 {
 	--tw-bg-opacity: 1;
-	background-color: rgba(20, 20, 20, var(--tw-bg-opacity));
+	background-color: rgba(18, 18, 18, var(--tw-bg-opacity));
 }
 .bg-gray-300 {
 	--tw-bg-opacity: 1;
@@ -1312,7 +1312,7 @@ video {
 }
 .text-dh-primary-dark-500 {
 	--tw-text-opacity: 1;
-	color: rgba(20, 20, 20, var(--tw-text-opacity));
+	color: rgba(18, 18, 18, var(--tw-text-opacity));
 }
 .text-gray-400 {
 	--tw-text-opacity: 1;
@@ -1548,7 +1548,7 @@ video {
 }
 .dark .dark\:bg-dh-primary-dark-500 {
 	--tw-bg-opacity: 1;
-	background-color: rgba(20, 20, 20, var(--tw-bg-opacity));
+	background-color: rgba(18, 18, 18, var(--tw-bg-opacity));
 }
 .dark .dark\:bg-dh-secondary-dark-500 {
 	--tw-bg-opacity: 1;
@@ -1584,7 +1584,7 @@ video {
 }
 .dark .dark\:text-dh-primary-dark-500 {
 	--tw-text-opacity: 1;
-	color: rgba(20, 20, 20, var(--tw-text-opacity));
+	color: rgba(18, 18, 18, var(--tw-text-opacity));
 }
 .dark .dark\:text-dh-secondary-dark-500 {
 	--tw-text-opacity: 1;
@@ -1596,7 +1596,7 @@ video {
 }
 .dark .dark\:hover\:bg-dh-primary-dark-500:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgba(20, 20, 20, var(--tw-bg-opacity));
+	background-color: rgba(18, 18, 18, var(--tw-bg-opacity));
 }
 .dark .dark\:hover\:bg-dh-secondary-dark-500:hover {
 	--tw-bg-opacity: 1;
