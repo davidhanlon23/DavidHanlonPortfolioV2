@@ -55,7 +55,7 @@
 </svelte:head>
 <Hero heroObject={heroObject} backgroundColor="bg-white dark:bg-dh-primary-dark-500" backgroundHeight="100" />
 <div class="w-full mx-0 my-8 bg-dh-secondary-dark-500 rounded-t-3xl min-h-screen">
-	<div class="pt-36 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
+	<div class="pt-36 pb-8 sm:pb-12 md:pb-0 mx-4 md:mx-12 lg:mx-16 xl:mx-96">
 		<div class="flex justify-center my-4">
 			<Image classes="w-48 h-48 border-none" src="/Images/davidHanlon.webp" alt="Image of Me (David Hanlon)" circle />
 		</div>

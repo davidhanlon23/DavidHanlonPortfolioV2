@@ -1209,6 +1209,9 @@ video {
 .pt-36 {
 	padding-top: 9rem;
 }
+.pb-8 {
+	padding-bottom: 2rem;
+}
 .pb-4 {
 	padding-bottom: 1rem;
 }
@@ -1727,6 +1730,10 @@ video {
 		padding-right: 1.5rem;
 	}
 
+	.sm\:pb-12 {
+		padding-bottom: 3rem;
+	}
+
 	.sm\:pt-24 {
 		padding-top: 6rem;
 	}
@@ -1897,6 +1904,10 @@ video {
 	.md\:py-16 {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
+	}
+
+	.md\:pb-0 {
+		padding-bottom: 0;
 	}
 
 	.md\:pt-0 {
