@@ -1764,6 +1764,11 @@ video {
 		margin-right: 3rem;
 	}
 
+	.md\:mx-0 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.md\:my-8 {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
@@ -1789,6 +1794,10 @@ video {
 
 	.md\:mt-32 {
 		margin-top: 8rem;
+	}
+
+	.md\:mb-0 {
+		margin-bottom: 0;
 	}
 
 	.md\:mt-2 {
@@ -1829,6 +1838,10 @@ video {
 
 	.md\:w-full {
 		width: 100%;
+	}
+
+	.md\:w-auto {
+		width: auto;
 	}
 
 	.md\:max-w-md {

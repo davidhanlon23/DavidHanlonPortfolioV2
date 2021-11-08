@@ -15,7 +15,7 @@
     },
     ];
 
-    const ctaClasses = "w-full mx-auto mb-4 sm:mx-0 sm:mb-0 sm:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  sm:px-8";
+    const ctaClasses = "w-full mx-auto mb-4 md:mx-0 md:mb-0 md:w-auto flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  md:px-8";
 </script>
 {#each projects as project}
 <Container>
