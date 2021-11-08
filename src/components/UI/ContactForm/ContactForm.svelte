@@ -50,7 +50,7 @@
         <textarea id="contact-form-message" name="message" type="text" placeholder="How can I assist you?" class={`${inputClasses} p-4 h-56`} bind:value={$user.message} required />
     </div>
     <div class="mt-8 flex justify-center">
-        <Button classes="border-2 py-2 px-12 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Contact" type="submit" />
+        <Button classes="border-2 py-3 px-12 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Contact" type="submit" />
     </div>
 </form>
 <Toast/>

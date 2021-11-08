@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <Button classes="border-2 py-2 px-4 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Start a Conversation" href="/contact" />
+            <Button classes="border-2 py-3 px-4 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Start a Conversation" href="/contact" />
         </div>
     </Container>
 </div>
