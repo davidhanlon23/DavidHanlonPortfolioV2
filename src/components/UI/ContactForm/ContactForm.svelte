@@ -20,7 +20,7 @@
           if (response.data.status === 'success'){
             notifications.success('Message Sent!', 3000)
             resetForm()
-          }else if(response.data.status === 'fail'){
+          }else if(response.data.status === 'fail' || '400'){
             notifications.danger('Message Failed!', 3000)
           }
         })

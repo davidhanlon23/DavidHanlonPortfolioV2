@@ -3,7 +3,6 @@ export const educationObject = [
         sectionName:"Education",
         sectionEducation: [
             {
-                educationType: "College",
                 educationDates: " August 2015 - May 2019",
                 educationGPA:"GPA: 3.16/4.00",
                 education: [
@@ -19,7 +18,6 @@ export const educationObject = [
                 ],
             },
             {
-                educationType: "High School",
                 educationDates: "August 2011 - May 2015",
                 educationGPA:"GPA: 4.25/5.00",
                 education: [

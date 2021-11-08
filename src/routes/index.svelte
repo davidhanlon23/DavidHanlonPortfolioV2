@@ -68,7 +68,6 @@
 		  </p>
 	</div>
 </div>
-<Divider marginBottom="mb-8" />
 <Container className="min-h-screen">
 	<h3 class="text-center text-2xl sm:text-4xl font-bold pb-4 text-dh-secondary-dark-500">My Recent Work</h3>
 	<p class="text-lg sm:text-xl text-center text-black dark:text-white" >Here are a few design projects I've worked on recently that I can talk about. Want to see more?
@@ -94,5 +93,4 @@
 		<Button classes="border-2 py-2 px-4 border-dh-secondary-dark-500 text-dh-secondary-dark-500 hover:text-white hover:bg-dh-secondary-dark-500 dark:hover:text-black" text="Start a Conversation" href="/contact" />
 	</div>
 </Container>
-<Divider marginTop="mt-8" />
 

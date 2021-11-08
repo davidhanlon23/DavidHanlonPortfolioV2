@@ -34,7 +34,7 @@
     const secondaryHeaderClasses = "text-black dark:text-white font-semibold text-2xl mt-8";
     const nameOfExperienceClasses = "text-black dark:text-white text-4xl hover:cursor-pointer hover:no-underline";
     const taglineClasses = "italic text-black dark:text-white mt-2";
-    const positionClasses = "text-black dark:text-white my-2";
+    const positionClasses = "text-black dark:text-white my-2 font-semibold";
     const dateAndLocationClasses = "text-black dark:text-white";
     const listClasses = "ml-4 list-disc dark:text-white";
     const logoClasses = "w-60 h-60";

@@ -8,7 +8,6 @@
                     sectionName:"",
                     sectionEducation: [
                         {
-                            educationType: "",
                             educationDates: "",
                             educationGPA:"",
                             education: [
@@ -38,15 +37,14 @@
     </Container>
     {#each section.sectionEducation as education}
         <Container>
-            <h3 class="text-2xl font-semibold text-black dark:text-white">{education.educationType}</h3>
-            <div class="flex my-4">
+            <!-- <div class="flex my-4">
                 <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
                 <p class={iconTextClasses}>{education.educationDates}</p>
             </div>
             <div class="flex my-4">
                 <Icon classes="w-6 h-6" name="academic-cap" color="primary" solid />
                 <p class={iconTextClasses}>{education.educationGPA}</p>
-            </div>
+            </div> -->
             {#each education.education as school}
                 <div class="flex flex-col md:flex-row md:w-full mt-8">
                     <div>
@@ -63,6 +61,14 @@
                 </div>
 
             {/each}
+            <div class="flex my-4">
+                <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
+                <p class={iconTextClasses}>{education.educationDates}</p>
+            </div>
+            <div class="flex my-4">
+                <Icon classes="w-6 h-6" name="academic-cap" color="primary" solid />
+                <p class={iconTextClasses}>{education.educationGPA}</p>
+            </div>
             
         </Container>
     {/each}          
