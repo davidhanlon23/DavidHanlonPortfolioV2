@@ -46,8 +46,8 @@
     </Container>
     {#each section.sectionExperience as experience}
         <Container>
-            <div class="flex flex-col md:flex-row md:w-full mt-8">
-                <div>
+            <div class="flex flex-col md:grid md:grid-cols-2 md:w-full mt-8">
+                <div class="md:w-full">
                     <h3>
                         <a class={`${nameOfExperienceClasses} ${experience.experienceNameClasses || ''}`} target="_blank" href={experience.experienceWebsite} aria-label={experience.ariaLabel}>
                             {experience.experienceName}
@@ -73,7 +73,7 @@
                         {/each}
                     </ul>
                 </div>
-                <div class="flex justify-center mt-8 md:mt-0 md:justify-start md:w-full">
+                <div class="flex justify-start mt-8 md:mt-0 md:justify-end md:w-full">
                     <Image classes={logoClasses} src={`${experience.experienceLogo}`} alt={experience.experienceLogoAlt} />
                 </div>
             </div>
