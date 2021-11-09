@@ -37,14 +37,6 @@
     </Container>
     {#each section.sectionEducation as education}
         <Container>
-            <!-- <div class="flex my-4">
-                <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
-                <p class={iconTextClasses}>{education.educationDates}</p>
-            </div>
-            <div class="flex my-4">
-                <Icon classes="w-6 h-6" name="academic-cap" color="primary" solid />
-                <p class={iconTextClasses}>{education.educationGPA}</p>
-            </div> -->
             {#each education.education as school}
                 <div class="flex flex-col md:grid md:grid-cols-2 md:w-full mt-8">
                     <div class="md:w-full">
@@ -54,13 +46,15 @@
                             </a>
                         </h4>
                         <p class={`${educationTaglinClasses}`}>{school.educationTagline}</p>
-                        <div class="flex my-4">
-                            <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
-                            <p class={iconTextClasses}>{education.educationDates}</p>
-                        </div>
-                        <div class="flex my-4">
-                            <Icon classes="w-6 h-6" name="academic-cap" color="primary" solid />
-                            <p class={iconTextClasses}>{education.educationGPA}</p>
+                        <div class="flex">
+                            <div class="flex m-4">
+                                <Icon classes="w-6 h-6" name="calendar" color="primary" solid />
+                                <p class={iconTextClasses}>{education.educationDates}</p>
+                            </div>
+                            <div class="flex m-4">
+                                <Icon classes="w-6 h-6" name="academic-cap" color="primary" solid />
+                                <p class={iconTextClasses}>{education.educationGPA}</p>
+                            </div>
                         </div>
                     </div>
                     <div class="flex justify-center mt-8 md:mt-0 md:justify-end md:w-full">
