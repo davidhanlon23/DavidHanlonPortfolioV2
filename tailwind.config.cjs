@@ -144,8 +144,8 @@ module.exports = {
 				},
 				'dh-secondary-dark': {
 					400: '#6ee7b7', // lighter emerald
-					500: '#00A566',
-					// 500: '#34D399', // emerald
+					// 500: '#00A566',
+					500: '#34D399', // emerald
 					// 500: '#fda4af', pink
 					// 500: '#67e8f9', cyan 300
 					// 500: '#c4b5fd', violet
