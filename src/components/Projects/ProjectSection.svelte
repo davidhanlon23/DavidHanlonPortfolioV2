@@ -12,6 +12,7 @@
         projectDescription: ``,
         projectImageUrl: '',
         projectLabelYear: '',
+        omitDivider: false,
     },
     ];
 
@@ -43,5 +44,7 @@
         </div>
     </div>
 </Container>
+{#if project.omitDivider === false}
 <Divider />
+{/if}
 {/each}

@@ -35,12 +35,12 @@ export const nav = {
           href: '/skills',
           id: uuidv4(),
         },
-        // {
-        //   label: 'Blockchain',
-        //   icon: 'cube',
-        //   href: '/blockchain',
-        //   id: uuidv4(),
-        // },
+        {
+          label: 'Blockchain',
+          icon: 'cube',
+          href: '/blockchain',
+          id: uuidv4(),
+        },
       ],
     },
     // secondary: {
@@ -86,11 +86,11 @@ export const nav = {
           href: '/skills',
           id: uuidv4(),
         },
-        // {
-        //   label: 'Blockchain',
-        //   href: '/blockchain',
-        //   id: uuidv4(),
-        // },
+        {
+          label: 'Blockchain',
+          href: '/blockchain',
+          id: uuidv4(),
+        },
       ],
     },
     authenticated: {

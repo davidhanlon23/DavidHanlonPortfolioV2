@@ -1,12 +1,14 @@
 export const projectsObject = [
-    // {
-    //     projectName: 'Test Project',
-    //     projectWebsite: 'https://www.google.com',
-    //     projectRepoLink: 'https://www.github.com/',
-    //     projectDescription: `Lorem ipsum dolor sit amet, vitae porta sapien imperdiet at. Morbi massa felis, lacinia ac purus et, eleifend imperdiet ligula. Phasellus accumsan ante eros, a tincidunt justo tempus eu. Integer egestas fermentum imperdiet. Nulla eget massa ex. Vivamus dapibus justo consequat neque aliquam, et mattis leo facilisis. Nam lacus est, sagittis congue mi ac, accumsan ultricies ligula. Ut semper, justo nec laoreet dapibus, diam ligula porta elit, vitae dictum arcu eros id dui. Ut ac sem interdum, porta magna vitae`, 
-    //     projectImageUrl: '/Images/needToEdit.png',
-    //     projectLabelYear: '2021',
-    // },
+    // @TODO update project image url
+    {
+        projectName: '0xWolfpack Finance NFT',
+        projectWebsite: 'https://pl7yg-5aaaa-aaaad-qbwiq-cai.ic.fleek.co/',
+        projectRepoLink: 'https://github.com/0xD4V1NC1/nft-minting-site',
+        projectDescription: `0xWF NFT is a Web3.0 NFT minting dapp built on the polygon network with React 18, TailwindCSS v3, Solidity 0.8.4, Mocha Testing Framework, TypeScript and Storybook`, 
+        projectImageUrl: '/Images/projectImages/0xWFNFT.webp',
+        projectLabelYear: '2022',
+        omitDivider: false,
+    },
     {
         projectName: 'Endeavors.tv',
         projectWebsite: 'https://Endeavors.tv',
@@ -14,6 +16,7 @@ export const projectsObject = [
         projectDescription: `Endeavors.tv previously known as Sleepless Gamers is a live streaming platform that was built with the intent of solving low volume viewership for entry level streamers. This platform was originally built with React, GoLang, JS, and TailwindCSS but is now running on Svelte, TypeScript, TailwindCSS and Rust `, 
         projectImageUrl: '/Images/projectImages/sleeplessGamersProject.webp',
         projectLabelYear: '2021',
+        omitDivider: false,
     },
     {
         projectName: 'NextJS Social',
@@ -22,6 +25,7 @@ export const projectsObject = [
         projectDescription: `NextJS Social is a fully functional demo social media application that I built using React, NextJS, ExpressJS, and MongoDB/NoSQL in order to practice building projects with Server Side Rendering.`, 
         projectImageUrl: '/Images/projectImages/nextJsProject.webp',
         projectLabelYear: '2019',
+        omitDivider: false,
     },
     {
         projectName: 'Original Portfolio',
@@ -30,6 +34,7 @@ export const projectsObject = [
         projectDescription: `My original website portfolio was built using ReactJS, JS, BootstrapCSS, ExpressJS and MongoDB/NoSql. This site is currently hosted on the Heroku platform.`, 
         projectImageUrl: '/Images/projectImages/davidHPortfolio.webp',
         projectLabelYear: '2019',
+        omitDivider: false,
     },
     {
         projectName: 'Love Calculator',
@@ -38,6 +43,7 @@ export const projectsObject = [
         projectDescription: `Love Calculator is a progressive web app I built for fun to better understand using Ionic's hybrid mobile application framework. The calculator takes the sum of the ASCII value of the two inputs and runs it through a function that calculates the "percent love" of two individuals. This project was built with JS, Angular, and Ionic's Mobile Framework hosted with firebase`, 
         projectImageUrl: '/Images/projectImages/loveCalculatorProject.webp',
         projectLabelYear: '2016',
+        omitDivider: false,
     },
   
     {
@@ -47,6 +53,7 @@ export const projectsObject = [
         projectDescription: `Expense Tracker is a simple app to record and keep track of your recent transactions. This app was built using Ionic Hybrid Mobile Application Framework, and AngularJS.`, 
         projectImageUrl: '/Images/projectImages/expenseTrackerProject.webp',
         projectLabelYear: '2016',
+        omitDivider: false,
     },
      {
         projectName: 'Chat App',
@@ -55,6 +62,7 @@ export const projectsObject = [
         projectDescription: `Chat App is a chat application built using Firebase Authentication, Angular, Ionic Hybrid Mobile Application Framework and ExpressJS. Simple app that allowed multiple users to converse in a single chat room. `, 
         projectImageUrl: '/Images/projectImages/chatAppProject.webp',
         projectLabelYear: '2016',
+        omitDivider: true,
     },
 
 ];
