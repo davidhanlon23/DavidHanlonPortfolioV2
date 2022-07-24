@@ -33,7 +33,7 @@
             <h2 class={h2classes}>DeFi (Decentralized Finance) </h2>
             <div class="mb-4">
                 <h3 class={h3classes}>Flash Loans</h3>
-                <p> What are Flash Loans?</p>
+                <p class="font-semibold"> What are Flash Loans?</p>
                 <br/>
                 <p>
                     Flash Loans allow users to borrow funds returned within seconds in a single transaction.
@@ -42,6 +42,8 @@
                     If the flash loan yields a profit, it is typically charged by the loan provider.
                 </p>
                 <br/>
+                <p class="font-semibold"> What is the point if you have to return it "instantly" ?</p>
+                <br />
                 <p> 
                     Flash loans are often used by people in DeFi in order to conduct an Arbitrage Trade, Front Running Trade or to help prevent being Liquidated when over leveraged while borrowing from a protocol such as Abracadabra.
                     In the example of Arbitrage. Say we have Coin A on Exchange 1 at the price of $1. And we have Coin A on Exchange 2 at the price of $1.01. There is now a price discrepency that allows for an arbitrage trade.
@@ -72,7 +74,7 @@
         </div>
         <Divider />
         <div id="nfts" class={sectionClasses}>
-            <h2 class={h2classes}>Projects Worth Watching</h2>
+            <h2 class={h2classes}>Projects Worth Watching (NOT FINANCIAL ADVICE) </h2>
             <ul>
                 <li class="mb-4">
                     <h3 class={h3classes}><a class="text-dh-secondary-dark-500" href="https://lens.xyz/">Lens Protocol</a></h3>
