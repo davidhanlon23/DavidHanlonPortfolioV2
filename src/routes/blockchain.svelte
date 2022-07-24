@@ -91,17 +91,14 @@ import Button from '../components/UI/Button/Button.svelte';
                 <p class={pClasses}><a class={linkClasses} href="https://pro.nansen.ai/" target="_blank">Nansen AI</a> - very... very... advanced blockchain analytics platform allowing you to find trending tokens, NFTs and projects before they have blown up</p>
                 <p class={pClasses}><a class={linkClasses} href="https://app.firebird.finance/swap" target="_blank">Firebird Finance</a> - as mentioned previously this is a DEX Aggregator and one of my personal favorites. There are others out there but this one best serves most of my needs</p>
                 <p class={pClasses}><a class={linkClasses} href="https://koinly.io" target="_blank">Koinly</a> - this was recommended to me, although I have not personally used it. Koinly is known for being able to easily compute/handle your taxes for crypto</p>
-                <p class={pClasses}><a class={linkClasses} href="nftcalendar.io" target="_blank">NFT Calendar</a> - easy way to track when very hyped up NFT projects are set to release and start minting</p>
+                <p class={pClasses}><a class={linkClasses} href="https://nftcalendar.io" target="_blank">NFT Calendar</a> - easy way to track when very hyped up NFT projects are set to release and start minting</p>
                 <p class={pClasses}><a class={linkClasses} href="https://chainlist.org/" target="_blank">Chain List</a> - allows you to quickly add any blockchain to your wallet </p>
                 <p class={pClasses}><a class={linkClasses} href="https://dailydefi.org/tools/impermanent-loss-calculator/" target="_blank">Impermanent Lost Calculator </a> - helps you calculate potential risk of a yield farming or liquidity providing opportunity</p>
                 <p class={pClasses}><a class={linkClasses} href="https://wiki.rugdoc.io/docs/how-to-revoke-permissions/" target="_blank">RugDoc Wallet Security</a> - Here you will learn how to mitigate risk to your wallet by revoking smart contract approvals.</p>
                 <p class={pClasses}><a class={linkClasses} href="https://www.marketcapof.com/fantom/solana" target="_blank">Market Cap Simulator</a> - Ever wonder how rich you would be if a particular token reached a certain market cap? Looking to dream about the what-ifs and hypotheticals? This calculator helps you compare if your asset grew to the level of another asset and what it would be worth</p>
                 <p class={pClasses}><a class={linkClasses} href="https://gains.trade/" target="_blank">Gains Network</a> - decentralized trading platform allowing you to conduct leveraged day trades for advanced traders</p>
                 <p class={pClasses}><a class={linkClasses} href="https://debank.com/" target="_blank">Debank</a> - great wallet analyzer tool to see what your overall wallet value is across multiple chains, staked protocols and while providing liquidity</p>
-
-
             </div>
-            
         </div>
         <Divider />
         <div id="interesting-projects" class="mt-8 pb-24">
