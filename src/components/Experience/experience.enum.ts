@@ -15,13 +15,15 @@ export const experienceObject = [
                         ariaLabel: "Opens Cybrary's site in new tab",
                         experienceItems: [
                             {
-                                experience: `Collaborate with team members to coordinate large project releases in a timely manner`,
+                                experience: `Responsible Software Engineer on a 4 person product (agile) team leveraging React.js
+                                (Hook-based React) using current paradigms, tools, and processes. to coordinate large project
+                                releases in a timely manner.`,
                             },
                             {
                                 experience: `Assisted in the development of multiple B2B and B2C features including the user goals
                                 features for our product application which resulted in improved engagement throughout the
                                 platform and lowering our B2C customer churn rate increasing the company’s overall revenue
-                                and customer retention rate`,
+                                and customer retention rate.`,
                             },
                             {
                                 experience: `Assisted in the entire redesign of the frontend of the product application which provided a
@@ -30,7 +32,7 @@ export const experienceObject = [
                             {
                                 experience: `Improve the product application’s accessibility issues which directly resulted in the closing of
                                 multiple B2B deals with various government agencies providing additional long term revenue
-                                streams for the company`,
+                                streams for the company.`,
                             },
                             {
                                 experience: `Implement Tailwind CSS framework to replace Semantic UI in order to improve SEO and the
@@ -41,7 +43,7 @@ export const experienceObject = [
                                 experience: `Help improve architecture of the marketing application by changing information that was
                                 fetched from our Content Management System (Contentful) during render to being fetched
                                 during build time which resulted in higher seo scores, faster page load times, and improved
-                                user experience`,
+                                user experience.`,
                             },
                             {
                                 experience: `Fix Cumulative Layout Shift (CLS), First Contentful Paint (FCP) and update our browser polyfill
