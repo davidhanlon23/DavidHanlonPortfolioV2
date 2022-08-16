@@ -2,8 +2,17 @@
     import Divider from '../components/UI/Divider/Divider.svelte';
     import Container from '../components/UI/Container/Container.svelte';
     import ProjectSection from '../components/Projects/ProjectSection.svelte';
-import Button from '../components/UI/Button/Button.svelte';
+    import Button from '../components/UI/Button/Button.svelte';
     const web3Projects = [
+        {
+            projectName: 'Stellr',
+            projectWebsite: 'https://stellr.social',
+            projectRepoLink: 'https://github.com/0xDreamLabs/stellr',
+            projectDescription: `Stellr.social is a Web 3.0 social networking application being built on Polygon via Lens Protocol, NextJS, React18, Tailwind V3, Typescript, EthersJS, Solidity, AWS Amplify and Multilingual support. Stellr's mission is to empower creators by enabling them to have the ability to grow and scale their network as well as monetize their content. We are hooping to launch the Stellr MVP in the coming months. Checkout out the discord to find out more.`, 
+            projectImageUrl: '/Images/projectImages/stellrProject.webp',
+            projectLabelYear: 'Soon',
+            omitDivider: false,
+        },
         {
             projectName: '0xWolfpack Finance NFT',
             projectWebsite: 'https://pl7yg-5aaaa-aaaad-qbwiq-cai.ic.fleek.co/',

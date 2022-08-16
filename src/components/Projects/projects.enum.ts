@@ -1,5 +1,22 @@
 export const projectsObject = [
-    // @TODO update project image url
+    {
+        projectName: 'Stellr',
+        projectWebsite: 'https://stellr.social',
+        projectRepoLink: 'https://github.com/0xDreamLabs/stellr',
+        projectDescription: `Stellr.social is a Web 3.0 social networking application being built on Polygon via Lens Protocol, NextJS, React18, Tailwind V3, Typescript, EthersJS, Solidity, AWS Amplify and Multilingual support. Stellr's mission is to empower creators by enabling them to have the ability to grow and scale their network as well as monetize their content. We are hooping to launch the Stellr MVP in the coming months. Checkout out the discord to find out more.`, 
+        projectImageUrl: '/Images/projectImages/stellrProject.webp',
+        projectLabelYear: 'Soon',
+        omitDivider: false,
+    },
+    {
+        projectName: 'Leverage Trading Calculator',
+        projectWebsite: 'https://leveragetradingcalculator.com',
+        projectRepoLink: 'https://github.com/0xD4V1NC1/leverage-trading-calculator',
+        projectDescription: `Leverage Trading Calculator is a tool I built to help me estimate entry and exit points on leveraged crypto trades. It is built with React 18, NextJS, TailwindCSS v3, and TypeScript. This very simple project bolsters a perfect lighthouse score in all categories `, 
+        projectImageUrl: '/Images/projectImages/ltcProject.webp',
+        projectLabelYear: '2022',
+        omitDivider: false,
+    },
     {
         projectName: '0xWolfpack Finance NFT',
         projectWebsite: 'https://pl7yg-5aaaa-aaaad-qbwiq-cai.ic.fleek.co/',
