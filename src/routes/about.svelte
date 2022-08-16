@@ -14,7 +14,7 @@
             <div class="flex flex-col justify-items-center text-center md:text-left w-full sm:w-2/3 md:w-1/2 md:ml-16 my-8 m-auto md:m-0">
                 <h2 class="text-black dark:text-white font-bold text-xl">Hi, I am David Hanlon.</h2>
                 <br />
-                <p class={`${textClasses}`}> I am an ambitious, optimistic, and dependable Associate Level Software Engineer with a passion for developing software and pushing the limits of my current programming and problem solving skillset.</p>
+                <p class={`${textClasses}`}> I am an ambitious, optimistic, and dependable Mid Level Software Engineer III with a passion for developing software and pushing the limits of my current programming and problem solving skillset.</p>
                 <br/>
                 <p class={`${textClasses}`}>I have many hobbies but the one I am passionate about most is my dedication and commitment to the persuit of life long learning. I am always looking for opportunities to grow as an individual and projects that give me an opportunity to make a difference and do something meaningful.
                 </p>

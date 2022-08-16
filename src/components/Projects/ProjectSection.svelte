@@ -20,7 +20,7 @@
 </script>
 {#each projects as project}
 <Container>
-    <div class="flex flex-wrap justify-center flex-col md:flex-row my-16 md:w-full">
+    <div class="flex flex-wrap justify-center flex-col md:flex-row py-16 md:w-full">
         <div class="md:max-w-md md:mt-2">
             <!-- IMAGE GOES HERE -->
             <Image src={project.projectImageUrl} />
